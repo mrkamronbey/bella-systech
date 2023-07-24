@@ -1,5 +1,15 @@
 {
-    "Header":{
-        "0":"Hello"
-    }
+  "Header": {
+    "0": "All companies",
+    "1": "Catalog",
+    "2": "About us",
+    "3": "Our advantages",
+    "4": "Terms of cooperation",
+    "5": "News",
+    "6": "Contacts"
+  },
+  "HeroSlider": {
+    "0": "Consultation",
+    "1": "Submit request"
+  }
 }

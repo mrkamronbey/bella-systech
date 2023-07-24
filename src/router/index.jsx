@@ -6,7 +6,7 @@ function RouterComponent() {
     <>
     <Routes>
     {RouterData.map(elem => 
-        < key={elem.id} path={elem.path} element={
+        <Route key={elem.id} path={elem.path} element={
             <Suspense fallback={<h1>Loading...</h1>}>
                 {elem.component}
             </Suspense>            

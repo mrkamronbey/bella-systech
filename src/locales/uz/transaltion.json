@@ -1,5 +1,15 @@
 {
-    "Header":{
-        "0":"Salom"
-    }
+  "Header": {
+    "0": "Barcha kompaniyalar",
+    "1": "Katalog",
+    "2": "Biz haqimizda",
+    "3": "Bizning afzalliklarimiz",
+    "4": "Hamkorlik shartlari",
+    "5": "Yangiliklar",
+    "6": "Kontaktlar"
+  },
+  "HeroSlider": {
+    "0": "Maslahat",
+    "1": "So'rov yuborish"
+  }
 }

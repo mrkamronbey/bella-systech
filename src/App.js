@@ -1,9 +1,12 @@
-import './App.css';
-import RouterComponent from './router';
+import RouterComponent from "./router";
+import { GlobalStyle } from "./style-app";
+import Header from "./components/header";
 function App() {
   return (
     <>
-    <RouterComponent/>
+      <GlobalStyle />
+      <Header />
+      <RouterComponent />
     </>
   );
 }

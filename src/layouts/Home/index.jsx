@@ -1,11 +1,10 @@
 import React from 'react'
-import { useTranslation } from 'react-i18next'
+import HomeComponentent from '../../components/home';
 function Home() {
-  const {t , i18n}= useTranslation();
   return (
-    <div>
-      {t("Header.0")}
-    </div>
+    <>
+      <HomeComponentent />
+    </>
   )
 }
 

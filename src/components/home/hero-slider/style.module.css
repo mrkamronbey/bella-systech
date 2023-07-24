@@ -1,0 +1,66 @@
+.home_hero_section {
+  padding: 118.5px 0 0 0;
+  height: 81.3vh;
+}
+
+.content_box {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+}
+
+.slider_title {
+  color: #fff;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+.slider_text {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.left_btn {
+  background-color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #df2027;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  margin-right: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.right_btn {
+  background-color: #df2027;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
