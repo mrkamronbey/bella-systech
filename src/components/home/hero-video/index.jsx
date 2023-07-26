@@ -9,15 +9,13 @@ import { motion, useViewportScroll, useTransform } from "framer-motion";
 const HeroVideo = () => {
     const { t } = useTranslation()
     const { scrollYProgress } = useViewportScroll();
-    const scale = useTransform(scrollYProgress, [0, 1], [0, 1]);
+    const scale = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
     return (
         <>
             <motion.div
-                transition={{ type: "spring", duration: 1, ease: "easeIn" }}
-                style={{
-                    scale,
-                }}
+                // transition={{ duration: 1, ease: "easeIn" }}
+                // style={{scale}}
                 className={styles.hero_video}>
                 <div className={styles.video_wrapp}>
                     <div className={styles.video_content}>

@@ -1,12 +1,12 @@
 import React, { useEffect, useRef } from 'react'
-import { motion, useInView, useAnimation  } from 'framer-motion'
+import { motion, useInView, useAnimation } from 'framer-motion'
 
 
 
-  interface Props {
-    children: JSX.Element;
-    width?: "fit-content" | "100%"
-  }
+interface Props {
+  children: JSX.Element;
+  width?: "fit-content" | "100%"
+}
 
 
 
@@ -50,7 +50,7 @@ const Reveal = ({ children, width = "fit-content" }: Props) => {
             left: 0,
             right: 0,
             background: "#df2027",
-            zIndex: 20
+            zIndex: 20,
           }}
         />
       </div>

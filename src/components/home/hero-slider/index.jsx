@@ -5,7 +5,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCreative, Navigation } from 'swiper/modules';
 import CommonButton from '../../../common/button';
 import Reveal from '../../../utils/reveal/reveal';
-import { motion, useViewportScroll, useTransform, useSpring } from "framer-motion";
+// import { motion, useViewportScroll, useTransform, useSpring } from "framer-motion";
+import { motion, transform, useScroll, useSpring, useViewportScroll, useTransform } from "framer-motion";
 
 
 // Import Swiper styles
@@ -23,15 +24,24 @@ import { useTranslation } from 'react-i18next';
 const HomeHeroSlider = () => {
     const { t } = useTranslation()
     const { scrollYProgress } = useViewportScroll();
-    const scale = useTransform(scrollYProgress, [0, 1], [1, 0.2]);
+    const scale = useTransform(scrollYProgress, [0, 1], [1, 0.6]);
+    // const { scrollYProgress } = useScroll(0);
+    // const scale = useSpring(scrollYProgress, {
+    //     stiffness: 100,
+    //     damping: 30,
+    //     restDelta: 4,
+    // });
     // const scaleSpring = useSpring(scale)
     return (
         <>
             <motion.div
-                transition={{ duration: 0.5, ease: "easeIn" }}
-                style={{
-                    scale
-                }}
+                // transition={{ duration: 0.5, ease: "easeIn" }}
+                // style={{
+                //     scale
+                // }}
+
+
+
                 className={styles.home_hero_section}>
                 {/* <WrapperContainer> */}
                 <Swiper
@@ -40,7 +50,7 @@ const HomeHeroSlider = () => {
                     navigation={true}
                     shadow={true}
                     loop={true}
-                    speed={850}
+                    speed={2000}
                     creativeEffect={{
                         prev: {
                             shadow: true,

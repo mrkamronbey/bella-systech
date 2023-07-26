@@ -1,0 +1,44 @@
+.card {
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 20px 20px 40px 0px rgba(0, 0, 0, 0.05);
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.card_img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card_img > img {
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+.card_content {
+  padding: 14px;
+}
+
+.card_titles {
+  margin: 0;
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  text-align: center;
+}
+
+.card_text {
+  color: #2e2e2e;
+  font-family: Okta Neue;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
