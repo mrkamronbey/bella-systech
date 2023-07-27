@@ -1,0 +1,17 @@
+.home_our_cosmetics_section {
+  padding: 20px 0 50px 0;
+  background: #f8f8f8;
+}
+.home_cosmetics_title {
+  color: #000;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
+  line-height: 150%;
+  margin-bottom: 35px;
+}
+
+.home_cosmetics_row {
+  margin: 0 !important;
+}

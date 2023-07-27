@@ -7,6 +7,7 @@ import Menu from '../menu';
 import { Button } from 'antd';
 
 import HeaderLogo from '../../../assets/header/bella-systech-hdr-logo.png'
+import { NavLink } from 'react-router-dom';
 
 
 const HeaderTop = () => {
@@ -22,7 +23,7 @@ const HeaderTop = () => {
       <div className={styles.header_top_wrapp}>
         <Row className={styles.header_top_row}>
           <Col className={styles.header_top_col} lg={5}>
-            <img src={HeaderLogo} alt="" />
+            <NavLink to='/'><img src={HeaderLogo} alt="" /></NavLink>
           </Col>
           <Col className={styles.header_top_col} lg={7}>
             <div className={styles.header_top_link_wrapp}>
@@ -71,8 +72,10 @@ const HeaderTop = () => {
       <div className={styles.mobile_box}>
         <Row className={styles.header_top_row}>
           <Col className={styles.mobile_btm_col}  >
-            <img className={styles.desktop_block_img} src={HeaderLogo} alt="" />
-            <h1 className={styles.mobile_block_title}>Bella-Systech</h1>
+            <NavLink to='/'><img src={HeaderLogo} alt="" />
+              <img className={styles.desktop_block_img} src={HeaderLogo} alt="" />
+              <h1 className={styles.mobile_block_title}>Bella-Systech</h1>
+            </NavLink>
           </Col>
           <Col className={styles.mobile_btm_col}>
             <button className={styles.drawers_btn} onClick={showDefaultDrawer}>

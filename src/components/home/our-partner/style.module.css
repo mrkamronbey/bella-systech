@@ -1,0 +1,31 @@
+.ourpartner_section {
+  padding: 50px 0;
+  background: #fff;
+}
+
+.ourpartner_content {
+  margin-bottom: 40px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.ourpartner_title {
+  color: #000;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  margin: 0 0 10px 0;
+  display: inline;
+}
+
+.ourpartner_text {
+  white-space: pre-wrap;
+  color: #2e2e2e;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  display: inline;
+}

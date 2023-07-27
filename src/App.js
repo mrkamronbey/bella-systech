@@ -2,7 +2,6 @@ import RouterComponent from "./router";
 import { GlobalStyle } from "./style-app";
 import Header from "./components/header";
 import { motion, useScroll, useSpring } from "framer-motion";
-import ParticleRing from "./components/particlering";
 import "./App.css";
 
 function App() {
@@ -17,7 +16,6 @@ function App() {
       <motion.div className="progress-bar" style={{ scaleX }} />
       <GlobalStyle />
       <Header />
-      {/* <ParticleRing /> */}
       <RouterComponent />
     </>
   );

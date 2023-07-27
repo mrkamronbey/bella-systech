@@ -1,11 +1,15 @@
-.swiper {
+.home_hero_section {
+  padding: 118.5px 0 0 0;
+  height: 81.3vh;
+}
+.home_hero_section .swiper {
   width: 100% !important;
   height: 100% !important;
-  padding-top: 50px;
+  /* padding-top: 50px; */
   padding-bottom: 50px;
 }
 
-.swiper-slide {
+.home_hero_section .swiper-slide {
   position: relative !important;
   background-position: center;
   background-size: cover;
@@ -13,18 +17,18 @@
   height: 100% !important;
 }
 
-.swiper-slide-image {
+.home_hero_section .swiper-slide-image {
   display: block;
   width: 100%;
   height: 100%;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
+.home_hero_section .swiper-button-prev,
+.home_hero_section .swiper-button-next {
   color: #fff !important;
 }
 
-.swiper-button-prev:after,
-.swiper-button-next:after {
+.home_hero_section .swiper-button-prev:after,
+.home_hero_section .swiper-button-next:after {
   font-size: 30px !important;
 }

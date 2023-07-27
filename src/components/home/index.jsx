@@ -1,8 +1,11 @@
 import React from 'react'
 import HomeHeroSlider from './hero-slider'
 import HeroVideo from './hero-video'
-import ParticleRing from '../particlering'
 import HomeOurProduct from './home-our-product'
+import HomeThird from './home-third'
+import HomeOurCosmetics from './home-our-cosmetics'
+import OurPartner from './our-partner'
+import News from './news'
 
 const HomeComponentent = () => {
     return (
@@ -11,6 +14,10 @@ const HomeComponentent = () => {
             <HomeHeroSlider />
             <HeroVideo />
             <HomeOurProduct />
+            <HomeThird />
+            <HomeOurCosmetics />
+            <OurPartner />
+            <News />
         </>
     )
 }

@@ -1,14 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './style.css'
 import styles from './style.module.css'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCreative, Navigation } from 'swiper/modules';
 import CommonButton from '../../../common/button';
 import Reveal from '../../../utils/reveal/reveal';
-// import { motion, useViewportScroll, useTransform, useSpring } from "framer-motion";
-import { motion, transform, useScroll, useSpring, useViewportScroll, useTransform } from "framer-motion";
-
-
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
@@ -20,6 +16,8 @@ import 'swiper/css/pagination';
 import 'swiper/css';
 import 'swiper/css/effect-creative';
 import { useTranslation } from 'react-i18next';
+import { NavLink } from 'react-router-dom';
+import { motion, transform, useScroll, useSpring, useViewportScroll, useTransform } from "framer-motion";
 
 const HomeHeroSlider = () => {
     const { t } = useTranslation()
@@ -39,29 +37,41 @@ const HomeHeroSlider = () => {
                 // style={{
                 //     scale
                 // }}
-
-
-
-                className={styles.home_hero_section}>
+                className='home_hero_section'>
                 {/* <WrapperContainer> */}
                 <Swiper
-                    // grabCursor={true}
+                    // effect={'creative'}
+                    // navigation={true}
+                    // shadow={true}
+                    // loop={true}
+                    // speed={2000}
+                    // creativeEffect={{
+                    //     prev: {
+                    //         shadow: true,
+                    //         origin: 'left center',
+                    //         translate: ['-5%', 0, -200],
+                    //         rotate: [0, 100, 0],
+                    //     },
+                    //     next: {
+                    //         origin: 'right center',
+                    //         translate: ['5%', 0, -200],
+                    //         rotate: [0, -100, 0],
+                    //     },
+                    // }}
                     effect={'creative'}
                     navigation={true}
-                    shadow={true}
                     loop={true}
-                    speed={2000}
+                    speed={1500}
                     creativeEffect={{
                         prev: {
                             shadow: true,
-                            origin: 'left center',
-                            translate: ['-5%', 0, -200],
-                            rotate: [0, 100, 0],
+                            translate: [0, 0, -800],
+                            rotate: [180, 0, 0],
                         },
                         next: {
-                            origin: 'right center',
-                            translate: ['5%', 0, -200],
-                            rotate: [0, -100, 0],
+                            shadow: true,
+                            translate: [0, 0, -800],
+                            rotate: [-180, 0, 0],
                         },
                     }}
                     modules={[Navigation, EffectCreative]}
@@ -82,8 +92,16 @@ const HomeHeroSlider = () => {
                                 </Reveal>
                             </div>
                             <div className={styles.btn_group}>
-                                <CommonButton className={styles.left_btn}>{t("HeroSlider.0")}</CommonButton>
-                                <CommonButton className={styles.right_btn}>{t("HeroSlider.1")}</CommonButton>
+                                <CommonButton className={styles.left_btn}>
+                                    <NavLink to="#">
+                                        {t("HeroSlider.0")}
+                                    </NavLink>
+                                </CommonButton>
+                                <CommonButton className={styles.right_btn}>
+                                    <NavLink to="#">
+                                        {t("HeroSlider.1")}
+                                    </NavLink>
+                                </CommonButton>
                             </div>
                         </div>
                     </SwiperSlide>

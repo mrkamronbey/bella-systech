@@ -51,6 +51,7 @@ const Reveal = ({ children, width = "fit-content" }: Props) => {
             right: 0,
             background: "#df2027",
             zIndex: 20,
+            borderRadius: "10px"
           }}
         />
       </div>
