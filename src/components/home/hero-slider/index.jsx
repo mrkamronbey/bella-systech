@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './style.css'
 import styles from './style.module.css'
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCreative, Navigation } from 'swiper/modules';
+import { EffectCreative, Navigation, Autoplay, Pagination } from 'swiper/modules';
 import CommonButton from '../../../common/button';
 import Reveal from '../../../utils/reveal/reveal';
 // Import Swiper styles
@@ -62,6 +62,10 @@ const HomeHeroSlider = () => {
                     navigation={true}
                     loop={true}
                     speed={1500}
+                    autoplay={{
+                        delay: 6500,
+                        disableOnInteraction: false,
+                    }}
                     creativeEffect={{
                         prev: {
                             shadow: true,
@@ -74,7 +78,7 @@ const HomeHeroSlider = () => {
                             rotate: [-180, 0, 0],
                         },
                     }}
-                    modules={[Navigation, EffectCreative]}
+                    modules={[Navigation, Autoplay, EffectCreative]}
                     className="mySwiper6"
                 >
                     <SwiperSlide>

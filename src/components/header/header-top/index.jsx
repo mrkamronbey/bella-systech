@@ -72,7 +72,7 @@ const HeaderTop = () => {
       <div className={styles.mobile_box}>
         <Row className={styles.header_top_row}>
           <Col className={styles.mobile_btm_col}  >
-            <NavLink to='/'><img src={HeaderLogo} alt="" />
+            <NavLink to='/'>
               <img className={styles.desktop_block_img} src={HeaderLogo} alt="" />
               <h1 className={styles.mobile_block_title}>Bella-Systech</h1>
             </NavLink>

@@ -32,6 +32,22 @@ const HeroVideo = () => {
                         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/BzjhZEeGlio" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
                 </div>
+                <div className={styles.mobile_video_wrapp}>
+                    <div className={styles.mobile_video_content}>
+                        <div>
+                            <Reveal>
+                                <h4 className={styles.mobile_video_title}>{t("HeroVideo.0")}</h4>
+                            </Reveal>
+                            <Reveal>
+                                <p className={styles.mobile_video_text}>{t("HeroVideo.1")}</p>
+                            </Reveal>
+                        </div>
+                        <div className={styles.mobile_iframe_wrapp}>
+                            <iframe width="100%" height="250px" style={{borderRadius: "15px"}} src="https://www.youtube.com/embed/BzjhZEeGlio" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+
+                    </div>
+                </div>
             </motion.div>
         </>
     )

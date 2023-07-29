@@ -20,7 +20,7 @@ const CommonCard = ({
     isTitle,
     isTime,
     style,
-    timeText
+    timeText,
 }) => {
     return (
         <>

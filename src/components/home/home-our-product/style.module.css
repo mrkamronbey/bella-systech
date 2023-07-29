@@ -22,3 +22,10 @@
 .home_our_row {
   margin: 0 !important;
 }
+
+@media screen and (max-width: 1150px) {
+  .home_our_product_section {
+    margin-top: 100px;
+    overflow-y: hidden;
+  }
+}

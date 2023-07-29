@@ -28,7 +28,7 @@ const News = () => {
           <Row className={styles.home_news_row}>
             {
               arr.map(() => (
-                <Col className={styles.home_news_col} lg={4} md={12} sm={12}>
+                <Col className={styles.home_news_col} lg={4} md={12} sm={12}> 
                   <NavLink className={styles.news_link} to='#'>
                     <CommonCard
                       src={NewsImg}
