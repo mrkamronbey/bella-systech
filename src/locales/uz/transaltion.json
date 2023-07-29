@@ -33,5 +33,10 @@
     "0": "Kompaniya yangiliklari",
     "1": "Biz bilan bir necha yil davomida o'z qadriyatlarini \n baham ko'rgan hamkorlarimiz",
     "2": "Автобус ва метрога Humo картаси орқали \n тўлов қилишда муаммо пайдо бўлди — \n бунинг сабаби нимада?"
+  },
+  "RegisterSlider": {
+    "0": "Voqealar tavsifi",
+    "1": "Lutronic uskunasi sifati va ishonchliligi bilan ajralib turadi. U uzoqroq xizmat qiladi va texnik xususiyatlari bo'yicha raqobatchilardan ustun turadi. Xizmat ko'rsatish talab qilinganda bizning mutaxassislarimiz uskunani tezda ish holatiga keltiradi.",
+    "2": "Ro'yxatdan o'tish"
   }
 }

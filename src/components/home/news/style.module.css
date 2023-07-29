@@ -33,3 +33,50 @@
 .news_link{
   text-decoration: none;
 }
+
+@media only screen and (max-width: 991px) {
+  .news_title {
+    margin: 0;
+    font-size: 35px;
+    margin: 0 0 20px 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .news_title {
+    font-size: 35px;
+  }
+  .news_text {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .news_title {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .news_title {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .news_title {
+    font-size: 22px;
+  }
+  .news_text {
+    font-size: 13px;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .news_title {
+    font-size: 22px;
+  }
+  .news_text {
+    font-size: 11px;
+    text-align: center;
+  }
+}

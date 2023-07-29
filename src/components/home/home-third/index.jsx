@@ -17,7 +17,7 @@ const HomeThird = () => {
                     <Row className={styles.home_third_row}>
                         <Col
                             className={styles.home_third_col}
-                            lg={5}
+                            lg={6}
                             md={12}
                             sm={12}
                         >
@@ -34,12 +34,13 @@ const HomeThird = () => {
                         </Col>
                         <Col
                             className={styles.home_third_col}
-                            lg={7}
+                            lg={6}
                             md={12}
                             sm={12}
                         >
                             <ImageAnimation
                                 style={{
+                                    width: "100%",
                                     aspectRatio: "16 / 9",
                                     borderRadius: "15px"
                                 }}

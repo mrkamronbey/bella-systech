@@ -29,3 +29,50 @@
   line-height: 120%;
   display: inline;
 }
+
+@media only screen and (max-width: 991px) {
+  .ourpartner_title {
+    margin: 0;
+    font-size: 35px;
+    margin: 0 0 20px 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .ourpartner_title {
+    font-size: 35px;
+  }
+  .ourpartner_text {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .ourpartner_title {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .ourpartner_title {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .ourpartner_title {
+    font-size: 22px;
+  }
+  .ourpartner_text {
+    font-size: 13px;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .ourpartner_title {
+    font-size: 22px;
+  }
+  .ourpartner_text {
+    font-size: 11px;
+    text-align: center;
+  }
+}
