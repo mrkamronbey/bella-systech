@@ -15,7 +15,12 @@ const HomeThird = () => {
             <div className={styles.home_third_section}>
                 <WrapperContainer>
                     <Row className={styles.home_third_row}>
-                        <Col className={styles.home_third_col} lg={6} md={12} sm={12}>
+                        <Col
+                            className={styles.home_third_col}
+                            lg={5}
+                            md={12}
+                            sm={12}
+                        >
                             <Reveal>
                                 <h4 className={styles.home_third_title}>
                                     {t("HomeThird.0")}
@@ -27,7 +32,12 @@ const HomeThird = () => {
                                 </p>
                             </Reveal>
                         </Col>
-                        <Col className={styles.home_third_col} lg={6} md={12} sm={12}>
+                        <Col
+                            className={styles.home_third_col}
+                            lg={7}
+                            md={12}
+                            sm={12}
+                        >
                             <ImageAnimation
                                 style={{
                                     aspectRatio: "16 / 9",
@@ -36,6 +46,28 @@ const HomeThird = () => {
                                 src={HomeThirdImg} />
                         </Col>
                     </Row>
+                    {/* <div className={styles.home_thirdrow}>
+                        <div className={styles.home_thirdcol}>
+                            <Reveal>
+                                <h4 className={styles.home_third_title}>
+                                    {t("HomeThird.0")}
+                                </h4>
+                            </Reveal>
+                            <Reveal>
+                                <p className={styles.home_third_text}>
+                                    {t("HomeThird.1")}
+                                </p>
+                            </Reveal>
+                        </div>
+                        <div className={styles.home_thirdcol}>
+                            <ImageAnimation
+                                style={{
+                                    aspectRatio: "16 / 9",
+                                    borderRadius: "15px"
+                                }}
+                                src={HomeThirdImg} />
+                        </div>
+                    </div> */}
                 </WrapperContainer>
             </div>
         </>

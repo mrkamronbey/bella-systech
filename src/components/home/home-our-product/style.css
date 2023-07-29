@@ -24,6 +24,6 @@ circle {
   /* margin-right: 10px !important; */
 }
 
-@media only screen and (max-width: 768px) {
-  
+.slick-arrow {
+  display: none !important;
 }

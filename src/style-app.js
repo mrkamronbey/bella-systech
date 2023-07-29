@@ -4,10 +4,17 @@ export const WrapperContainer = styled.div`
   max-width: 1300px;
   width: 100%;
   margin: 0 auto;
+
+  @media screen and (max-width: 1024px) {
+    width: 90%;
+  }
+  @media screen and (max-width: 425px) {
+    width: 95%;
+  }
 `;
 
 export const BigContainer = styled.div`
-  max-width: 1300px;
+  max-width: 1250px;
   width: 100%;
   margin: 0 auto;
 `;
