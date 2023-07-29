@@ -3,6 +3,7 @@ import { GlobalStyle } from "./style-app";
 import Header from "./components/header";
 import { motion, useScroll, useSpring } from "framer-motion";
 import "./App.css";
+import Footer from "./components/footer";
 
 function App() {
   const { scrollYProgress } = useScroll(0);
@@ -17,6 +18,7 @@ function App() {
       <GlobalStyle />
       <Header />
       <RouterComponent />
+      <Footer/>
     </>
   );
 }
