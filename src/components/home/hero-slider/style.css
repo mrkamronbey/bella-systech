@@ -1,6 +1,6 @@
 .home_hero_section {
   padding: 118.5px 0 0 0;
-  height: 81.3vh;
+  height: 83.3vh;
 }
 .home_hero_section .swiper {
   width: 100% !important;
@@ -26,9 +26,22 @@
 .home_hero_section .swiper-button-prev,
 .home_hero_section .swiper-button-next {
   color: #fff !important;
+  display: none !important;
 }
 
 .home_hero_section .swiper-button-prev:after,
 .home_hero_section .swiper-button-next:after {
   font-size: 30px !important;
+}
+
+@media only screen and (max-width: 991px) {
+  .home_hero_section {
+    padding: 64.5px 0 0 0;
+    height: 88.3vh;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .home_hero_section {
+    overflow-y: hidden;
+  }
 }

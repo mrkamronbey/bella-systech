@@ -69,3 +69,97 @@
 .right_btn > a {
   color: #fff;
 }
+
+@media only screen and (max-width: 768px) {
+  .slider_title,
+  .slider_text {
+    text-align: center;
+  }
+
+  .content_box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    left: 0;
+    right: 0;
+    top: 13px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .slider_title,
+  .slider_text {
+    text-align: center;
+  }
+
+  .content_box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    left: 0;
+    right: 0;
+    top: 15px;
+  }
+
+  .slider_title {
+    font-size: 50px;
+  }
+
+  .slider_text {
+    max-width: 400px;
+    font-size: 14px;
+    margin-bottom: 50px;
+  }
+
+  .btn_group > button {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .slider_title,
+  .slider_text {
+    text-align: center;
+  }
+
+  .slider_title {
+    font-size: 40px;
+  }
+
+  .slider_text {
+    max-width: 300px;
+    font-size: 12px;
+    margin-bottom: 50px;
+  }
+
+  .btn_group > button {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .slider_title,
+  .slider_text {
+    text-align: center;
+  }
+
+  .slider_title {
+    font-size: 40px;
+  }
+
+  .slider_text {
+    max-width: 300px;
+    font-size: 12px;
+    margin-bottom: 50px;
+  }
+
+  .btn_group > button {
+    font-size: 11px;
+    padding: 15px;
+  }
+}

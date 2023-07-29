@@ -12,12 +12,12 @@ const HomeComponentent = () => {
         <>
 
             <HomeHeroSlider />
-            <HeroVideo />
+            {/* <HeroVideo /> */}
             <HomeOurProduct />
-            <HomeThird />
-            <HomeOurCosmetics />
-            <OurPartner />
-            <News />
+            {/* <HomeThird /> */}
+            {/* <HomeOurCosmetics /> */}
+            {/* <OurPartner /> */}
+            {/* <News /> */}
         </>
     )
 }
