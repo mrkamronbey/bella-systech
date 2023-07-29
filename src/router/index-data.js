@@ -1,8 +1,8 @@
 import { lazy } from "react";
 
-const Home = lazy(() => import("./../layouts/home/index"));
-const About = lazy(() => import("./../layouts/about/index"));
-const Contact = lazy(() => import("./../layouts/contact/index"));
+const Home = lazy(() => import("./../layouts/Home/index"));
+const About = lazy(() => import("./../layouts/About/index"));
+const Contact = lazy(() => import("./../layouts/Contact/index"));
 
 export const RouterData = [
   {
