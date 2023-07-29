@@ -101,3 +101,21 @@
   line-height: normal;
   text-transform: uppercase;
 }
+
+
+@media only screen and (max-width: 870px) {
+  .card_btn > button{
+    padding: 12px 20px 12px 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card{
+    margin: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+}

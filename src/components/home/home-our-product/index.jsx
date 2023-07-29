@@ -33,11 +33,11 @@ const HomeOurProduct = () => {
                     slidesToShow: 2,
                     slidesToScroll: 1,
                     infinite: true,
-                    dots: true
+                    dots: false
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 768,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
@@ -58,7 +58,7 @@ const HomeOurProduct = () => {
             <div className={styles.home_our_product_section}>
                 <WrapperContainer>
                     <div className={styles.title_box}>
-                        <Reveal>
+                        <Reveal className={styles.title_anime}>
                             <h4 className={styles.home_our_title}>{t("Card.2")}</h4>
                         </Reveal>
                     </div>

@@ -120,6 +120,7 @@
   }
   .drawers_btn {
     display: block;
+    padding: 0;
   }
 
   .mobile_box {

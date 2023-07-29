@@ -1,11 +1,12 @@
 import React, { useEffect, useRef } from 'react'
 import { motion, useInView, useAnimation } from 'framer-motion'
+import styles from './style.module.css'
 
 
 
 interface Props {
   children: JSX.Element;
-  width?: "fit-content" | "100%"
+  width?: "fit-content" | "100%",
 }
 
 
@@ -25,6 +26,7 @@ const Reveal = ({ children, width = "fit-content" }: Props) => {
     <>
       <div ref={ref} style={{ position: "relative", overflow: "hidden" }}>
         <motion.div
+        className={styles.animate_title}
           variants={{
             hidden: { opacity: 0, y: 75 },
             visible: { opacity: 1, y: 0 },
