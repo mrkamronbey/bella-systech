@@ -6,7 +6,10 @@ import HomeThird from './home-third'
 import HomeOurCosmetics from './home-our-cosmetics'
 import OurPartner from './our-partner'
 import News from './news'
+import RequestConsultation from './request-consultation'
+
 import RegisterSlider from './register-slider'
+
 
 const HomeComponentent = () => {
     return (
@@ -19,7 +22,11 @@ const HomeComponentent = () => {
             <HomeOurCosmetics />
             <OurPartner />
             <News />
+
+            <RequestConsultation/>
+
             <RegisterSlider />
+
         </>
     )
 }

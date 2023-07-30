@@ -1,9 +1,9 @@
 import { lazy } from "react";
 
-const Home = lazy(() => import("./../layouts/home/index"));
-const About = lazy(() => import("./../layouts/about/index"));
-const Contact = lazy(() => import("./../layouts/contact/index"));
-
+const Home = lazy(() => import("./../layouts/Home/index"));
+const About = lazy(() => import("./../layouts/About/index"));
+const Contact = lazy(() => import("./../layouts/Contact/index"));
+const Category = lazy(() => import("./../layouts/category/index"))
 export const RouterData = [
   {
     id: 1,
@@ -19,5 +19,10 @@ export const RouterData = [
     id: 3,
     path: "/contact",
     component: <Contact />,
+  },
+  {
+    id: 3,
+    path: "/category",
+    component: <Category />,
   },
 ];
