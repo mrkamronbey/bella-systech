@@ -66,7 +66,7 @@ const HeaderBottom = () => {
                 <NavLink to='#'>{t("Header.1")}</NavLink>
               </li>
               <li>
-                <NavLink to='#'>{t("Header.2")}</NavLink>
+                <NavLink to='/about'>{t("Header.2")}</NavLink>
               </li>
               <li>
                 <NavLink to='#'>{t("Header.3")}</NavLink>
