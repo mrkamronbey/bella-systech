@@ -63,7 +63,7 @@ const HeaderBottom = () => {
           <Col className={styles.header_btm_col} lg={8}>
             <ul className={styles.header_btm_col_list}>
               <li>
-                <NavLink to='#'>{t("Header.1")}</NavLink>
+                <NavLink to='/category'>{t("Header.1")}</NavLink>
               </li>
               <li>
                 <NavLink to='/about'>{t("Header.2")}</NavLink>
