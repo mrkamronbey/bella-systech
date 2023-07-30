@@ -48,6 +48,9 @@
         color: #FFFFFF;
         width: 100%;
     }
+    .Container h1{
+        padding-top: 20%;
+    }
     .Container{
         display: flex;
         align-items: center;
