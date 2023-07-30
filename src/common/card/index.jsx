@@ -21,6 +21,7 @@ const CommonCard = ({
     isTime,
     style,
     timeText,
+    textStyle
 }) => {
     return (
         <>
@@ -33,7 +34,11 @@ const CommonCard = ({
                 </div>
                 <div className={styles.card_content}>
                     {
-                        isTime == true ? <span className={styles.time}>{timeText}</span> : null
+                        isTime == true ?
+                            <Reveal>
+                                <span className={styles.time}>{timeText}</span>
+                            </Reveal>
+                            : null
                     }
                     {
                         isTitle == true ?
@@ -42,7 +47,7 @@ const CommonCard = ({
                             </Reveal> : null
                     }
                     <Reveal>
-                        <p className={styles.card_text}>{card_description}</p>
+                        <p className={styles.card_text} style={textStyle}>{card_description}</p>
                     </Reveal>
                     {
                         isBtn == true ?

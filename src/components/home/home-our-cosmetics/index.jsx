@@ -3,22 +3,67 @@ import styles from './style.module.css'
 import { WrapperContainer } from '../../../style-app'
 import CommonCard from '../../../common/card'
 import { Col, Row } from 'react-grid-system'
+import './style.css'
+import Reveal from '../../../utils/reveal/reveal'
 
 import CardImg from '../../../assets/card/cardimg1.png'
 import { useTranslation } from 'react-i18next'
+import Slider from "react-slick";
 
 const HomeOurCosmetics = () => {
     const { t } = useTranslation()
-    const arr = [1, 2, 3]
+    const arr = [1, 2, 3, 4, 5, 7, 8, 9]
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 1000,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        initialSlide: 0,
+        autoplay: true,
+        speed: 2500,
+        autoplaySpeed: 2500,
+        // cssEase: "linear",
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    initialSlide: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    };
     return (
         <>
             <div className={styles.home_our_cosmetics_section}>
                 <WrapperContainer>
-                    <h4 className={styles.home_cosmetics_title}>{t("Card.2")}</h4>
-                    <Row className={styles.home_cosmetics_row}>
+                    <div className={styles.title_box}>
+                        <Reveal>
+                            <h4 className={styles.home_cosmetics_title}>{t("Card.2")}</h4>
+                        </Reveal>
+                    </div>
+                    <Slider {...settings}>
                         {
                             arr.map(() => (
-                                <Col className={styles.home_cosmetics_col} lg={4} md={12} sm={12}>
+                                <div className='slider_card_box'>
                                     <CommonCard
                                         src={CardImg}
                                         card_title="Краткая информация"
@@ -30,10 +75,10 @@ const HomeOurCosmetics = () => {
                                         isBtn={true}
                                         isTitle={true}
                                     />
-                                </Col>
+                                </div>
                             ))
                         }
-                    </Row>
+                    </Slider>
                 </WrapperContainer>
             </div>
         </>

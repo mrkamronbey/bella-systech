@@ -34,12 +34,20 @@
   justify-content: center !important;
 }
 
-.slider_link{
+.slider_link {
   height: 100%;
   outline: none;
 }
 
-.slider_link > img{
+.slider_link > img {
   height: 100%;
   /* width: 100%; */
+}
+
+.slick-arrow {
+  display: none !important;
+}
+
+.slick-list {
+  padding: 20px 0 !important;
 }

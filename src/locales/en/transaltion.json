@@ -33,5 +33,11 @@
     "0": "Company news",
     "1": "Our partners who have shared their \n values with us for several years",
     "2": "Автобус ва метрога Humo картаси орқали \n тўлов қилишда муаммо пайдо бўлди — \n бунинг сабаби нимада?"
+  },
+
+  "RegisterSlider": {
+    "0": "Description of the event",
+    "1": "Lutronic equipment is distinguished by quality and reliability. It lasts longer and outperforms its competitors in terms of technical characteristics. When service is required, our specialists quickly restore the equipment to working condition.",
+    "2": "Register"
   }
 }
