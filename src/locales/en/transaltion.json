@@ -39,5 +39,22 @@
     "0": "Description of the event",
     "1": "Lutronic equipment is distinguished by quality and reliability. It lasts longer and outperforms its competitors in terms of technical characteristics. When service is required, our specialists quickly restore the equipment to working condition.",
     "2": "Register"
+  },
+  "NewsPage": {
+    "0": "News",
+    "1": "Public in: ",
+    "2": "View: ",
+    "3": "Like: ",
+    "4": "Related news",
+    "5": "Our partners who share their values ​​with us for several years"
+  },
+  "Contact": {
+    "0": "Contacts",
+    "1": "Our address:",
+    "2": "Uzbekistan, Tashkent city, Navruz street 3, Sirgalinsky district",
+    "3": "Our phone:",
+    "4": "Our email:",
+    "5": "Our social media pages:",
+    "6": "open to map"
   }
 }

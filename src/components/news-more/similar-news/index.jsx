@@ -7,8 +7,9 @@ import Reveal from "../../../utils/reveal/reveal";
 import CommonCard from "../../../common/card";
 import { NavLink } from "react-router-dom";
 import Slider from "react-slick";
+import "./style.css";
 
-const News = () => {
+const SimilarNews = () => {
   const { t } = useTranslation();
   const arr = [1, 2, 3, 4, 5, 7, 8, 9];
   const settings = {
@@ -56,10 +57,10 @@ const News = () => {
         <WrapperContainer>
           <div className={styles.news_content}>
             <Reveal>
-              <h4 className={styles.news_title}>{t("News.0")}</h4>
+              <h4 className={styles.news_title}>{t("NewsPage.4")}</h4>
             </Reveal>
             <Reveal>
-              <p className={styles.news_text}>{t("News.1")}</p>
+              <p className={styles.news_text}>{t("NewsPage.5")}</p>
             </Reveal>
           </div>
           <Slider {...settings}>
@@ -88,4 +89,4 @@ const News = () => {
   );
 };
 
-export default News;
+export default SimilarNews;

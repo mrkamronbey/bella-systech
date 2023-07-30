@@ -1,10 +1,12 @@
-import React from 'react'
-import CategoryComponent from '../../components/category'
+import React from "react";
+import CategoryComponent from "../../components/category";
 
 const Category = () => {
   return (
-    <><CategoryComponent/></>
-  )
-}
+    <>
+      <CategoryComponent />
+    </>
+  );                                          
+};
 
-export default Category
+export default Category;
