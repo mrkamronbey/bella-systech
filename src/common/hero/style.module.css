@@ -44,6 +44,45 @@
     font-weight: bold;
     font-size: 14px;
     line-height: 28px;
+    color: #FFFFFF;
+    width: 50%;
+}
+@media only screen and (max-width:550px) {
+    .Container p{
+        color: white;
+        font-family:'Inter';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 28px;
+        color: #FFFFFF;
+        width: 100%;
+    }
+    .Container h1{
+        padding-top: 20%;
+    }
+    .Container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .Container h1{
+        width: 100%;
+        color: white;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 44px !important;
+        color: #FFFFFF;
+    }
+}
+.Container button {
+    font-family:'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 17px;
     color: #ffffff;
     width: 100%;
   }
