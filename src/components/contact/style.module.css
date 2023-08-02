@@ -1,0 +1,29 @@
+.contact_hero {
+  background-image: url("../../assets/news/newshero.png ");
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  height: 50vh;
+  margin-top: 119px;
+}
+
+@media only screen and (max-width: 882px) {
+  .contact_hero {
+    background-size: cover;
+    background-position: center center;
+    height: 34vh;
+    width: 100%;
+    margin-top: 69px;
+  }
+}
+
+
+
+@media only screen and (max-width: 375px) {
+  .contact_hero {
+    background-size: cover;
+    background-position: center center;
+    height: 34vh;
+    width: 100%;
+    margin-top: 63px !important;
+  }
+}

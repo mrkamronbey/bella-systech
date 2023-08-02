@@ -39,6 +39,23 @@
     "1": "Lutronic uskunasi sifati va ishonchliligi bilan ajralib turadi. U uzoqroq xizmat qiladi va texnik xususiyatlari bo'yicha raqobatchilardan ustun turadi. Xizmat ko'rsatish talab qilinganda bizning mutaxassislarimiz uskunani tezda ish holatiga keltiradi.",
     "2": "Ro'yxatdan o'tish"
   },
+  "NewsPage": {
+    "0": "Yangiliklar",
+    "1": "Ommaviy:",
+    "2": "Ko'rish:",
+    "3": "Yoqdi:",
+    "4": "Tegishli yangiliklar",
+    "5": "Biz bilan bir necha yillar davomida o'z qadriyatlarini baham ko'rgan sheriklarimiz"
+  },
+  "Contact": {
+    "0": "Kontaktlar",
+    "1": "Bizning manzilimiz:",
+    "2": "O'zbekiston, Toshkent shahri, Sirg'alinskiy tumani, Navro'z ko'chasi, 3-uy",
+    "3": "Bizning telefon:",
+    "4": "Bizning elektron pochtamiz:",
+    "5": "Bizning ijtimoiy media sahifalarimiz:",
+    "6": "kartani ochish"
+
   "AboutUs": {
     "0": "Biz haqimizda",
     "1": "Kompaniya haqida",
@@ -93,5 +110,6 @@
     "13": "O'qishni tugatganlik haqidagi guvohnoma",
     "14": "Ta'lim yakunida sizga malakangiz va qurilmalarda protseduralarni bajarish huquqini tasdiqlovchi sertifikat beriladi. Bu yangi imkoniyatlar va mijozlar ishonchiga eshik ochadi.",
     "15": "Biz, Bella-systex Uzbekistan, mijozlarimizga estetik tibbiyotda yuqori natijalarga erishish va o‘z sohalarida yetakchi bo‘lishga yordam berish uchun bunday imtiyozlarni taqdim etayotganimizdan faxrlanamiz."
+
   }
 }
