@@ -84,27 +84,27 @@ const Menu = ({ onClose, open }) => {
                     </li>
                     <div className={styles.menu_hr}></div>
                     <li>
-                        <NavLink to='#'>{t("Header.1")}</NavLink>
+                        <NavLink onClick={onClose} to='/category'>{t("Header.1")}</NavLink>
                     </li>
                     <div className={styles.menu_hr}></div>
                     <li>
-                        <NavLink to='#'>{t("Header.2")}</NavLink>
+                        <NavLink onClick={onClose} to='/about'>{t("Header.2")}</NavLink>
                     </li>
                     <div className={styles.menu_hr}></div>
                     <li>
-                        <NavLink to='#'>{t("Header.3")}</NavLink>
+                        <NavLink onClick={onClose} to='/benefits'>{t("Header.3")}</NavLink>
                     </li>
                     <div className={styles.menu_hr}></div>
                     <li>
-                        <NavLink to='#'>{t("Header.4")}</NavLink>
+                        <NavLink onClick={onClose} to='/join'>{t("Header.4")}</NavLink>
                     </li>
                     <div className={styles.menu_hr}></div>
                     <li>
-                        <NavLink to='#'>{t("Header.5")}</NavLink>
+                        <NavLink onClick={onClose} to='#'>{t("Header.5")}</NavLink>
                     </li>
                     <div className={styles.menu_hr}></div>
                     <li>
-                        <NavLink to='#'>{t("Header.6")}</NavLink>
+                        <NavLink onClick={onClose} to='#'>{t("Header.6")}</NavLink>
                     </li>
                     <div className={styles.menu_hr}></div>
                     <li>

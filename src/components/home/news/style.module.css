@@ -1,6 +1,6 @@
 .news_section {
   padding: 50px 0;
-  background: #F8F8F8;
+  background: #f8f8f8;
 }
 
 .news_content {
@@ -30,8 +30,14 @@
   display: inline;
 }
 
-.news_link{
+.news_link {
   text-decoration: none;
+}
+
+@media only screen and (max-width: 1300px) {
+  .news_section {
+    padding: 50px 20px;
+  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -39,6 +45,9 @@
     margin: 0;
     font-size: 35px;
     margin: 0 0 20px 0;
+  }
+  .news_section {
+    padding: 50px 0;
   }
 }
 

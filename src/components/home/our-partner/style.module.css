@@ -30,6 +30,12 @@
   display: inline;
 }
 
+@media only screen and (max-width: 1300px) {
+  .ourpartner_section {
+    padding: 50px 20px;
+  }
+}
+
 @media only screen and (max-width: 991px) {
   .ourpartner_title {
     margin: 0;

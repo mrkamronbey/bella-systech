@@ -16,15 +16,14 @@ const HomeOurProduct = () => {
     const { t } = useTranslation()
     const arr = [1, 2, 3, 4, 5, 7, 8, 9]
     const settings = {
-        dots: false,
+        dots: true,
         infinite: true,
-        speed: 1000,
         slidesToShow: 3,
         slidesToScroll: 1,
         initialSlide: 0,
-        autoplay: true,
+        autoplay: false,
         speed: 2500,
-        autoplaySpeed: 2500,
+        autoplaySpeed: 5000,
         // cssEase: "linear",
         responsive: [
             {
@@ -41,7 +40,8 @@ const HomeOurProduct = () => {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    initialSlide: 1
+                    initialSlide: 1,
+                    autoplay: true,
                 }
             },
             {
@@ -62,45 +62,27 @@ const HomeOurProduct = () => {
                             <h4 className={styles.home_our_title}>{t("Card.2")}</h4>
                         </Reveal>
                     </div>
-                    {/* <Row className={styles.home_our_row}>
-                        {
-                            arr.map(() => (
-                                <Col className={styles.home_our_col} lg={4} md={12} sm={12}>
-                                    <CommonCard
-                                        src={CardImg}
-                                        card_title="Краткая информация"
-                                        card_description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                                        card_btn_text1={t("Card.0")}
-                                        card_btn_text2={t("Card.1")}
-                                        details="#"
-                                        order="#"
-                                        isBtn={true}
-                                        isTitle={true}
-                                    />
-                                </Col>
-                            ))
-                        }
-                    </Row> */}
-
-                    <Slider {...settings}>
-                        {
-                            arr.map(() => (
-                                <div className='slider_card_box'>
-                                    <CommonCard
-                                        src={CardImg}
-                                        card_title="Краткая информация"
-                                        card_description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                                        card_btn_text1={t("Card.0")}
-                                        card_btn_text2={t("Card.1")}
-                                        details="#"
-                                        order="#"
-                                        isBtn={true}
-                                        isTitle={true}
-                                    />
-                                </div>
-                            ))
-                        }
-                    </Slider>
+                    <div className='ourproduct_slider_wrapp'>
+                        <Slider {...settings}>
+                            {
+                                arr.map(() => (
+                                    <div className='slider_card_box'>
+                                        <CommonCard
+                                            src={CardImg}
+                                            card_title="Краткая информация"
+                                            card_description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                                            card_btn_text1={t("Card.0")}
+                                            card_btn_text2={t("Card.1")}
+                                            details="#"
+                                            order="#"
+                                            isBtn={true}
+                                            isTitle={true}
+                                        />
+                                    </div>
+                                ))
+                            }
+                        </Slider>
+                    </div>
                 </WrapperContainer>
             </div>
         </>

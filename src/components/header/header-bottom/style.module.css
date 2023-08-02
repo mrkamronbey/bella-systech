@@ -53,6 +53,13 @@
   }
 }
 
+@media only screen and (max-width: 1100px) {
+  /* .header_btm_col_list > li{
+    border-right: 2px solid #DF2027;
+    border-left: 2px solid #DF2027;
+  } */
+}
+
 @media only screen and (max-width: 1011px) {
   .header_btm_col_list > li > a,
   .header_btm_drop > span {
@@ -66,7 +73,12 @@
   .header_btm_wrapp {
     padding: 8px 0;
   }
+
+  /* .header_btm_col_list > li > a{
+    border-right: 1px solid #DF2027;
+  } */
 }
+
 
 @media only screen and (max-width: 991px) {
   .header_btm_wrapp {

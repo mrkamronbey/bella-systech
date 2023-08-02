@@ -5,59 +5,24 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCreative, Navigation, Autoplay, Pagination } from 'swiper/modules';
 import CommonButton from '../../../common/button';
 import Reveal from '../../../utils/reveal/reveal';
+import { useTranslation } from 'react-i18next';
+import { NavLink } from 'react-router-dom';
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import 'swiper/css';
+import 'swiper/css/effect-creative';
 // import BannerImg from '../../../assets/banner'
 
 
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/effect-creative';
-import { useTranslation } from 'react-i18next';
-import { NavLink } from 'react-router-dom';
-import { motion, transform, useScroll, useSpring, useViewportScroll, useTransform } from "framer-motion";
 
 const HomeHeroSlider = () => {
     const { t } = useTranslation()
-    const { scrollYProgress } = useViewportScroll();
-    const scale = useTransform(scrollYProgress, [0, 1], [1, 0.6]);
-    // const { scrollYProgress } = useScroll(0);
-    // const scale = useSpring(scrollYProgress, {
-    //     stiffness: 100,
-    //     damping: 30,
-    //     restDelta: 4,
-    // });
-    // const scaleSpring = useSpring(scale)
     return (
         <>
-            <motion.div
-                // transition={{ duration: 0.5, ease: "easeIn" }}
-                // style={{
-                //     scale
-                // }}
+            <div
                 className='home_hero_section'>
-                {/* <WrapperContainer> */}
                 <Swiper
-                    // effect={'creative'}
-                    // navigation={true}
-                    // shadow={true}
-                    // loop={true}
-                    // speed={2000}
-                    // creativeEffect={{
-                    //     prev: {
-                    //         shadow: true,
-                    //         origin: 'left center',
-                    //         translate: ['-5%', 0, -200],
-                    //         rotate: [0, 100, 0],
-                    //     },
-                    //     next: {
-                    //         origin: 'right center',
-                    //         translate: ['5%', 0, -200],
-                    //         rotate: [0, -100, 0],
-                    //     },
-                    // }}
                     effect={'creative'}
                     navigation={true}
                     loop={true}
@@ -195,7 +160,7 @@ const HomeHeroSlider = () => {
                     </SwiperSlide>
                 </Swiper>
                 {/* </WrapperContainer> */}
-            </motion.div>
+            </div>
         </>
     )
 }

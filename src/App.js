@@ -18,7 +18,7 @@ function App() {
       <GlobalStyle />
       <Header />
       <RouterComponent />
-      <Footer/>
+      {/* <Footer/> */}
     </>
   );
 }

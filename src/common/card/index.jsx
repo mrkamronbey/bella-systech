@@ -26,7 +26,7 @@ const CommonCard = ({
     return (
         <>
             <motion.div
-                whileHover={{ scale: 1.04 }}
+                whileHover={{ scale: 1.03 }}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
                 className={styles.card}>
                 <div className={styles.card_img}>

@@ -1,0 +1,27 @@
+.benefits_col_wrapp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 1210px) {
+  .benefits_col_wrapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .benefits_media_col_wrapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+
+  .benefits_col_img,
+  .benefits_col_content {
+    width: 100%;
+    height: 100%;
+  }
+}
