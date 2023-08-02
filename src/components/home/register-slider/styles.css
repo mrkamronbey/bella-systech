@@ -43,6 +43,39 @@
   -ms-border-radius: 0;
   -o-border-radius: 0;
 }
+
+.autoplay-progress {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  z-index: 10;
+  width: 38px;
+  height: 38px;
+  font-weight: bold;
+  color: #df2027 !important;
+}
+
+.autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: #df2027 !important;
+  fill: none;
+  stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
+}
+
+
 @media only screen and (max-width: 1206px) {
   .swiper-pagination {
     overflow-y: hidden;
@@ -55,8 +88,14 @@
   }
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1120px) {
   .swiper-pagination {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  /* .swiper-pagination {
     overflow-y: hidden;
     display: inline !important;
     top: 0 !important;
@@ -64,7 +103,7 @@
     width: 450px !important;
     height: 26px !important;
     left: 59% !important;
-  }
+  } */
 }
 @media only screen and (max-width: 1024px) {
   .swiper-pagination {
@@ -83,5 +122,52 @@
     -moz-border-radius: 20px !important;
     -ms-border-radius: 20px !important;
     -o-border-radius: 20px !important;
+  }
+
+  .autoplay-progress {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    z-index: 10;
+    width: 38px;
+    height: 38px;
+
+    font-weight: bold;
+    color: #df2027 !important;
+  }
+
+  .autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 4px;
+    stroke: #df2027 !important;
+    fill: none;
+    stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .register_slider_wrapp .swiper-slide img {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+  .register_slider_wrapp .swiper-slide {
+    background: #000;
+    border-radius: 5px !important;
+    -webkit-border-radius: 5px !important;
+    -moz-border-radius: 5px !important;
+    -ms-border-radius: 5px !important;
+    -o-border-radius: 5px !important;
   }
 }

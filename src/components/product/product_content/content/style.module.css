@@ -1,0 +1,54 @@
+.Wrapper{
+    padding-left: 140px;
+    margin-top: 130px;
+}
+.Wrapper h3{
+    color: #000;
+
+/* Text/Heading 2 */
+font-family: Okta Neue;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 150%; /* 36px */
+}
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.buttons a {
+    background: var(--brand-main, linear-gradient(0deg, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.10) 100%), #DF2027);
+    color: #FFF;
+    /* font-family: Roboto; */
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 16px 30px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.buttons button {
+    background-color: transparent;
+    border: 1px solid var(--brand-main, #DF2027);
+    color: #DF2027;
+    /* font-family: Roboto; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 10px;
+}
+.buttons a i{
+font-size: 20px;
+}
+.Wrapper p{
+    color: #000;
+/* font-family: Okta Neue; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 20.8px */
+}

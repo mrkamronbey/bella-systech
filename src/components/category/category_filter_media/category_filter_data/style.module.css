@@ -1,0 +1,30 @@
+.Wrapper{
+    border-right: 1px solid #EEE;
+    padding-right: 5px;
+}
+.checkbox{
+    display: flex;
+    align-items: flex-start;
+    color: #24272C;
+    /* font-family: Okta Neue; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 19.2px */
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.Wrapper label{
+    cursor: pointer;
+}
+.Title{
+    color: #000;
+    /* font-family: Okta Neue; */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%; /* 20px */
+}
+@media only screen and (max-width: 900px) {
+
+}

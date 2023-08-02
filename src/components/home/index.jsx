@@ -11,21 +11,20 @@ import RequestConsultation from "./request-consultation";
 import RegisterSlider from "./register-slider";
 
 const HomeComponentent = () => {
-  return (
-    <>
-      <HomeHeroSlider />
-      <HeroVideo />
-      <HomeOurProduct />
-      <HomeThird />
-      <HomeOurCosmetics />
-      <OurPartner />
-      <News />
+    return (
+        <>
 
-      <RequestConsultation />
+            <HomeHeroSlider />
+            <HeroVideo />
+            <HomeOurProduct />
+            <HomeThird />
+            <HomeOurCosmetics />
+            <OurPartner />
+            <News />
+            <RegisterSlider />
+            <RequestConsultation />
+        </>
+    )
+}
 
-      <RegisterSlider />
-    </>
-  );
-};
-
-export default HomeComponentent;
+export default HomeComponenten

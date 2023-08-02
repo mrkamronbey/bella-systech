@@ -78,4 +78,5 @@ const CommonCard = ({
   );
 };
 
+
 export default CommonCard;

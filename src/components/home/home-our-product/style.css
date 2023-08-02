@@ -1,33 +1,21 @@
-/* #progress {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  transform: rotate(-90deg);
-}
-
-circle {
-  stroke-dashoffset: 0;
-  stroke-width: 15%;
-  fill: none;
-}
-
-.bg {
-  stroke: var(--accent);
-  opacity: 0.3;
-}
-
-#progress .indicator {
-  stroke: var(--accent);
-} */
-
-.slick-track > div {
-  /* margin-right: 10px !important; */
-}
-
-.slick-arrow {
+.ourproduct_slider_wrapp > .slick-slider > .slick-arrow {
   display: none !important;
 }
 
-.slick-list{
+.ourproduct_slider_wrapp > .slick-slider > .slick-list {
   padding: 20px 0 !important;
+}
+
+.ourproduct_slider_wrapp
+  > .slick-slider
+  > .slick-dots
+  > .slick-active
+  > button::before {
+  color: #df2027 !important;
+  font-size: 20px !important;
+}
+
+.ourproduct_slider_wrapp > .slick-slider > .slick-dots > li > button::before {
+  font-size: 16px !important;
+  color: #df2027 !important;
 }

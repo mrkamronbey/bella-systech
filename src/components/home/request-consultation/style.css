@@ -22,7 +22,6 @@
   outline: none;
   border: 2px solid transparent;
   padding: 20px 20px;
-  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -31,7 +30,6 @@
 }
 
 .request_form > div > input::placeholder {
-  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -42,7 +40,6 @@
 .request_form > button {
   background: #DF2027;
   border-radius: 5px;
-  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -82,4 +79,10 @@
 
 .request_form > div > input:valid ~ .bxs-check-circle {
   display: block;
+}
+
+@media only screen and (max-width: 425px) {
+  .request_form > div > input::placeholder {
+    font-size: 14px;
+  }
 }

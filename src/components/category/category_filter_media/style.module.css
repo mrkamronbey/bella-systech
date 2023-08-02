@@ -4,7 +4,22 @@
 }
 .box{
     width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: none;
+
 }
+.Filter{
+    display: flex;
+    align-items: center;
+}
+.Filter i {
+    font-size: 25px;
+    position: relative;
+    right: 5px;
+}
+
+
 .checkbox{
     display: flex;
     align-items: flex-start;
@@ -28,8 +43,12 @@
     font-weight: 600;
     line-height: 100%; /* 20px */
 }
+.ul{
+    padding: 0;
+}
 @media only screen and (max-width: 900px) {
-    .Wrapper{
-        display: none;
+
+    .box{
+        display: block;
     }
 }
