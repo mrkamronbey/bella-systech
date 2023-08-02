@@ -6,8 +6,11 @@ const Category = () => {
     window.scrollTo(0, 0)
   }, [])
   return (
-    <><CategoryComponent /></>
-  )
-}
+    <>
+      <CategoryComponent />
+    </>
+  );                                          
+};
 
-export default Category
+
+export default Category;

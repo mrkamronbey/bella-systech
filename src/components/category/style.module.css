@@ -1,39 +1,39 @@
-.Wrapper{
+.Wrapper {
+  background-image: url("./../../assets/hero.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50vh;
+  margin-top: 119px;
+}
+@media only screen and (max-width: 882px) {
+  .Wrapper {
     background-image: url("./../../assets/hero.png");
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+    height: 34vh;
     width: 100%;
-    height: 50vh;
-    margin-top: 119px;
+    margin-top: 0px;
+  }
 }
-@media only screen and (max-width:882px) {
-    .Wrapper{
-        background-image: url("./../../assets/hero.png");
-        background-size: cover;
-        background-position: right center;
-        height: 34vh;
-        width: 100%;
-        margin-top: 0px;
-    }
+.Container {
+  max-width: 1250px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
 }
-.Container{
-    max-width: 1250px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 10px;
+@media only screen and (max-width: 882px) {
+  .Container {
+    width: 90%;
+  }
 }
-@media only screen and (max-width:882px) {
-    .Container{
-        width: 90%;
-    }
+.Wrapper {
+  display: flex;
+  justify-content: space-between;
 }
-.Wrapper{
-    display: flex;
-    justify-content: space-between;
+.Wrapper img {
+  width: 50%;
 }
-.Wrapper img{
-    width: 50%;
-}
-.about{
-    width: 45%;
+.about {
+  width: 45%;
 }

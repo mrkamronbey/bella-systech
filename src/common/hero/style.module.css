@@ -7,8 +7,8 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  height: 100%;
 }
+
 
 .hero_content {
   width: 100%;
@@ -29,16 +29,6 @@
   font-style: normal;
   font-weight: 600;
   text-transform: uppercase;
-}
-
-.Container p {
-  color: white;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-  color: #ffffff;
-  width: 50%;
 }
 
 .Container button {
@@ -141,7 +131,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+  
+}
+.Container button {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  border: 2px solid #ff5403;
+  background-color: #ff5403;
+  padding: 22px 49px;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 425px) {
