@@ -100,11 +100,11 @@ const Menu = ({ onClose, open }) => {
                     </li>
                     <div className={styles.menu_hr}></div>
                     <li>
-                        <NavLink onClick={onClose} to='#'>{t("Header.5")}</NavLink>
+                        <NavLink onClick={onClose} to='/news'>{t("Header.5")}</NavLink>
                     </li>
                     <div className={styles.menu_hr}></div>
                     <li>
-                        <NavLink onClick={onClose} to='#'>{t("Header.6")}</NavLink>
+                        <NavLink onClick={onClose} to='/contact'>{t("Header.6")}</NavLink>
                     </li>
                     <div className={styles.menu_hr}></div>
                     <li>
