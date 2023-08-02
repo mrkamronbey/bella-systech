@@ -3,7 +3,6 @@ import { Routes, Route } from "react-router-dom"
 import { RouterData } from "./index-data"
 import Logo from '../assets/header/bella-systech-hdr-logo.png'
 import './style.css'
-import ImageAnimation from "../common/image"
 
 function RouterComponent() {
 

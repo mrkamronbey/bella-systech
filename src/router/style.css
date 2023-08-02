@@ -1,26 +1,26 @@
 .progress-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 10px;
-    background: var(--red);
-    transform-origin: 0%;
-  }
-  .spin_wrapp{
-    width: 100vw;
-    height: 100vh;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 99999;
-    position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: var(--red);
+  transform-origin: 0%;
+}
+.spin_wrapp {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  position: relative;
 }
 
 @media only screen and (max-width: 425px) {
-    .spin_wrapp > img{
-      width: 120px;
-      object-fit: cover;
-    }
+  .spin_wrapp > img {
+    width: 120px;
+    object-fit: cover;
   }
+}
