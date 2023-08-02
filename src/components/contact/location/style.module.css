@@ -68,6 +68,9 @@
   align-items: center;
   gap: 10px;
 }
+.our_location_box > div > h3{
+  text-align: center;
+}
 .icon {
   background-color: white;
   width: 50px;
@@ -89,6 +92,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: 130%;
+  text-align: center;
 }
 
 .email {
