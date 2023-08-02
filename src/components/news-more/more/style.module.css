@@ -66,6 +66,15 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .more_section {
+    padding: 100px 0;
+  }
+  .news_more_box {
+    padding: 20px;
+  }
+}
+
 @media screen and (max-width: 740px) {
   .news_more_box h2 {
     font-size: 25px;
@@ -78,7 +87,7 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 520px) {
   .news_more_box h2 {
     font-size: 20px;
   }
@@ -86,6 +95,7 @@
     padding: 0 !important;
     background: none !important;
     box-shadow: none !important;
+    width: 100%;
   }
   .description {
     font-size: 16px;

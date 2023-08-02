@@ -53,7 +53,6 @@ function Location({ t }) {
                     <p>@bella-systech</p>
                   </li>
                   <li>
-                    {" "}
                     <div className={styled.icon}>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"

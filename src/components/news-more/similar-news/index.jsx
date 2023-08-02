@@ -19,10 +19,8 @@ const SimilarNews = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
-    autoplay: true,
-    speed: 2500,
-    autoplaySpeed: 2500,
-    // cssEase: "linear",
+    autoplay: false,
+    autoplaySpeed: 3500,
     responsive: [
       {
         breakpoint: 1024,
@@ -39,17 +37,25 @@ const SimilarNews = () => {
           slidesToShow: 1,
           slidesToScroll: 1,
           initialSlide: 1,
-        },
+          autoplay: true,
+          dots: true
+        }
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-        },
-      },
-    ],
+          autoplay: true,
+          dots: true
+        }
+      }
+    ]
   };
+
+  const handleTap = () => {
+    window.scrollTo(0, 0)
+  }
 
   return (
     <>
@@ -63,26 +69,29 @@ const SimilarNews = () => {
               <p className={styles.news_text}>{t("NewsPage.5")}</p>
             </Reveal>
           </div>
-          <Slider {...settings}>
-            {arr.map(() => (
-              <div className="slider_card_box">
-                <NavLink className={styles.news_link} to="#">
-                  <CommonCard
-                    src={NewsImg}
-                    card_description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                    timeText={"18.05.2023"}
-                    isTime={true}
-                    isBtn={false}
-                    isTitle={false}
-                    style={{
-                      aspectRatio: 16 / 9,
-                    }}
-                    textStyle={{ fontWeight: "600", color: "#000" }}
-                  />
-                </NavLink>
-              </div>
-            ))}
-          </Slider>
+          <div className='news_slider_wrapp'>
+            <Slider {...settings}>
+              {arr.map(() => (
+                <div className="slider_card_box">
+                  <NavLink onClick={handleTap} className={styles.news_link} to="/newsmore">
+                    <CommonCard
+                      src={NewsImg}
+                      card_description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                      timeText={"18.05.2023"}
+                      isTime={true}
+                      isBtn={false}
+                      isTitle={false}
+                      style={{
+                        aspectRatio: 16 / 9,
+                        width: '100%'
+                      }}
+                      textStyle={{ fontWeight: "600", color: "#000" }}
+                    />
+                  </NavLink>
+                </div>
+              ))}
+            </Slider>
+          </div>
         </WrapperContainer>
       </div>
     </>

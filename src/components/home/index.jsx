@@ -27,4 +27,4 @@ const HomeComponentent = () => {
     )
 }
 
-export default HomeComponenten
+export default HomeComponentent

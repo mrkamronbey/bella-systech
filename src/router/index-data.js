@@ -40,6 +40,7 @@ export const RouterData = [
     path: "/newsmore",
     component: <NewsMore />,
   },
+  {
     id: 7,
     path: "/product",
     component: <Product />,

@@ -70,7 +70,7 @@ const News = () => {
               {
                 arr.map(() => (
                   <div className='slider_card_box'>
-                    <NavLink className={styles.news_link} to='#'>
+                    <NavLink className={styles.news_link} to='/newsmore'>
                       <CommonCard
                         src={NewsImg}
                         card_description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."

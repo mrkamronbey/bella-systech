@@ -15,7 +15,7 @@ function NewsCards() {
         <Row style={{ margin: 0 }}>
           {Data.map(() => (
             <Col xxl={6} xxxl={6} lg={6} md={6} sm={12} className={styled.Col}>
-              <NavLink to={"/more"}>
+              <NavLink to={"/newsmore"}>
                 <CommonCard
                   src={NewsCardImg}
                   style={{ aspectRatio: 16 / 9 }}
