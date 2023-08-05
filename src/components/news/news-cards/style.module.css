@@ -1,0 +1,17 @@
+.news_cards_section {
+ padding: 50px 0;
+  background: #f8f8f8;
+}
+.Col a {
+  text-decoration: none;
+  color: black;
+}
+.Col {
+  margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+  .Col{
+    padding: 0 !important;
+  }
+}

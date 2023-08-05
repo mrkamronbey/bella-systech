@@ -15,8 +15,6 @@ const HeroVideo = () => {
     return (
         <>
             <motion.div
-                // transition={{ duration: 1, ease: "easeIn" }}
-                // style={{scale}}
                 className={styles.hero_video}>
                 <div className={styles.video_wrapp}>
                     <div className={styles.video_content}>

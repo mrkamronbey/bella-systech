@@ -34,7 +34,7 @@ const RequestConsultation = () => {
             </Col>
             <Col className={styles.request_col} lg={6} md={12} sm={12}>
               <Reveal>
-                <h3>{t("Form.0")}</h3>
+                <h3 className={styles.request_col_title}>{t("Form.0")}</h3>
               </Reveal>
               <Reveal>
                 <form className="request_form" onSubmit={HandleSubmit}>

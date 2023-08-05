@@ -9,7 +9,8 @@
   -o-border-radius: 20px;
   cursor: pointer;
   overflow: hidden;
-  margin: 0 15px 0 0;
+  width: 95%;
+  margin: 0 auto;
 }
 .card_img {
   width: 100%;
@@ -24,7 +25,7 @@
 
 .card_img > section > div > img {
   width: 100%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 4 / 3;
 }
 .card_content {
   padding: 14px;
@@ -117,16 +118,17 @@
     -ms-border-radius: 0;
     -o-border-radius: 0;
     box-shadow: none;
-}
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 375px) {
-  .card_btn > button{
+  .card_btn > button {
     font-size: 14px;
   }
 }
 @media screen and (max-width: 320px) {
-  .card_btn > button{
+  .card_btn > button {
     font-size: 11px;
   }
 }

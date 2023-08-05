@@ -1,18 +1,9 @@
-import '@splidejs/react-splide/css';
-
-// or other themes
-import '@splidejs/react-splide/css/skyblue';
-import '@splidejs/react-splide/css/sea-green';
-
-// or only core styles
-import '@splidejs/react-splide/css/core';
 import React from 'react'
 import styles from './style.module.css'
 import { WrapperContainer } from '../../../style-app';
-// import { Swiper, SwiperSlide } from 'swiper/react';
 import { useTranslation } from 'react-i18next';
-// import 'swiper/css';
-// import 'swiper/css/pagination';
+import { NavLink } from 'react-router-dom';
+import Reveal from '../../../utils/reveal/reveal';
 import './style.css'
 import Slider from "react-slick";
 
@@ -22,8 +13,7 @@ import PartnerImg2 from '../../../assets/partner/partner-logo2.png'
 import PartnerImg3 from '../../../assets/partner/partner-logo3.png'
 import PartnerImg4 from '../../../assets/partner/partner-logo4.png'
 import PartnerImg5 from '../../../assets/partner/partner-logo5.png'
-import { NavLink } from 'react-router-dom';
-import Reveal from '../../../utils/reveal/reveal';
+
 
 
 const OurPartner = () => {
@@ -33,7 +23,7 @@ const OurPartner = () => {
     infinite: true,
     autoplay: true,
     speed: 2000,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 4000,
     cssEase: "linear",
     slidesToShow: 5,
     slidesToScroll: 1,
@@ -43,24 +33,27 @@ const OurPartner = () => {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToScroll: 1,
           infinite: true,
-          dots: false
+          dots: false,
+          cssEase: "linear",
         }
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2
+          slidesToScroll: 1,
+          initialSlide: 1,
+          cssEase: "linear",
         }
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          cssEase: "linear",
         }
       }
     ]

@@ -12,6 +12,11 @@ const Lasemd = lazy(() => import("./../layouts/companies/lasemd/index"))
 const Histolab = lazy(() => import("./../layouts/companies/histolab/index"))
 const UltraFormer = lazy(() => import("./../layouts/companies/ultrafarm/index"))
 const Skinwell = lazy(() => import("./../layouts/companies/skinwell/index"))
+const News = lazy(() => import("./../layouts/News/index"));
+const NewsMore = lazy(() => import("./../layouts/News-More/index"));
+const Benefits = lazy(() => import("./../layouts/benefits/index"));
+const JoinUs = lazy(() => import("../layouts/joinus/index"));
+
 export const RouterData = [
   {
     id: 1,
@@ -29,12 +34,22 @@ export const RouterData = [
     component: <Contact />,
   },
   {
-    id: 3,
+    id: 4,
     path: "/category",
     component: <Category />,
   },
   {
-    id: 3,
+    id: 5,
+    path: "/news",
+    component: <News />,
+  },
+  {
+    id: 6,
+    path: "/newsmore",
+    component: <NewsMore />,
+  },
+  {
+    id: 7,
     path: "/product",
     component: <Product />,
   },
@@ -72,5 +87,13 @@ export const RouterData = [
     id: 3,
     path: "/companies/skinwell",
     component: <Skinwell />,
+    id: 8,
+    path: "/benefits",
+    component: <Benefits />,
+  },
+  {
+    id: 9,
+    path: "/join",
+    component: <JoinUs />,
   },
 ];

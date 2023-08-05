@@ -8,21 +8,28 @@ import './styles.css';
 import styles from './style.module.css'
 import Reveal from '../../../utils/reveal/reveal'
 import ImageAnimation from '../../../common/image';
-
-import RegisterSliderImg from '../../../assets/register/register-img.png'
-import RegisterImgBorder from '../../../assets/register/registerimgborder.png'
-
-
-// import required modules
-import { Pagination, Navigation } from 'swiper/modules';
+import { Pagination, Navigation, Autoplay } from 'swiper/modules';
 import { WrapperContainer } from '../../../style-app';
 import { useTranslation } from 'react-i18next';
 import { Row, Col } from 'react-grid-system';
 import CommonButton from '../../../common/button';
 
+import RegisterSliderImg from '../../../assets/register/register-img.png'
+import RegisterImgBorder from '../../../assets/register/registerimgborder.png'
+
+
+
+
+
 const RegisterSlider = () => {
     const { t } = useTranslation()
     const arr = [1, 2, 3, 4, 5]
+    const progressCircle = useRef(null);
+    const progressContent = useRef(null);
+    const onAutoplayTimeLeft = (s, time, progress) => {
+        progressCircle.current.style.setProperty('--progress', 1 - progress);
+        progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
+    };
     return (
         <>
             <div className={styles.register_section}>
@@ -36,8 +43,13 @@ const RegisterSlider = () => {
                                 clickable: true,
                             }}
                             navigation={false}
-                            modules={[Pagination, Navigation]}
+                            modules={[Autoplay, Pagination, Navigation]}
                             className="mySwiper"
+                            autoplay={{
+                                delay: 9500,
+                                disableOnInteraction: false,
+                            }}
+                            onAutoplayTimeLeft={onAutoplayTimeLeft}
                         >
                             {
                                 arr.map(() => (
@@ -50,7 +62,6 @@ const RegisterSlider = () => {
                                                             width: "100%",
                                                             aspectRatio: "16 / 9",
                                                         }} />
-                                                        {/* <img className={styles.position_img} src={RegisterImgBorder} alt="" /> */}
                                                     </div>
                                                 </Col>
                                                 <Col lg={5} md={12} sm={12} className={styles.register_col}>
@@ -73,6 +84,12 @@ const RegisterSlider = () => {
                                     </SwiperSlide>
                                 ))
                             }
+                            <div className="autoplay-progress" slot="container-end">
+                                <svg viewBox="0 0 48 48" ref={progressCircle}>
+                                    <circle cx="24" cy="24" r="20"></circle>
+                                </svg>
+                                <span ref={progressContent}></span>
+                            </div>
 
                         </Swiper>
                     </div>

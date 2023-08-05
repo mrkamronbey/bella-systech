@@ -5,6 +5,7 @@
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@motionone/utils": "^10.15.1",
     "@mui/icons-material": "^5.14.1",
     "@mui/material": "^5.14.2",
@@ -15,15 +16,21 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^29.5.3",
+    "@types/node": "^20.4.5",
+    "@types/react": "^18.2.18",
+    "@types/react-dom": "^18.2.7",
     "@types/three": "^0.154.0",
     "@types/typescript": "^2.0.0",
     "antd": "^5.7.2",
+    "canvas-confetti": "^1.6.0",
     "framer-motion": "^10.13.1",
     "framer-motion-3d": "^10.13.1",
     "i18next": "^22.4.5",
     "i18next-browser-languagedetector": "^7.0.1",
     "i18next-http-backend": "^2.1.0",
     "react": "^18.2.0",
+    "react-countup": "^6.4.2",
     "react-dom": "^18.2.0",
     "react-grid-system": "^8.1.9",
     "react-i18next": "^12.1.1",
@@ -33,6 +40,8 @@
     "react-scripts": "5.0.1",
     "react-slick": "^0.29.0",
     "react-three": "^0.9.7",
+    "react-timeline-animation": "^1.2.3",
+    "react-visibility-sensor": "^5.1.1",
     "sass": "^1.64.1",
     "styled-components": "^6.0.5",
     "swiper": "^10.0.4",
@@ -40,7 +49,8 @@
     "tailwindcss": "^3.3.3",
     "three": "^0.154.0",
     "typescript": "^5.1.6",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "webpack-cli": "^5.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -64,6 +74,14 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "resolve": {
+    "extensions": [
+      ".js",
+      ".json",
+      ".ts",
+      ".tsx"
     ]
   }
 }

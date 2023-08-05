@@ -1,15 +1,18 @@
 import styled, { createGlobalStyle } from "styled-components";
 
 export const WrapperContainer = styled.div`
-  max-width: 1300px;
+  max-width: 1250px;
   width: 100%;
   margin: 0 auto;
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1100px) {
+    width: 95%;
+  }
+  @media screen and (max-width: 991px) {
     width: 90%;
   }
   @media screen and (max-width: 425px) {
-    width: 95%;
+    width: 90%;
   }
 `;
 
@@ -31,7 +34,7 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background: #FAFAFA;
+    /* background: #FAFAFA; */
     
   }
 
