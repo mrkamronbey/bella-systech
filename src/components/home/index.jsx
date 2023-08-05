@@ -22,11 +22,8 @@ const HomeComponentent = () => {
             <HomeOurCosmetics />
             <OurPartner />
             <News />
-
-            <RequestConsultation/>
-
             <RegisterSlider />
-
+            <RequestConsultation />
         </>
     )
 }
