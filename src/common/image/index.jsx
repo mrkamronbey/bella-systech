@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { motion } from "framer-motion";
 const hiddenMask = `repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 30px, rgba(0,0,0,1) 30px, rgba(0,0,0,1) 30px)`;
 const visibleMask = `repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 0px, rgba(0,0,0,1) 0px, rgba(0,0,0,1) 30px)`;
-const ImageAnimation = ({ src, style }) => {
+const ImageAnimation = ({ src, style, className }) => {
     const [isLoaded, setIsLoaded] = useState(false);
     const [isInView, setIsInView] = useState(false);
 
@@ -19,7 +19,7 @@ const ImageAnimation = ({ src, style }) => {
                 viewport={{ once: true }}
                 onViewportEnter={() => setIsInView(true)}
             >
-                <img style={style} src={src} alt="" onLoad={() => setIsLoaded(true)} />
+                <img style={style} className={className} src={src} alt="" onLoad={() => setIsLoaded(true)} />
             </motion.div>
         </section>
     );

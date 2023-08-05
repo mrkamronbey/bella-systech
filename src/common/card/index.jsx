@@ -19,16 +19,18 @@ const CommonCard = ({
   style,
   timeText,
   textStyle,
+  className,
+  classNameImg
 }) => {
   return (
     <>
       <motion.div
         whileHover={{ scale: 1.04 }}
         transition={{ type: "spring", stiffness: 400, damping: 10 }}
-        className={styles.card}
+        className={`${styles.card} ${className}`}
       >
         <div className={styles.card_img}>
-          <ImageAnimation src={src} style={style} />
+          <ImageAnimation src={src} style={style} className={classNameImg} />
         </div>
         <div className={styles.card_content}>
           {isTime == true ? (

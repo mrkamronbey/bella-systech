@@ -1,12 +1,27 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { Col, Row } from 'react-grid-system'
 import { useTranslation } from 'react-i18next'
 import { Dropdown, Space } from 'antd';
 import { NavLink } from 'react-router-dom';
 import styles from './style.module.css'
+import './style.css'
 
 
 const HeaderBottom = () => {
+  useEffect(() => {
+    window.addEventListener("scroll", isSticky);
+    return () => {
+      window.removeEventListener("scroll", isSticky);
+    };
+  });
+
+  const isSticky = (e) => {
+    const header = document.querySelector(".header_btm_wrapp");
+    const scrollTop = window.scrollY;
+    scrollTop >= 60
+      ? header.classList.add("is_sticky")
+      : header.classList.remove("is_sticky");
+  };
   const { t } = useTranslation();
   const items = [
     {
@@ -41,9 +56,9 @@ const HeaderBottom = () => {
   ];
   return (
     <>
-      <div className={styles.header_btm_wrapp}>
-        <Row className={styles.header_btm_row}>
-          <Col className={styles.header_btm_col} lg={4}>
+      <div className='header_btm_wrapp'>
+        <Row className="header_btm_row">
+          <Col className="header_btm_col" lg={4}>
             <Dropdown
               menu={{
                 items,
@@ -52,7 +67,7 @@ const HeaderBottom = () => {
             >
               <a onClick={(e) => e.preventDefault()}>
                 <Space>
-                  <div className={styles.header_btm_drop}>
+                  <div className="header_btm_drop">
                     <i class='bx bx-category' ></i>
                     <span>{t("Header.0")}</span>
                   </div>
@@ -60,8 +75,8 @@ const HeaderBottom = () => {
               </a>
             </Dropdown>
           </Col>
-          <Col className={styles.header_btm_col} lg={8}>
-            <ul className={styles.header_btm_col_list}>
+          <Col className="header_btm_col" lg={8}>
+            <ul className='header_btm_col_list'>
               <li>
                 <NavLink to='/category'>{t("Header.1")}</NavLink>
               </li>

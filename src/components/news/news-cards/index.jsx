@@ -8,7 +8,7 @@ import { NavLink } from "react-router-dom";
 
 function NewsCards() {
   const Data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-  
+
   return (
     <div className={styled.news_cards_section}>
       <WrapperContainer>
@@ -17,6 +17,7 @@ function NewsCards() {
             <Col xxl={6} xxxl={6} lg={6} md={6} sm={12} className={styled.Col}>
               <NavLink to={"/newsmore"}>
                 <CommonCard
+                  className={styled.news_cards}
                   src={NewsCardImg}
                   style={{ aspectRatio: 16 / 9 }}
                   timeText={"18.05.2023"}

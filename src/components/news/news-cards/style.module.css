@@ -10,6 +10,10 @@
   margin-bottom: 40px;
 }
 
+.news_cards{
+  width: 100%;
+}
+
 @media only screen and (max-width: 768px) {
   .Col{
     padding: 0 !important;
