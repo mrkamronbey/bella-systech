@@ -1,0 +1,45 @@
+.Wrapper{
+    background-color: white;
+}
+.Container{
+    max-width: 1250px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.box h2{
+    text-align: center;
+    color: #000;
+/* Text/Heading 1 */
+/* font-family: Okta Neue; */
+font-size: 40px;
+font-style: normal;
+font-weight: 600;
+line-height: 150%;
+}
+.slider_card_box{
+    margin-bottom: 20px;
+}
+.box{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+@media only screen and (max-width:882px) {
+    .Container{
+        width: 90%;
+    }
+    .box{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .box h2{
+        text-align: center;
+        color: #000;
+    /* Text/Heading 1 */
+    /* font-family: Okta Neue; */
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    }
+}

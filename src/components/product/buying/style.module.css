@@ -1,0 +1,68 @@
+.Container{
+    max-width: 1250px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.Wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.box{
+    background: white;
+    border-radius: 0px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.Col p{
+    /* font-family: Okta Neue; */
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 130%; 
+color: black;
+}
+.Col {
+    padding: 20px;
+    margin-bottom: 28px;
+    border-radius: 18px;
+    background: #F8F8F8;
+    height: 132px;
+}
+.box h2{
+    margin-bottom: 40px;
+}
+.Cols{
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media only screen and (max-width:882px) {
+    .Container{
+        width: 90%;
+    }
+    .Row{
+        margin: 0 !important;
+    }
+    .Col {
+        margin-bottom: 10px;
+    }
+    .Cols{
+        padding: 0 !important;
+
+    }
+    .Photos{
+        width: 100%;
+    }
+    .box{
+        padding-top:30px;
+        padding-bottom: 30px;
+    }
+    .Wrapper{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+}
+
