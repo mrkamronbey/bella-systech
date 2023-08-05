@@ -1,5 +1,5 @@
 .Wrapper{
-    background-image: url("./../../../assets/compaines/bnv.png");
+    background-image: url("./../../../assets/compaines/lutronic.png");
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
@@ -8,7 +8,7 @@
 }
 @media only screen and (max-width:882px) {
     .Wrapper{
-        background-image: url("./../../../assets/compaines/bnv.png");
+        background-image: url("./../../../assets/compaines/lutronic.png");
         background-size: cover;
         background-position: right center;
         height: 34vh;

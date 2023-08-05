@@ -5,11 +5,11 @@ import styles from "./style.module.css"
 import CompainesAbout from './about/index'
 import Card from './card'
 import RequestConsultation from '../../home/request-consultation'
-const BialogComponent = () => {
+const HistolabComponent = () => {
   const {t} = useTranslation()
   return (
     <div>
-    <HomeHero title={t("BNV Biolab")}  className={styles.Wrapper} Contact/>
+    <HomeHero title={t("Histolab")}  className={styles.Wrapper} Contact/>
     <CompainesAbout/>
     <Card/>
     <RequestConsultation/>
@@ -17,4 +17,4 @@ const BialogComponent = () => {
   )
 }
 
-export default BialogComponent
+export default HistolabComponent
