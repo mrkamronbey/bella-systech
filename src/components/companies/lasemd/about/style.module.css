@@ -1,60 +1,54 @@
-.Container{
-    max-width: 1250px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 10px;
+.lasemd_section {
+  padding: 50px 0;
+  background: #f8f8f8;
 }
-.Col{
-    margin-right: 10px;
+
+.Container {
+  max-width: 1250px;
+  width: 100%;
+  margin: 0 auto;
 }
-.Col_Right{
-    margin-left: 10px;
+
+.Col_Right h2 {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
 }
-.Col_Right h2{
+.Col_Right p {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+.Rows {
+  margin: 0 !important;
+}
+@media only screen and (max-width: 882px) {
+  .Container {
+    width: 90%;
+  }
+  .Rows {
     margin: 0;
     padding: 0;
-    color: #000;
-/* Text/Heading 2 */
-/* font-family: Okta Neue; */
-    font-size: 24px;
-    font-style: normal;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .Col img {
+    width: 100%;
+  }
+  .Col {
+    margin-right: 0px;
+  }
+  .Col_Right {
+    margin-left: 0px;
+  }
+  .Col_Right h2 {
+    font-size: 21px;
     font-weight: 600;
-    line-height: 150%;
-}
-.Col_Right p{
-    color: #000;
-/* Text/Paragraph */
-/* font-family: Okta Neue; */
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 130%; 
-}
-.Rows{
-    margin-top: 120px;
-    margin-bottom: 120px;
-}
-@media only screen and (max-width:882px) {
-    .Container{
-        width: 90%;
-    }
-    .Rows{
-        margin: 0;
-        padding: 0;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-    .Col img{
-        width: 100%;
-    }
-    .Col{
-        margin-right: 0px;
-    }
-    .Col_Right{
-        margin-left: 0px;
-    }
-    .Col_Right h2{
-        font-size: 21px;
-        font-weight: 600;
-    }
+  }
 }

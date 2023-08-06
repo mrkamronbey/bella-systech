@@ -1,42 +1,46 @@
-.Wrapper{
-    background-color: white;
+.Wrapper {
+  background-color: white;
+  padding: 50px 0;
 }
-.Container{
-    max-width: 1250px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 10px;
+.Container {
+  max-width: 1250px;
+  width: 100%;
+  margin: 0 auto;
 }
-.box h2{
+.box h2 {
+  text-align: center;
+  color: #000;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+@media only screen and (max-width: 991px) {
+  .Container {
+    width: 90%;
+  }
+
+  .box h2 {
     text-align: center;
     color: #000;
-/* Text/Heading 1 */
-/* font-family: Okta Neue; */
-font-size: 40px;
-font-style: normal;
-font-weight: 600;
-line-height: 150%;
-}
-.box{
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
-@media only screen and (max-width:882px) {
-    .Container{
-        width: 90%;
-    }
-    .box{
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-    .box h2{
-        text-align: center;
-        color: #000;
-    /* Text/Heading 1 */
-    /* font-family: Okta Neue; */
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
     line-height: 150%;
-    }
+  }
+}
+@media only screen and (max-width: 882px) {
+  .Container {
+    width: 90%;
+  }
+
+  .box h2 {
+    text-align: center;
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+  }
 }

@@ -4,14 +4,16 @@ import HomeHero from '../../../common/hero'
 import styles from "./style.module.css"
 import CompainesAbout from './about/index'
 import RequestConsultation from '../../home/request-consultation'
+import BannerSkillWell from './banner-skillwell'
 const SkinwellComponent = () => {
-  const {t} = useTranslation()
+  const { t } = useTranslation()
   return (
-    <div>
-    <HomeHero title={t("Skinwell")}  className={styles.Wrapper} Contact/>
-    <CompainesAbout/>
-    <RequestConsultation/>
-    </div>
+    <>
+      <HomeHero title={t("Skinwell")} className={styles.Wrapper} Contact />
+      <CompainesAbout />
+      <BannerSkillWell />
+      <RequestConsultation />
+    </>
   )
 }
 

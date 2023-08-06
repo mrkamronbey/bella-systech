@@ -17,14 +17,10 @@ const Content = () => {
         </p>
       </Reveal>
       <div className={styles.buttons}>
-        <Reveal>
-          <a href="">
-            <i class="bx bxs-file-doc"></i>Подробная информация
-          </a>
-        </Reveal>
-        <Reveal>
-          <button>Связаться для оформления заказа</button>
-        </Reveal>
+        <a href="">
+          <i class="bx bxs-file-doc"></i>Подробная информация
+        </a>
+        <button>Связаться для оформления заказа</button>
       </div>
     </div>
   );

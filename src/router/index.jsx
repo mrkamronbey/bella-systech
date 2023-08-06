@@ -14,6 +14,7 @@ function RouterComponent() {
           <Route key={elem.id} path={elem.path} element={
             <Suspense fallback={
               <div className="spin_wrapp">
+                <div className='loader'></div>
                 <img src={Logo} alt="" />
               </div>
             }>

@@ -6,18 +6,19 @@ import { Col, Row } from "react-grid-system";
 import "./style.css";
 const Card = () => {
   const { t } = useTranslation();
-  const data = [1, 2, 3, 4, 5 , 6 , 7 , 8 , 9 , 10 , 11 , 12 ,12 , 13 , 15 , 16 , 17 , 18 , 19 , 20];
+  const data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
 
   return (
     <div className={styles.Wrapper}>
       <div className={styles.Container}>
         <div className={styles.box}>
           <h2>{t("Compaines.6")}</h2>
-          <Row>
+          <Row className={styles.Row}>
             {data.map(() => (
-              <Col lg={4} md={12}>
+              <Col className={styles.Col} lg={4} md={12}>
                 <div className={styles.slider_card_box}>
                   <CommonCard
+                    className={styles.histolab_card}
                     src={
                       "https://llskin.ru/image/cache/catalog/VIA/VIAnew-642x470.png"
                     }
@@ -30,6 +31,7 @@ const Card = () => {
                     order="#"
                     isBtn={true}
                     isTitle={true}
+
                   />
                 </div>
               </Col>

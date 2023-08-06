@@ -6,8 +6,8 @@ import CardImg from "./../../../../assets/card/cardimg.png"
 import "./style.css"
 import Slider from "react-slick";
 const Card = () => {
-    const {t} = useTranslation()
-    const data = [1 , 2 ,3 , 4 ,5]
+    const { t } = useTranslation()
+    const data = [1, 2, 3, 4, 5]
     const settings = {
         dots: true,
         infinite: true,
@@ -46,24 +46,24 @@ const Card = () => {
             }
         ]
     };
-  return (
-    <div className={styles.Wrapper}>
-        <div className={styles.Container}>
-        <div className={styles.box}>
-        <h2>{t("Compaines.5")}</h2>
-        <div className='ourproduct_slider_wrapp'>
+    return (
+        <div className={styles.Wrapper}>
+            <div className={styles.Container}>
+                <div className={styles.box}>
+                    <h2>{t("Compaines.5")}</h2>
+                    <div className='ourproduct_slider_wrapp'>
                         <Slider {...settings}>
                             {
                                 data.map(() => (
                                     <div className='slider_card_box'>
                                         <CommonCard
                                             src={"https://llskin.ru/image/cache/catalog/VIA/VIAnew-642x470.png"}
-                                            style={{width: "100%" , aspectRatio : 16 / 10}}
+                                            style={{ width: "100%", aspectRatio: 16 / 10 }}
                                             card_title="Краткая информация"
                                             card_description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                                             card_btn_text1={t("Card.0")}
                                             card_btn_text2={t("Card.1")}
-                                            details="/product"
+                                            details="/product2"
                                             order="#"
                                             isBtn={true}
                                             isTitle={true}
@@ -73,10 +73,10 @@ const Card = () => {
                             }
                         </Slider>
                     </div>
+                </div>
+            </div>
         </div>
-        </div>
-    </div>
-  )
+    )
 }
 
 export default Card

@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
 import { Col, Row } from 'react-grid-system'
 import { useTranslation } from 'react-i18next'
 import { Dropdown, Space } from 'antd';
@@ -25,31 +25,31 @@ const HeaderBottom = () => {
   const { t } = useTranslation();
   const items = [
     {
-      label: <a href="https://www.antgroup.com">1st menu item</a>,
+      label: <NavLink to="/companies/bialob">BNV Biolab</NavLink>,
       key: '0',
     },
     {
-      label: <a href="https://www.antgroup.com">2nd menu item</a>,
+      label: <NavLink to="/companies/lutronic">Lutronic</NavLink>,
       key: '1',
     },
     {
-      label: <a href="https://www.antgroup.com">3nd menu item</a>,
+      label: <NavLink to="/companies/lasemd">LaseMD</NavLink>,
       key: '3',
     },
     {
-      label: <a href="https://www.antgroup.com">4nd menu item</a>,
+      label: <NavLink to="/companies/histolab">Histolab</NavLink>,
       key: '4',
     },
     {
-      label: <a href="https://www.antgroup.com">5nd menu item</a>,
+      label: <NavLink to="/companies/classys">Classys</NavLink>,
       key: '5',
     },
     {
-      label: <a href="https://www.antgroup.com">6nd menu item</a>,
+      label: <NavLink to="/companies/ultraformer">Ultraformer</NavLink>,
       key: '6',
     },
     {
-      label: <a href="https://www.antgroup.com">7nd menu item</a>,
+      label: <NavLink to="/companies/skinwell">Skinwell</NavLink>,
       key: '7',
     },
 

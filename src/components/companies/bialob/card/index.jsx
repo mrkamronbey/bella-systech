@@ -6,8 +6,8 @@ import CardImg from "./../../../../assets/card/cardimg.png"
 import "./style.css"
 import Slider from "react-slick";
 const Card = () => {
-    const {t} = useTranslation()
-    const data = [1 , 2 ,3 , 4 ,5]
+    const { t } = useTranslation()
+    const data = [1, 2, 3, 4, 5]
     const settings = {
         dots: true,
         infinite: true,
@@ -25,7 +25,7 @@ const Card = () => {
                     slidesToShow: 2,
                     slidesToScroll: 1,
                     infinite: true,
-                    dots: false
+                    dots: true
                 }
             },
             {
@@ -46,12 +46,12 @@ const Card = () => {
             }
         ]
     };
-  return (
-    <div className={styles.Wrapper}>
-        <div className={styles.Container}>
-        <div className={styles.box}>
-        <h2>{t("Compaines.2")}</h2>
-        <div className='ourproduct_slider_wrapp'>
+    return (
+        <div className={styles.Wrapper}>
+            <div className={styles.Container}>
+                <div className={styles.box}>
+                    <h2>{t("Compaines.2")}</h2>
+                    <div className='ourproduct_slider_wrapp'>
                         <Slider {...settings}>
                             {
                                 data.map(() => (
@@ -72,10 +72,10 @@ const Card = () => {
                             }
                         </Slider>
                     </div>
+                </div>
+            </div>
         </div>
-        </div>
-    </div>
-  )
+    )
 }
 
 export default Card

@@ -1,60 +1,86 @@
-.Container{
-    max-width: 1250px;
+.bialob_section {
+  padding: 50px 0;
+  background-color: #f8f8f8;
+}
+
+.Container {
+  max-width: 1250px;
+  width: 100%;
+  margin: 0 auto;
+}
+.Rows {
+  margin: 0 !important;
+}
+
+.Col_Right h2 {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.Col_Right p {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+@media only screen and (max-width: 991px) {
+  .Container {
+    width: 90%;
+  }
+
+  .bialob_col{
+    padding: 0 !important;
+    margin-bottom: 20px;
+  }
+
+  .Col img {
     width: 100%;
-    margin: 0 auto;
-    padding: 0 10px;
-}
-.Col{
-    margin-right: 10px;
-}
-.Col_Right{
-    margin-left: 10px;
-}
-.Col_Right h2{
-    margin: 0;
-    padding: 0;
-    color: #000;
-/* Text/Heading 2 */
-/* font-family: Okta Neue; */
-    font-size: 24px;
-    font-style: normal;
+  }
+
+  .Col_Right h2 {
+    font-size: 21px;
     font-weight: 600;
-    line-height: 150%;
+  }
 }
-.Col_Right p{
-    color: #000;
-/* Text/Paragraph */
-/* font-family: Okta Neue; */
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 130%; 
+
+@media only screen and (max-width: 882px) {
+  .Container {
+    width: 90%;
+  }
+
+  .Col img {
+    width: 100%;
+  }
+
+  .Col_Right h2 {
+    font-size: 21px;
+    font-weight: 600;
+  }
 }
-.Rows{
-    margin-top: 120px;
-    margin-bottom: 120px;
-}
-@media only screen and (max-width:882px) {
-    .Container{
-        width: 90%;
-    }
-    .Col img{
-        width: 100%;
-    }
-    .Rows{
-        margin: 0;
-        padding: 0;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-    .Col{
-        margin-right: 0px;
-    }
-    .Col_Right{
-        margin-left: 0px;
-    }
-    .Col_Right h2{
-        font-size: 21px;
-        font-weight: 600;
-    }
+
+@media only screen and (max-width: 409px) {
+  .Container {
+    width: 90%;
+  }
+
+  .Col img {
+    width: 100%;
+  }
+
+  .Col_Right h2 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .Col_Right p {
+    font-size: 15px;
+    font-weight: 400;
+  }
 }

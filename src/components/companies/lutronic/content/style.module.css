@@ -1,45 +1,66 @@
-.Container{
-    max-width: 1250px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 10px;
+.lutronic_content_section {
+  padding: 50px 0;
+  background-color: #f8f8f8;
 }
-.Container h2{
+
+.Container {
+  max-width: 1250px;
+  width: 100%;
+  margin: 0 auto;
+}
+.lutronic_title {
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+.lutronic_text {
+  color: #000;
+  white-space: pre-wrap;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+}
+
+@media only screen and (max-width: 991px) {
+  .Container {
+    width: 90%;
+  }
+  .lutronic_title {
     color: #000;
-    /* font-family: Okta Neue; */
-    font-size: 24px;
+    font-size: 21px;
     font-style: normal;
     font-weight: 600;
     line-height: 150%;
-}
-.Container p{
-        color: #000;
-    /* font-family: Okta Neue; */
-    white-space : pre-wrap;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 130%;
-}
-@media only screen and (max-width:882px) {
-    .Container{
-        width: 90%;
-    }
-    .Container h2{
-        color: #000;
-        /* font-family: Okta Neue; */
-        font-size: 21px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 150%;
-    }
-    .Container p{
-        color: #000;
-    /* font-family: Okta Neue; */
-    white-space : pre-wrap;
+  }
+  .lutronic_text {
+    color: #000;
+    white-space: pre-wrap;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: 130%;
+  }
 }
+@media only screen and (max-width: 882px) {
+  .Container {
+    width: 90%;
+  }
+  .lutronic_title {
+    color: #000;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+  }
+  .lutronic_text {
+    color: #000;
+    white-space: pre-wrap;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+  }
 }

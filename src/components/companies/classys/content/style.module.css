@@ -1,0 +1,67 @@
+.classys_content_section {
+  padding: 50px 0;
+  background: #f8f8f8;
+}
+
+.Container {
+  max-width: 1250px;
+  width: 100%;
+  margin: 0 auto;
+}
+.classys_title {
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+.classys_text {
+  color: #000;
+  white-space: pre-wrap;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+}
+
+@media only screen and (max-width: 991px) {
+  .Container {
+    width: 90%;
+  }
+  .classys_title {
+    color: #000;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+  }
+  .classys_text {
+    color: #000;
+    white-space: pre-wrap;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+  }
+}
+
+@media only screen and (max-width: 882px) {
+  .Container {
+    width: 90%;
+  }
+  .classys_title {
+    color: #000;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+  }
+  .classys_text {
+    color: #000;
+    white-space: pre-wrap;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+  }
+}

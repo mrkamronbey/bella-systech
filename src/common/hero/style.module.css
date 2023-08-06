@@ -154,4 +154,8 @@
   .Container {
     width: 95%;
   }
+
+  .hero_content{
+    padding-left: 9px;
+  }
 }

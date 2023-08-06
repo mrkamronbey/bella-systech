@@ -3,15 +3,20 @@ import { lazy } from "react";
 const Home = lazy(() => import("./../layouts/home/index"));
 const About = lazy(() => import("./../layouts/about/index"));
 const Contact = lazy(() => import("./../layouts/contact/index"));
-const Category = lazy(() => import("./../layouts/category/index"))
-const Product = lazy(() => import("./../layouts/product/index"))
-const Product2 = lazy(() => import("./../layouts/product2/index"))
-const Bialog = lazy(() => import("./../layouts/companies/bialob/index"))
-const LutronicCompaines = lazy(() => import("./../layouts/companies/lutronic/index"))
-const Lasemd = lazy(() => import("./../layouts/companies/lasemd/index"))
-const Histolab = lazy(() => import("./../layouts/companies/histolab/index"))
-const UltraFormer = lazy(() => import("./../layouts/companies/ultrafarm/index"))
-const Skinwell = lazy(() => import("./../layouts/companies/skinwell/index"))
+const Category = lazy(() => import("./../layouts/category/index"));
+const Product = lazy(() => import("./../layouts/product/index"));
+const Product2 = lazy(() => import("./../layouts/product2/index"));
+const Bialog = lazy(() => import("./../layouts/companies/bialob/index"));
+const LutronicCompaines = lazy(() =>
+  import("./../layouts/companies/lutronic/index")
+);
+const Lasemd = lazy(() => import("./../layouts/companies/lasemd/index"));
+const Histolab = lazy(() => import("./../layouts/companies/histolab/index"));
+const UltraFormer = lazy(() =>
+  import("./../layouts/companies/ultrafarm/index")
+);
+const Classys = lazy(() => import("../layouts/companies/classys/index"));
+const Skinwell = lazy(() => import("./../layouts/companies/skinwell/index"));
 const News = lazy(() => import("./../layouts/News/index"));
 const NewsMore = lazy(() => import("./../layouts/News-More/index"));
 const Benefits = lazy(() => import("./../layouts/benefits/index"));
@@ -54,45 +59,52 @@ export const RouterData = [
     component: <Product />,
   },
   {
-    id: 3,
+    id: 8,
     path: "/product2",
     component: <Product2 />,
   },
   {
-    id: 3,
-    path: "/companies/bialog",
+    id: 9,
+    path: "/companies/bialob",
     component: <Bialog />,
   },
   {
-    id: 3,
+    id: 10,
     path: "/companies/lutronic",
     component: <LutronicCompaines />,
   },
   {
-    id: 3,
+    id: 11,
     path: "/companies/lasemd",
     component: <Lasemd />,
   },
   {
-    id: 3,
+    id: 12,
     path: "/companies/histolab",
     component: <Histolab />,
   },
   {
-    id: 3,
+    id: 13,
     path: "/companies/ultraformer",
     component: <UltraFormer />,
   },
   {
-    id: 3,
+    id: 14,
     path: "/companies/skinwell",
     component: <Skinwell />,
-    id: 8,
+  },
+  {
+    id: 15,
+    path: "/companies/classys",
+    component: <Classys />,
+  },
+  {
+    id: 16,
     path: "/benefits",
     component: <Benefits />,
   },
   {
-    id: 9,
+    id: 17,
     path: "/join",
     component: <JoinUs />,
   },
