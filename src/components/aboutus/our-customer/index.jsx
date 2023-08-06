@@ -83,10 +83,10 @@ const OurCustumer = () => {
                 <WrapperContainer>
                     <div className={styles.custumer_content}>
                         <Reveal>
-                            <h4 className={styles.custumer_title}>{t("AboutUs.18")}</h4>
+                        <h4 className={styles.custumer_title}>{t("AboutUs.18")}</h4>
                         </Reveal>
                         <Reveal>
-                            <p className={styles.custumer_text}>{t("AboutUs.19")}</p>
+                        <p className={styles.custumer_text}>{t("AboutUs.19")}</p>
                         </Reveal>
                     </div>
                     <div className="custumer_slid_wrapp">
