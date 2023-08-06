@@ -50,7 +50,7 @@ const RequestConsultation = () => {
                   </div>
                   <div>
                     <input
-                      type="name"
+                      type="tel"
                       placeholder={t("Form.2")}
                       ref={phone_number}
                       required
