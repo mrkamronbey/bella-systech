@@ -1,31 +1,86 @@
-.Container{
-    max-width: 1250px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 10px;
+.before_after_section {
+  background: #e9e9e9;
+  padding: 50px 0;
 }
-.Wrapper{
-    display: flex;
-    justify-content: space-between;
+
+.before_after_item {
+  position: relative;
 }
-.box{
-    background: #e9e9e9;
-    border-radius: 0px;
+
+.before_after_item > img {
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
 }
-.Photos{
-    width: 49%;
+
+.before_btn {
+  position: absolute;
+  content: "";
+  bottom: 50px;
+  right: 50px;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-bottom-right-radius: 50px;
+  border-top-left-radius: 50px;
+  background: #df2027;
+  color: #fff;
+  box-shadow: 20px 20px 40px 0px rgba(0, 0, 0, 0.05);
 }
-.Col {
-    padding-bottom: 24px;
+
+.after_btn {
+  position: absolute;
+  content: "";
+  bottom: 50px;
+  left: 50px;
+  background: #df2027;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  box-shadow: 20px 20px 40px 0px rgba(0, 0, 0, 0.05);
 }
-.Col img{
-    border-radius: 12px;
+.before_after_row {
+  margin: 0 !important;
 }
-.Video{
-    float: left;
-    width: 49%;
+
+@media only screen and (max-width: 991px) {
+  .before_after_col {
+    margin-bottom: 20px;
+    padding: 0 !important;
+  }
 }
-@media only screen and (max-width:882px) {
+
+@media only screen and (max-width: 500px) {
+  .after_btn,
+  .before_btn {
+    bottom: 20px;
+    right: 10px;
+  }
+  .after_btn {
+    left: auto;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+  }
+}
+
+/* @media only screen and (max-width:882px) {
     .Container{
         width: 90%;
     }
@@ -54,4 +109,4 @@
         flex-direction: column;
         padding-bottom: 20px;
     }
-}
+} */

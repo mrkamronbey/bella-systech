@@ -29,7 +29,7 @@ const RequestConsultation = () => {
           <Row className={styles.request_row}>
             <Col className={styles.request_col} lg={6} md={12} sm={12}>
               <Reveal>
-                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quasi soluta consectetur distinctio vero quia perspiciatis aperiam fugit totam nulla quibusdam quam, iusto explicabo dicta maiores voluptas optio repellendus eos provident deserunt? Aspernatur sunt nemo, necessitatibus ea dolorum sequi id dolore molestias adipisci cupiditate exercitationem reiciendis omnis, expedita fugiat saepe. Atque ipsam odit minima reiciendis, qui veritatis maxime omnis nobis obcaecati ipsa rerum perferendis iste tempore nostrum quod repellendus quis cupiditate asperiores dolores! Quam molestias atque, consectetur vero repellat quibusdam aperiam non dicta hic harum. Vitae amet, fugit ipsum autem excepturi velit rerum. Architecto voluptatem error debitis, atque labore libero?</span>
+                <span>{t("Form.5")}</span>
               </Reveal>
             </Col>
             <Col className={styles.request_col} lg={6} md={12} sm={12}>

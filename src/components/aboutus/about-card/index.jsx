@@ -126,7 +126,7 @@ const AboutCard = () => {
                                     </div>
                                 </div>
                             </Col>
-                            <Col className={styles.about_card_col} lg={6} md={12} sm={12}>
+                            {/* <Col className={styles.about_card_col} lg={6} md={12} sm={12}>
                                 <div className={styles.col_card_wrapp}>
                                     <div className={styles.col_img_wrapp}>
                                         <img src={Card2} alt="" />
@@ -179,7 +179,7 @@ const AboutCard = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </Col>
+                            </Col> */}
                         </Row>
                     </div>
                 </WrapperContainer>

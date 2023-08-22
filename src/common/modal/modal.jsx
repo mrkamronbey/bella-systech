@@ -3,15 +3,17 @@ import { Modal } from 'antd';
 
 const ModalCommon = ({
     children,
+    className,
     isModalOpen,
     handleOk,
     handleCancel,
     width,
-    title
+    title,
+    style
 }) => {
     return (
         <>
-            <Modal title={title} footer={false} width={width} open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+            <Modal title={title} className={className} style={style} footer={false} width={width} open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
                 {children}
             </Modal>
         </>

@@ -73,7 +73,7 @@ const HomeOurProduct = () => {
                                             card_description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                                             card_btn_text1={t("Card.0")}
                                             card_btn_text2={t("Card.1")}
-                                            details="#"
+                                            details="/product"
                                             order="#"
                                             isBtn={true}
                                             isTitle={true}

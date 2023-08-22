@@ -55,7 +55,7 @@ const HomeOurCosmetics = () => {
                 <WrapperContainer>
                     <div className={styles.title_box}>
                         <Reveal>
-                            <h4 className={styles.home_cosmetics_title}>{t("Card.2")}</h4>
+                            <h4 className={styles.home_cosmetics_title}>{t("Card.3")}</h4>
                         </Reveal>
                     </div>
                     <div className='ourcosmetics_slider_wrapp'>
@@ -69,8 +69,8 @@ const HomeOurCosmetics = () => {
                                             card_description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                                             card_btn_text1={t("Card.0")}
                                             card_btn_text2={t("Card.1")}
-                                            toDetails="#"
-                                            toOrder="#"
+                                            details="/product"
+                                            order="#"
                                             isBtn={true}
                                             isTitle={true}
                                             style={{

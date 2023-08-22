@@ -13,17 +13,18 @@
     "1": "Submit request"
   },
   "HeroVideo": {
-    "0": "Summary of activities",
+    "0": "About our company",
     "1": "Bella-systech provides professional services for both warranty and post-warranty maintenance of cosmetology devices. Engineers of the Bella-systech authorized service center regularly undergo training at the enterprises of our manufacturers in South Korea, and Lutronic and Classys specialists constantly provide information and technical support to our company. Our customers can be sure of high-quality timely service."
   },
   "Card": {
     "0": "details",
     "1": "order",
-    "2": "Our products, equipment"
+    "2": "Innovative Devices",
+    "3": "Aesthetic Care and Recovery"
   },
   "HomeThird": {
-    "0": "Brief information about activities",
-    "1": "Bella-systech provides professional services for \n warranty and post-warranty maintenance of cosmetology \n devices. Bella-systech authorized service center engineers \n regularly undergo training at our manufacturers' facilities in South Korea, and Lutronic and Classys specialists constantly provide \n informational and technical support to our company. Our \n customers can be sure of high-quality timely service."
+    "0": "Bella-Systech Uzbekistan",
+    "1": "Bella-Systech offers a wide range of laser and beauty equipment that meets the highest standards of quality and performance. In our range you will find tubes for PRP therapy, an innovative procedure that is actively used in medicine and cosmetology. We are pleased to introduce to you the leader in the field of laser, cosmetology and additional equipment, as well as professional cosmetics - Bella Systech. Now you can get access to advanced technologies and innovative products right here in Uzbekistan."
   },
   "OurPartner": {
     "0": "Our partners",
@@ -33,6 +34,37 @@
     "0": "Company news",
     "1": "Our partners who have shared their \n values with us for several years",
     "2": "Автобус ва метрога Humo картаси орқали \n тўлов қилишда муаммо пайдо бўлди — \n бунинг сабаби нимада?"
+  },
+
+  "Form": {
+    "0": "Application form",
+    "1": "Name",
+    "2": "Phone number",
+    "3": "E-mail",
+    "4": "Send",
+    "5": "We specialize in providing high-quality equipment and professional solutions in the field of cosmetology and laser technology. Our company has a successful experience of cooperation with enterprises focused on quality and results. \n If you are looking for a reliable partner who is ready to provide modern innovative solutions and support for your business, we are ready to be that partner for you.Our team will help you select the optimal equipment and products, design efficient processes and succeed in the field of cosmetology."
+  },
+
+  "Footer": {
+    "0": "All companies",
+    "1": "Useful links",
+    "2": "Directory",
+    "3": "About us",
+    "4": "Company Benefits",
+    "5": "Terms of cooperation",
+    "6": "News",
+    "7": "Contacts",
+    "8": "About us",
+    "9": "Call us",
+    "10": "Your reliable partner in the world of cosmetology and medical technology.",
+    "11": "All goods registered, services licensed",
+    "12": "Mon - Fri"
+  },
+  "Category": {
+    "0": "Product catalog",
+    "1": "Categories",
+    "2": "Brand",
+    "3": "Filter"
   },
 
   "RegisterSlider": {
@@ -49,7 +81,7 @@
     "5": "Our partners who have shared their \n values with us for several years"
   },
   "Contact": {
-    "0": "Contacts",
+    "0": "Our contacts",
     "1": "Our address:",
     "2": "Uzbekistan, Tashkent city, Navruz street 3, Sirgalinsky district",
     "3": "Our phone:",
@@ -61,16 +93,16 @@
   "AboutUs": {
     "0": "About us",
     "1": "About the company",
-    "2": "Bella systech",
+    "2": "Bella systech Uzbekistan",
     "3": "Bella-systech corp. - the exclusive distributor of Lutronic, Classys, Histolab professional cosmetics, as well as a supplier of additional equipment. More than 700 laser and cosmetic devices have already been delivered to various private cosmetology and public clinics in America, Europe , Korea, Japan, Russia and the CIS countries.We are constantly expanding our dealer network to promote Histolab liposomal professional cosmetics.More than 200 cosmetology clinics in Russia and more than 50 clinics in the CIS already use Histolab developments in their work and recommend lines for home care to their patients.Bella -systech supplies Lutronic and Classys devices to all regions of the Republic of Uzbekistan.",
-    "4": "EFFICIENCY",
-    "5": "Lutronic's systems have a deep scientific and medical basis. Significant funds are allocated by the company to conduct international clinical studies to test their effectiveness and safety. More than 350 scientific articles have already been written about Lutronic systems",
-    "6": "RELIABILITY",
-    "7": "Lutronic equipment is distinguished by quality and reliability. It lasts longer and outperforms its competitors in terms of technical characteristics. When service is required, our specialists quickly restore the equipment to working condition",
-    "8": "INTUITIVE INTERFACE",
-    "9": "The use of Lutronic equipment is based on an intuitive interface, which allows doctors to concentrate on the patient, and not on the technology of the procedure",
-    "10": "EFFICIENCY",
-    "11": "Lutronic's systems have a deep scientific and medical basis. Significant funds are allocated by the company to conduct international clinical studies to test their effectiveness and safety. More than 350 scientific articles have already been written about Lutronic systems",
+    "4": "Intertwining Innovation and Beauty:",
+    "5": "Bella-Systech Corp. - is a guide to a world of advanced technology and incredible beauty. We are a unique provider, putting innovative Lutronic and Classys devices and inspiring Histolab cosmetics at the center of our mission. Our products are not only technology, but also the secret to longevity and confidence.",
+    "6": "One Company, One World:",
+    "7": "Creating aesthetic harmony around the world, more than 700 of our devices are being realized in the dreams and projects of clinics and salons in Russia, Europe, America and far beyond. We are global creators of beauty, providing access to cutting-edge technology and innovation even where there seem to be no borders.",
+    "8": "Cosmetics that speaks with the heart:",
+    "9": "In the world of Histolab, professional cosmetics become a living story told by your skin. This product line is not just mixtures of ingredients, but a symphony of beauty care. Every treatment in the clinic and every home ritual becomes part of this story.",
+    "10": "The power of Partnership and Growth:",
+    "11": "Bella-Systech Corp. - is not just a company, it's a family of innovators and partners. We are building a network, bringing together clinics and salons to pass the baton of beauty. Our devices not only deliver visible results, but also open the door to endless possibilities.",
     "12": "RELIABILITY",
     "13": "Lutronic equipment is distinguished by quality and reliability. It lasts longer and outperforms its competitors in terms of technical characteristics. When service is required, our specialists quickly restore the equipment to working condition",
     "14": "INTUITIVE INTERFACE",
@@ -86,7 +118,7 @@
     "3": "partners",
     "4": "employees",
     "5": "branches",
-    "6": "Company Benefits",
+    "6": "Our benefits",
     "7": "Bella-systech provides professional services for both warranty and post-warranty maintenance of cosmetology devices. Engineers of the Bella-systech authorized service center regularly undergo training at the enterprises of our manufacturers in South Korea, and Lutronic and Classys specialists constantly carry out information and technical support of our company.Our customers can be sure of high-quality and timely service.Bella-systech provides professional services for both warranty and post-warranty maintenance of cosmetology devices.Bella-systech authorized service center engineers regularly undergo training at our manufacturers' enterprises in South Korea, and Lutronic and Classys specialists constantly provide information and technical support to our company.Our customers can be sure of high-quality and timely service.",
     "8": "Hardware Selection Assistance Information",
     "9": "Bella-systech provides professional services for both warranty and post-warranty maintenance of cosmetology devices. Bella-systech authorized service center engineers regularly undergo training at our manufacturers' enterprises in South Korea, and Lutronic and Classys specialists constantly carry out information and technical support of our company.Our customers can be sure of high-quality and timely service.Bella-systech provides professional services for both warranty and post-warranty maintenance of cosmetology devices.Bella-systech authorized service center engineers regularly undergo training at our manufacturers' enterprises in South Korea, and Lutronic and Classys specialists constantly provide information and technical support to our company.Our customers can be sure of high-quality and timely service.",
@@ -112,5 +144,11 @@
     "13": "Certificate upon graduation",
     "14": "At the end of the training, you will be issued a certificate confirming your qualifications and the full right to perform procedures on devices. This opens the door to new opportunities and trust from customers.",
     "15": "We, Bella-systech Uzbekistan, are proud to provide such benefits to our clients to help them achieve high results in aesthetic medicine and become leaders in their industry."
+  },
+  "BeforeAfter": {
+    "0": "Before",
+    "1": "After",
+    "2": "Our partners",
+    "3": "You can get these products from nearby clinics"
   }
 }

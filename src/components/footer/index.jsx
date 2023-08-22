@@ -5,7 +5,7 @@ import Logo from "./../../assets/logo.svg"
 import { useTranslation } from 'react-i18next'
 import { NavLink } from 'react-router-dom'
 import Reveal from '../../utils/reveal/reveal'
-import {WrapperContainer} from '../../style-app'
+import { WrapperContainer } from '../../style-app'
 const Footer = () => {
     const { t } = useTranslation();
     return (
@@ -15,7 +15,8 @@ const Footer = () => {
                     <Col lg={4} md={12} className={styles.Col_right}>
                         <div className={styles.box}>
                             <img src={Logo} alt="" />
-                            <Reveal>                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quasi soluta consectetur distinctio vero quia perspiciatis </p></Reveal>
+                            <Reveal>
+                                <p>{t("Footer.10")}</p></Reveal>
                             <hr />
                             <div className={styles.network}>
                                 <a href="tel:+998 93 908 70 85">
@@ -32,32 +33,47 @@ const Footer = () => {
                             <Col className={styles.navigation} lg={4} md={12} xs={12} >
                                 <ul>
                                     <li><p>{t("Footer.0")}</p></li>
-                                    <li><NavLink className={styles.Navlink} to={"/"}>Classys</NavLink></li>
-                                    <li><NavLink className={styles.Navlink} to={"/"}>Lutronic</NavLink></li>
-                                    <li><NavLink className={styles.Navlink} to={"/"}>Histolab</NavLink></li>
-                                    <li><NavLink className={styles.Navlink} to={"/"}>Skinwell</NavLink></li>
-                                    <li><NavLink className={styles.Navlink} to={"/"}>Bnv bio lab</NavLink></li>
-                                    <li><NavLink className={styles.Navlink} to={"/"}>Juvelook</NavLink></li>
+                                    <li>
+                                        <NavLink className={styles.Navlink} to={"/companies/bialob"}>BNV Biolab</NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink className={styles.Navlink} to={"/companies/lutronic"}>Lutronic</NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink className={styles.Navlink} to={"/companies/lasemd"}>Lasemd</NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink className={styles.Navlink} to={"/companies/histolab"}>Histolab</NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink className={styles.Navlink} to={"/companies/classys"}>Classys</NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink className={styles.Navlink} to={"/companies/ultraformer"}>Ultraformer</NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink className={styles.Navlink} to={"/companies/skinwell"}>Skinwell</NavLink>
+                                    </li>
                                 </ul>
 
                             </Col>
-                            <Col className={styles.navigation}  lg={4} md={12}>
+                            <Col className={styles.navigation} lg={4} md={12}>
                                 <ul>
                                     <li><p>{t("Footer.1")}</p></li>
-                                    <li><NavLink className={styles.Navlink} to={"/"}>{t("Footer.2")}</NavLink></li>
-                                    <li><NavLink className={styles.Navlink} to={"/"}>{t("Footer.3")}</NavLink></li>
-                                    <li><NavLink className={styles.Navlink} to={"/"}>{t("Footer.4")}</NavLink></li>
-                                    <li><NavLink className={styles.Navlink} to={"/"}>{t("Footer.5")}</NavLink></li>
-                                    <li><NavLink className={styles.Navlink} to={"/"}>{t("Footer.6")}</NavLink></li>
-                                    <li><NavLink className={styles.Navlink} to={"/"}>{t("Footer.7")}</NavLink></li>
+                                    <li><NavLink className={styles.Navlink} to={"/category"}>{t("Footer.2")}</NavLink></li>
+                                    <li><NavLink className={styles.Navlink} to={"/about"}>{t("Footer.3")}</NavLink></li>
+                                    <li><NavLink className={styles.Navlink} to={"/benefits"}>{t("Footer.4")}</NavLink></li>
+                                    <li><NavLink className={styles.Navlink} to={"/join"}>{t("Footer.5")}</NavLink></li>
+                                    <li><NavLink className={styles.Navlink} to={"/news"}>{t("Footer.6")}</NavLink></li>
+                                    <li><NavLink className={styles.Navlink} to={"/contact"}>{t("Footer.7")}</NavLink></li>
                                 </ul>
 
                             </Col>
                             <Col className={styles.network_contact} lg={4} md={12}>
                                 <p>{t("Footer.8")}</p>
-                                <span><i class='bx bx-stopwatch' ></i> 09:00 - 18:00, По-су</span>
+                                <span><i class='bx bx-stopwatch' ></i> 09:00 - 18:00, {t("Footer.12")}</span>
                                 <Reveal>
-                                    <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </h5>
+                                    <h5>{t("Footer.11")}</h5>
 
                                 </Reveal>
                                 <button style={{ cursor: "pointer" }} type="submit">{t("Footer.9")}</button>

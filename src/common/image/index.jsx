@@ -9,17 +9,22 @@ const ImageAnimation = ({ src, style, className }) => {
     return (
         <section>
             <motion.div
-                initial={false}
-                animate={
-                    isLoaded && isInView
-                        ? { WebkitMaskImage: visibleMask, maskImage: visibleMask }
-                        : { WebkitMaskImage: hiddenMask, maskImage: hiddenMask }
-                }
-                transition={{ duration: 0.7, delay: 0.7 }}
-                viewport={{ once: true }}
-                onViewportEnter={() => setIsInView(true)}
+            // initial={false}
+            // animate={
+            //     isLoaded && isInView
+            //         ? { WebkitMaskImage: visibleMask, maskImage: visibleMask }
+            //         : { WebkitMaskImage: hiddenMask, maskImage: hiddenMask }
+            // }
+            // transition={{ duration: 0.7, delay: 0.7 }}
+            // viewport={{ once: true }}
+            // onViewportEnter={() => setIsInView(true)}
             >
-                <img style={style} className={className} src={src} alt="" onLoad={() => setIsLoaded(true)} />
+                <img
+                    style={style}
+                    className={className}
+                    src={src} alt=""
+                // onLoad={() => setIsLoaded(true)}
+                />
             </motion.div>
         </section>
     );

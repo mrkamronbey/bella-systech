@@ -7,18 +7,22 @@ import PremiumProduct from './premium_product'
 import Procedura from './procedure_product'
 import ProductApplication from './product_application'
 import ProductContent from './product_content'
+import OurCustumer from './our-customer/index'
+import RequestConsultation from '../home/request-consultation/index'
 
 const ProductComponent = () => {
   return (
     <>
-      <ProductContent/>
-      <DescriptionProduct/>
-      <Parametr/>
-      <PremiumProduct/>
-      <ProductApplication/>
-      <Procedura/>
-      <BeforeAfter/>
-      <Buying/>
+      <ProductContent />
+      <DescriptionProduct />
+      <PremiumProduct />
+      <ProductApplication />
+      <Procedura />
+      <Parametr />
+      <BeforeAfter />
+      <Buying />
+      <OurCustumer />
+      <RequestConsultation />
     </>
   )
 }

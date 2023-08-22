@@ -13,17 +13,18 @@
     "1": "So'rov yuborish"
   },
   "HeroVideo": {
-    "0": "Faoliyat xulosasi",
+    "0": "Kompaniyamiz haqida",
     "1": "Bella-systech kompaniyasi kosmetologiya qurilmalariga kafolatli va kafolatdan keyingi xizmat ko'rsatish bo'yicha professional xizmatlarni taqdim etadi. Bella-systech vakolatli xizmat ko'rsatish markazi muhandislari Janubiy Koreyadagi ishlab chiqaruvchilarimiz korxonalarida muntazam ravishda malaka oshirishadi, Lutronic va Classys mutaxassislari kompaniyamizga doimiy ravishda ma'lumot va texnik yordam ko'rsatadilar. Mijozlarimiz o'z vaqtida yuqori sifatli xizmat ko'rsatishiga amin bo'lishlari mumkin."
   },
   "Card": {
     "0": "tafsilotlar",
     "1": "buyurtma",
-    "2": "Mahsulotlarimiz, jihozlarimiz"
+    "2": "Innovatsion qurilmalar",
+    "3": "Estetik parvarish va tiklanish"
   },
   "HomeThird": {
-    "0": "Faoliyat xulosasi",
-    "1": "Bella-systech kosmetologiya \n qurilmalariga \n kafolat va kafolatdan keyingi texnik xizmat ko'rsatish bo'yicha professional xizmatlar ko'rsatadi. Bella-systech vakolatli xizmat ko'rsatish markazi muhandislari \n Janubiy Koreyadagi ishlab chiqaruvchilarimiz korxonalarida muntazam ravishda malaka oshirishadi, Lutronic va Classys mutaxassislari kompaniyamizga doimiy \n ma'lumot va texnik yordam ko'rsatadilar. Bizning \n mijozlarimiz yuqori sifatli o'z vaqtida xizmat ko'rsatishiga ishonch hosil qilishlari mumkin."
+    "0": "Bella-Systech Uzbekistan",
+    "1": "Bella-Systech eng yuqori sifat va ishlash standartlariga javob beradigan keng turdagi lazer va go'zallik uskunalarini taklif etadi. Bizning assortimentimizda siz tibbiyot va kosmetologiyada faol qo'llaniladigan innovatsion protsedura bo'lgan PRP terapiyasi uchun naychalarni topasiz. Biz sizga lazer, kosmetologiya va qo‘shimcha uskunalar, shuningdek, professional kosmetika sohasida yetakchi – Bella Systech kompaniyasini tanishtirishdan mamnunmiz. Endi siz ilg‘or texnologiyalar va innovatsion mahsulotlarga aynan shu yerda, O‘zbekistonda ham kirishingiz mumkin"
   },
   "OurPartner": {
     "0": "Bizning hamkorlarimiz",
@@ -33,6 +34,36 @@
     "0": "Kompaniya yangiliklari",
     "1": "Biz bilan bir necha yil davomida o'z qadriyatlarini \n baham ko'rgan hamkorlarimiz",
     "2": "Автобус ва метрога Humo картаси орқали \n тўлов қилишда муаммо пайдо бўлди — \n бунинг сабаби нимада?"
+  },
+
+  "Form": {
+    "0": "Ariza qoldirish",
+    "1": "Ismingiz",
+    "2": "Telefon raqamingiz",
+    "3": "Elektron pochtangiz",
+    "4": "Yuborish",
+    "5": "Biz kosmetologiya va lazer texnologiyalari sohasida yuqori sifatli uskunalar va professional yechimlarni taqdim etishga ixtisoslashganmiz. Kompaniyamiz sifat va natijalarga yo'naltirilgan korxonalar bilan hamkorlikda muvaffaqiyatli tajribaga ega. \n Agar siz ishonchli kompaniya izlayotgan bo'lsangiz. Sizning biznesingiz uchun zamonaviy innovatsion yechimlar va qo'llab-quvvatlashni taqdim etishga tayyor bo'lgan hamkor, biz siz uchun hamkor bo'lishga tayyormiz. Bizning jamoamiz sizga optimal uskunalar va mahsulotlarni tanlashda, samarali jarayonlarni loyihalashda va kosmetologiya sohasida muvaffaqiyatga erishishda yordam beradi."
+  },
+  "Footer": {
+    "0": "Barcha kompaniyalar",
+    "1": "Foydali havolalar",
+    "2": "Katalog",
+    "3": "Biz haqimizda",
+    "4": "Kompaniya imtiyozlari",
+    "5": "Hamkorlik shartlari",
+    "6": "Yangiliklar",
+    "7": "Kontaktlar",
+    "8": "Biz haqimizda",
+    "9": "Bizga qo'ng'iroq qiling",
+    "10": "Kosmetologiya va tibbiy texnologiyalar olamidagi ishonchli hamkoringiz.",
+    "11": "Barcha tovarlar ro'yxatga olingan, xizmatlar litsenziyalangan",
+    "12": "Du - Juma"
+  },
+  "Category": {
+    "0": "Mahsulot katalogi",
+    "1": "Kategoriyalar",
+    "2": "Brend",
+    "3": "Filtr"
   },
   "RegisterSlider": {
     "0": "Voqealar tavsifi",
@@ -48,7 +79,7 @@
     "5": "Biz bilan bir necha yil davomida o'z qadriyatlarini \n baham ko'rgan hamkorlarimiz"
   },
   "Contact": {
-    "0": "Kontaktlar",
+    "0": "Bizning kontaktlarimiz",
     "1": "Bizning manzilimiz:",
     "2": "O'zbekiston, Toshkent shahri, Sirg'alinskiy tumani, Navro'z ko'chasi, 3-uy",
     "3": "Bizning telefon:",
@@ -60,16 +91,16 @@
   "AboutUs": {
     "0": "Biz haqimizda",
     "1": "Kompaniya haqida",
-    "2": "Bella systech",
+    "2": "Bella systech Uzbekistan",
     "3": "Bellasystech corp. - Lutronic, Classys, Histolab professional kosmetikalarining eksklyuziv distribyutori, shuningdek, qo'shimcha uskunalar yetkazib beruvchisi. 700 dan ortiq lazer va kosmetika asboblari allaqachon Amerikaning turli xususiy kosmetologiya va davlat klinikalariga yetkazib berilgan. , Yevropa, Koreya, Yaponiya, Rossiya va MDH davlatlari. Biz Histolab liposomal professional kosmetikasini targʻib qilish uchun dilerlar tarmogʻimizni doimiy ravishda kengaytirmoqdamiz.Rossiyadagi 200 dan ortiq kosmetologiya klinikalari va MDHdagi 50 dan ortiq klinikalar oʻz ishlarida Histolab ishlanmalaridan foydalanadilar. Bemorlarga uyda parvarishlash bo'yicha liniyalarni tavsiya etish. Bella -systex kompaniyasi Lutronic va Classys qurilmalarini O'zbekiston Respublikasining barcha hududlariga yetkazib beradi.",
-    "4": "samaradorlik",
-    "5": "Lutronic tizimlari chuqur ilmiy va tibbiy asosga ega. Ularning samaradorligi va xavfsizligini sinab ko'rish uchun xalqaro klinik tadqiqotlar o'tkazish uchun kompaniya tomonidan katta mablag' ajratiladi. Lutronic tizimlari haqida allaqachon 350 dan ortiq ilmiy maqolalar yozilgan ",
-    "6": "ishonchlilik",
-    "7": "Lutronic uskunasi sifati va ishonchliligi bilan ajralib turadi. U uzoqroq xizmat qiladi va texnik xususiyatlari bo'yicha raqobatchilardan ustun turadi. Xizmat ko'rsatish talab qilinganda bizning mutaxassislarimiz uskunani tezda ish holatiga keltiradi",
-    "8": "INTUITIV INTERFACE",
-    "9": "Lutronik uskunasidan foydalanish intuitiv interfeysga asoslangan bo'lib, shifokorlarga protsedura texnologiyasiga emas, balki bemorga e'tibor qaratishga imkon beradi",
-    "10": "samaradorlik",
-    "11": "Lutronic tizimlari chuqur ilmiy va tibbiy asosga ega. Ularning samaradorligi va xavfsizligini sinab ko'rish uchun xalqaro klinik tadqiqotlar o'tkazish uchun kompaniya tomonidan katta mablag' ajratiladi. Lutronic tizimlari haqida allaqachon 350 dan ortiq ilmiy maqolalar yozilgan ",
+    "4": "Innovatsiyalar va go'zallikning o'zaro bog'liqligi:",
+    "5": "Bella-Systech Corp. - bu ilg'or texnologiyalar va ajoyib go'zallik dunyosida qo'llanma. Biz noyob yetkazib beruvchimiz, innovatsion Lutronic va Classys apparatlarini, shuningdek, ilhomlantiruvchi Histolab kosmetikasini o'z missiyamiz markaziga qo'yamiz. Bizning mahsulotlarimiz nafaqat texnologiya, balki uzoq umr ko'rish va ishonch siridir.",
+    "6": "Bitta Kompaniya, Butun Dunyo:",
+    "7": "Dunyo bo'ylab estetik uyg'unlikni yaratib, bizning 700 dan ortiq qurilmalarimiz Rossiya, Evropa, Amerika va undan tashqaridagi klinikalar va salonlarning orzulari va loyihalarida mujassamlashgan. Biz go'zallikning global yaratuvchilarimiz, hatto chegaralar yo'qdek tuyulsa ham, ilg'or texnologiyalar va innovatsiyalarga kirishni ta'minlaymiz.",
+    "8": "Yurak Bilan Gapiradigan Kosmetika:",
+    "9": "Histolab dunyosida professional kosmetika sizning teringiz tomonidan aytilgan jonli hikoyaga aylanadi. Ushbu mahsulot qatori nafaqat ingredientlarning aralashmasi, balki go'zallikni parvarish qilish simfoniyasidir. Klinikadagi har bir murojaat va uydagi har bir marosim ushbu hikoyaning bir qismiga aylanadi.",
+    "10": "Hamkorlik va o'sish kuchi:",
+    "11": "Bella-Systech Corp. - bu nafaqat kompaniya, balki innovatorlar va sheriklar oilasi. Biz go'zallik estafetasini o'tkazish uchun klinikalar va salonlarni birlashtirib, tarmoq qurmoqdamiz. Bizning qurilmalarimiz nafaqat ko'rinadigan natijalarni beradi, balki cheksiz imkoniyatlarga eshiklarni ochadi.",
     "12": "ishonchlilik",
     "13": "Lutronic uskunasi sifati va ishonchliligi bilan ajralib turadi. U uzoqroq xizmat qiladi va texnik xususiyatlari bo'yicha raqobatchilardan ustun turadi. Xizmat ko'rsatish talab qilinganda bizning mutaxassislarimiz jihozlarni tezda ish holatiga keltiradi",
     "14": "INTUITIV INTERFACE",
@@ -85,7 +116,7 @@
     "3": "sheriklar",
     "4": "xodimlar",
     "5": "filiallar",
-    "6": "Kompaniya imtiyozlari",
+    "6": "Bizning afzalliklarimiz",
     "7": "Bella-systex kompaniyasi kosmetologiya qurilmalariga kafolatli va kafolatdan keyingi xizmat ko'rsatish bo'yicha professional xizmatlarni taqdim etadi. Bella-systech vakolatli xizmat ko'rsatish markazi muhandislari Janubiy Koreyadagi ishlab chiqaruvchilarimiz korxonalarida, Lutronic va Classys mutaxassislari esa muntazam ravishda malaka oshirib boradilar. doimiy ravishda kompaniyamizning axborot va texnik yordamini amalga oshiradi. Mijozlarimiz yuqori sifatli va o'z vaqtida xizmat ko'rsatishiga amin bo'lishlari mumkin. Bella-systech kosmetologiya qurilmalariga ham kafolatli, ham kafolatdan keyingi xizmat ko'rsatish bo'yicha professional xizmatlarni taqdim etadi. Bella-systech vakolatli servis markazi muhandislari muntazam ravishda. Janubiy Koreyadagi ishlab chiqaruvchilarimiz korxonalarida malaka oshirishadi va Lutronic va Classys mutaxassislari kompaniyamizga doimiy ravishda axborot va texnik yordam ko'rsatadilar. Mijozlarimiz yuqori sifatli va o'z vaqtida xizmat ko'rsatishiga ishonch hosil qilishlari mumkin.",
     "8": "Uskuna tanlashda yordam ma'lumoti",
     "9": "Bella-systech kompaniyasi kosmetologiya qurilmalariga kafolat va kafolatdan keyingi xizmat ko'rsatish bo'yicha professional xizmatlarni taqdim etadi. Bella-systech vakolatli xizmat ko'rsatish markazi muhandislari Janubiy Koreyadagi ishlab chiqaruvchilarimiz korxonalarida muntazam ravishda malaka oshirib boradilar, Lutronic va Classys mutaxassislari esa doimiy ravishda texnik xizmat ko'rsatishni amalga oshiradilar. Kompaniyamizning ma'lumot va texnik yordami. Mijozlarimiz sifatli va o'z vaqtida xizmat ko'rsatishiga amin bo'lishlari mumkin. Bella-systech kosmetologiya qurilmalariga kafolatli va kafolatdan keyingi xizmat ko'rsatish bo'yicha professional xizmatlarni taqdim etadi. Bella-systech vakolatli servis markazi muhandislari muntazam ravishda Janubiy Koreyadagi ishlab chiqaruvchilarimizning korxonalari va Lutronic va Classys mutaxassislari kompaniyamizga doimiy ravishda axborot va texnik yordam ko'rsatadilar. Mijozlarimiz yuqori sifatli va o'z vaqtida xizmat ko'rsatishiga ishonch hosil qilishlari mumkin.",
@@ -111,5 +142,11 @@
     "13": "O'qishni tugatganlik haqidagi guvohnoma",
     "14": "Ta'lim yakunida sizga malakangiz va qurilmalarda protseduralarni bajarish huquqini tasdiqlovchi sertifikat beriladi. Bu yangi imkoniyatlar va mijozlar ishonchiga eshik ochadi.",
     "15": "Biz, Bella-systex Uzbekistan, mijozlarimizga estetik tibbiyotda yuqori natijalarga erishish va o‘z sohalarida yetakchi bo‘lishga yordam berish uchun bunday imtiyozlarni taqdim etayotganimizdan faxrlanamiz."
+  },
+  "BeforeAfter": {
+    "0": "Oldin",
+    "1": "Keyin",
+    "2": "Bizning hamkorlarimiz",
+    "3": "Ushbu mahsulotlarni yaqin atrofdagi klinikalardan olishingiz mumkin"
   }
 }
