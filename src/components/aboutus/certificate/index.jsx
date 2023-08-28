@@ -6,9 +6,17 @@ import { Image } from 'antd';
 import CertificateImg from '../../../assets/about/certificate.png';
 import './style.css'
 import Slider from "react-slick";
+import { SertificatGet } from '../../../redux/sertifikat/index'
+import { useDispatch, useSelector } from 'react-redux';
+import { useEffect } from 'react';
+
 
 const Certificate = () => {
-    const arr = [1, 2, 3, 4, 5, 6, 7, 8,]
+    const dispatch = useDispatch()
+    useEffect(() => {
+        dispatch(SertificatGet())
+    }, [])
+    const sertificatGetState = useSelector((state) => state.sertificat.SertificatGet?.data)
     const settings = {
         dots: false,
         infinite: true,
@@ -62,21 +70,44 @@ const Certificate = () => {
             <div className={styles.certificate_section}>
                 <WrapperContainer>
                     <div className='certificate_wrap'>
-                        <Slider {...settings}>
-                            {
-                                arr.map(() => (
-                                    <div className='certificate_card_box'>
-                                        <Image
-                                            style={{
-                                                width: "100%",
-                                                aspectRatio: "18 / 24",
-                                            }}
-                                            src={CertificateImg}
-                                        />
-                                    </div>
-                                ))
-                            }
-                        </Slider>
+                        {
+                            sertificatGetState.length >= 4 ? (
+                                <Slider {...settings}>
+                                    {
+                                        sertificatGetState.map((elem) => (
+                                            <div key={elem.id} className='certificate_card_box'>
+                                                <Image
+                                                    style={{
+                                                        width: "100%",
+                                                        aspectRatio: "3 / 4",
+                                                    }}
+                                                    src={elem.image}
+                                                />
+                                            </div>
+                                        ))
+                                    }
+                                </Slider>
+                            ) : (
+                                <Row className='certificate_card_wrapps'>
+                                    {
+                                        sertificatGetState.slice(0, 4).map((elem) => (
+                                            <Col lg={3} md={4} sm={12} xs={12} key={elem.id} >
+                                                <Image
+                                                    style={{
+                                                        width: "100%",
+                                                        aspectRatio: "3 / 4",
+                                                    }}
+                                                    src={elem.image}
+                                                />
+                                            </Col>
+                                        ))
+                                    }
+                                </Row>
+                            )
+
+                        }
+
+
                     </div>
                 </WrapperContainer>
             </div>

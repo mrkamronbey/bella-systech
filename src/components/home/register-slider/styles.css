@@ -3,6 +3,10 @@
   height: 100%;
 }
 
+.ant-modal-title{
+  font-size: 30px !important;
+}
+
 .register_slider_wrapp .swiper-slide {
   text-align: center;
   font-size: 18px;

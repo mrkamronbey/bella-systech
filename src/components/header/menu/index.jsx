@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { Drawer, Space, Dropdown } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
 import { NavLink } from 'react-router-dom';
@@ -7,40 +7,54 @@ import styles from './style.module.css'
 import { useTranslation } from 'react-i18next';
 import LanguageHeader from '../header-language';
 import HeaderLogo from '../../../assets/header/bella-systech-hdr-logo.png'
+import { useDispatch, useSelector } from 'react-redux';
+import { CompanyGet } from '../../../redux/company';
+import ProductDropdown from '../header-bottom/product-dropdown';
 
 const Menu = ({ onClose, open }) => {
     const { t } = useTranslation()
-    const items = [
-        {
-            label: <NavLink to="/companies/bialob">BNV Biolab</NavLink>,
-            key: '0',
-        },
-        {
-            label: <NavLink to="/companies/lutronic">Lutronic</NavLink>,
-            key: '1',
-        },
-        {
-            label: <NavLink to="/companies/lasemd">LaseMD</NavLink>,
-            key: '3',
-        },
-        {
-            label: <NavLink to="/companies/histolab">Histolab</NavLink>,
-            key: '4',
-        },
-        {
-            label: <NavLink to="/companies/classys">Classys</NavLink>,
-            key: '5',
-        },
-        {
-            label: <NavLink to="/companies/ultraformer">Ultraformer</NavLink>,
-            key: '6',
-        },
-        {
-            label: <NavLink to="/companies/skinwell">Skinwell</NavLink>,
-            key: '7',
-        },
+    const dispatch = useDispatch()
+    const companyGetState = useSelector((state) => state.company.CompanyGet?.data)
+    useEffect(() => {
+        dispatch(CompanyGet())
+    }, [])
 
+    const items = [
+        // {
+        //     label: <NavLink to="/companies/bialob">BNV Biolab</NavLink>,
+        //     key: '0',
+        // },
+        // {
+        //     label: <NavLink to="/companies/lutronic">Lutronic</NavLink>,
+        //     key: '1',
+        // },
+        // {
+        //     label: <NavLink to="/companies/lasemd">LaseMD</NavLink>,
+        //     key: '3',
+        // },
+        // {
+        //     label: <NavLink to="/companies/histolab">Histolab</NavLink>,
+        //     key: '4',
+        // },
+        // {
+        //     label: <NavLink to="/companies/classys">Classys</NavLink>,
+        //     key: '5',
+        // },
+        // {
+        //     label: <NavLink to="/companies/ultraformer">Ultraformer</NavLink>,
+        //     key: '6',
+        // },
+        // {
+        //     label: <NavLink to="/companies/skinwell">Skinwell</NavLink>,
+        //     key: '7',
+        // },
     ];
+    companyGetState.map(elem => (
+        items.push({
+            key: elem.id,
+            label: <NavLink to={`/companies/${elem.name}`}>{elem.name}</NavLink>,
+        })
+    ))
     return (
         <>
             <Drawer
@@ -84,7 +98,7 @@ const Menu = ({ onClose, open }) => {
                     </li>
                     <div className={styles.menu_hr}></div>
                     <li>
-                        <NavLink onClick={onClose} to='/category'>{t("Header.1")}</NavLink>
+                        <ProductDropdown fonstSizes='16px' />
                     </li>
                     <div className={styles.menu_hr}></div>
                     <li>

@@ -1,8 +1,8 @@
 import { lazy } from "react";
 
-const Home = lazy(() => import("./../layouts/Home/index"));
-const About = lazy(() => import("./../layouts/About/index"));
-const Contact = lazy(() => import("./../layouts/Contact/index"));
+const Home = lazy(() => import("../layouts/home/index"));
+const About = lazy(() => import("./../layouts/about/index"));
+const Contact = lazy(() => import("./../layouts/contact/index"));
 const Category = lazy(() => import("./../layouts/category/index"));
 const Product = lazy(() => import("./../layouts/product/index"));
 const Product2 = lazy(() => import("./../layouts/product2/index"));
@@ -56,7 +56,7 @@ export const RouterData = [
   },
   {
     id: 6,
-    path: "/newsmore",
+    path: "/newsmore/:id",
     component: <NewsMore />,
   },
   {
@@ -71,37 +71,37 @@ export const RouterData = [
   },
   {
     id: 9,
-    path: "/companies/bialob",
+    path: "/companies/:name",
     component: <Bialog />,
   },
   {
     id: 10,
-    path: "/companies/lutronic",
+    path: "/companies/:name",
     component: <LutronicCompaines />,
   },
   {
     id: 11,
-    path: "/companies/lasemd",
+    path: "/companies/:name",
     component: <Lasemd />,
   },
   {
     id: 12,
-    path: "/companies/histolab",
+    path: "/companies/:name",
     component: <Histolab />,
   },
   {
     id: 13,
-    path: "/companies/ultraformer",
+    path: "/companies/:name",
     component: <UltraFormer />,
   },
   {
     id: 14,
-    path: "/companies/skinwell",
+    path: "/companies/:name",
     component: <Skinwell />,
   },
   {
     id: 15,
-    path: "/companies/classys",
+    path: "/companies/:name",
     component: <Classys />,
   },
   {

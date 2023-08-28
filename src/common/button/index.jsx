@@ -1,10 +1,11 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 
-const CommonButton = ({ children, style, type, onClick, className }) => {
+const CommonButton = ({ children, style, type, onClick, className, id }) => {
     return (
         <>
             <motion.button
+                id={id}
                 whileHover={{ scale: 1.1 }}
                 transition={{
                     type: "spring",

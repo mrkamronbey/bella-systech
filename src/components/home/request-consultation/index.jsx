@@ -1,27 +1,88 @@
-import React, { useRef } from "react";
+import React, { useState } from "react";
 import styles from "./style.module.css";
 import { Col, Row } from "react-grid-system";
 import { useTranslation } from "react-i18next";
 import "./style.css";
 import Reveal from "../../../utils/reveal/reveal";
-// import { useDispatch } from "react-redux";
-// import { PostContact } from "../../redux/contact";
+import { PostContact, GetContact } from "../../../redux/contact/index";
+import { Button, message } from 'antd';
+import { useDispatch, useSelector } from "react-redux";
+import { useEffect } from "react";
+
 
 const RequestConsultation = () => {
   const { t } = useTranslation();
-  const name = useRef();
-  const phone_number = useRef();
-  const email = useRef();
-  // const dispatch = useDispatch();
+  const [names, setNames] = useState(null);
+  const [phone, setPhone] = useState(null);
+  const [mail, setMail] = useState(null);
+  const [disableds, setDisableds] = useState(true);
+
+  const [messageApi, contextHolder] = message.useMessage();
+  const key = 'updatable';
+  const contactPost = useSelector((state) => state.contact);
+  const contactGet = useSelector((state) => state.contact.GetContact?.Data);
+  console.log(contactGet)
+  const openMessage = () => {
+    messageApi.open({
+      key,
+      type: 'loading',
+      content: 'Loading...',
+      style: {
+        padding: "10px 20px",
+        fontSize: "16px",
+        fontWeight: "500"
+      },
+    });
+    contactPost.postContact.Success == true ?
+      setTimeout(() => {
+        messageApi.open({
+          key,
+          type: 'success',
+          content: t("Contact.7"),
+          duration: 2,
+          style: {
+            padding: "10px 20px",
+            fontSize: "16px",
+            fontWeight: "500"
+          }
+        });
+      }, 2500) : setTimeout(() => {
+        messageApi.open({
+          key,
+          type: 'success',
+          content: t("Contact.7"),
+          duration: 2,
+          style: {
+            padding: "10px 20px",
+            fontSize: "16px",
+            fontWeight: "500"
+          }
+        });
+      }, 2500)
+  }
+  const dispatch = useDispatch()
   const HandleSubmit = async (e) => {
     e.preventDefault();
-    // await dispatch(PostContact({ 
-    //     name: name.current.value,
-    //     phone_number : phone_number.current.value,
-    //     email : email.current.value
-    //  }));
-    window.location.reload()
+    await dispatch(PostContact({
+      name: names,
+      phone_number: phone,
+      email: mail
+    }));
+    e.target[0].value = null
+    e.target[1].value = null
+    e.target[2].value = null
+    openMessage()
   };
+
+  console.log({
+    name: names,
+    phone_number: phone,
+    email: mail
+  })
+
+  useEffect(() => {
+    !names || !phone || !mail ? setDisableds(true) : setDisableds(false);
+  }, [mail]);
   return (
     <>
       <div className={styles.request_consultation_section} id="form">
@@ -42,7 +103,7 @@ const RequestConsultation = () => {
                     <input
                       type="text"
                       placeholder={t("Form.1")}
-                      ref={name}
+                      onChange={(e) => setNames(e.currentTarget.value)}
                       required
                     />
                     <i class="bx bxs-check-circle"></i>
@@ -52,7 +113,7 @@ const RequestConsultation = () => {
                     <input
                       type="tel"
                       placeholder={t("Form.2")}
-                      ref={phone_number}
+                      onChange={(e) => setPhone(e.currentTarget.value)}
                       required
                     />
                     <i class="bx bxs-check-circle"></i>
@@ -62,13 +123,16 @@ const RequestConsultation = () => {
                     <input
                       type="tel"
                       placeholder={t("Form.3")}
-                      ref={email}
+                      onChange={(e) => setMail(e.currentTarget.value)}
                       required
                     />
                     <i class="bx bxs-check-circle"></i>
                     {/* <i class='bx bxs-x-circle'></i> */}
                   </div>
-                  <button style={{ cursor: "pointer" }} type="submit">{t("Form.4")}</button>
+                  {contextHolder}
+                  <button disabled={disableds}
+                    // onClick={openMessage} 
+                    style={{ cursor: "pointer" }} type="submit">{t("Form.4")}</button>
                 </form>
               </Reveal>
             </Col>
