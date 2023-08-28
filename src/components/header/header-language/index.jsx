@@ -14,6 +14,7 @@ function LanguageHeader({ HandleClick }) {
     // window.location.reload();
     console.log(`selected ${value}`);
     window.localStorage.setItem('label', label.label)
+    window.location.reload()
   };
   function LanguValue() {
     return window.localStorage.getItem("i18nextLng");

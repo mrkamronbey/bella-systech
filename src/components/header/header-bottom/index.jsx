@@ -54,6 +54,16 @@ const HeaderBottom = () => {
     },
 
   ];
+  const items2 = [
+    {
+      label: <NavLink to="/category">Апарат</NavLink>,
+      key: '8',
+    },
+    {
+      label: <NavLink to="/category-pereparat">Препараты</NavLink>,
+      key: '9',
+    }
+  ];
   return (
     <>
       <div className='header_btm_wrapp'>
@@ -78,7 +88,20 @@ const HeaderBottom = () => {
           <Col className="header_btm_col" lg={8}>
             <ul className='header_btm_col_list'>
               <li>
-                <NavLink to='/category'>{t("Header.1")}</NavLink>
+              <Dropdown
+              menu={{
+                items2,
+              }}
+              trigger={['click']}
+            >
+              <a onClick={(e) => e.preventDefault()}>
+                <Space>
+                  <div className="header_btm_drop">
+                    <span>{t("Header.1")}</span>
+                  </div>
+                </Space>
+              </a>
+            </Dropdown>
               </li>
               <li>
                 <NavLink to='/about'>{t("Header.2")}</NavLink>

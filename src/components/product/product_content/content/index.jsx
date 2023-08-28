@@ -1,24 +1,24 @@
 import React from "react";
 import Reveal from "../../../../utils/reveal/reveal";
 import styles from "./style.module.css";
-const Content = () => {
+const Content = ({dataproductfilter}) => {
+  function LanguValue() {
+    return window.localStorage.getItem("i18nextLng");
+  }
+
   return (
-    <div className={styles.Wrapper}>
+    dataproductfilter.map((elem , index) => <>
+     <div className={styles.Wrapper}>
       <Reveal>
-        <h3>Наименование товара</h3>
+        <h3>{LanguValue() == 'uz' ? elem.name_uz: LanguValue() == 'ru' ? elem.name_ru:LanguValue() == 'en' ? elem.name_en:null}</h3>
       </Reveal>
       <Reveal>
-        <p>
-          • Ультрасовременная запатентованная насадка,обновленный мотор и иглы,
-          предназначенные длябыстрого, аккуратного и точного введения в кожу <br />
-          • Повышенный комфорт в каждом импульсе
-          <br /> • Тысячи клинических тестов
-          обеспечиваютоптимизированные протоколы для каждоготипа кожи и возраста
-          • Единственная система для измеренияпоставляемой энергии
+        <p style={{whiteSpace : "pre-wrap"}}>
+        {LanguValue() == 'uz' ? elem.description_uz: LanguValue() == 'ru' ? elem.description_ru:LanguValue() == 'en' ? elem.description_en:null}
         </p>
       </Reveal>
       <div className={styles.buttons}>
-        <a href="">
+        <a href={elem.pdf} target="_blank">
           <i class="bx bxs-file-doc"></i>Подробная информация
         </a>
 
@@ -26,6 +26,7 @@ const Content = () => {
 
       </div>
     </div>
+    </>)
   );
 };
 

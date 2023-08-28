@@ -7,6 +7,7 @@ const Category = lazy(() => import("./../layouts/category/index"));
 const Product = lazy(() => import("./../layouts/product/index"));
 const Product2 = lazy(() => import("./../layouts/product2/index"));
 const Bialog = lazy(() => import("./../layouts/companies/bialob/index"));
+const CategoryPereparat = lazy(() => import("./../layouts/category/index"))
 const LutronicCompaines = lazy(() =>
   import("./../layouts/companies/lutronic/index")
 );
@@ -44,6 +45,11 @@ export const RouterData = [
     component: <Category />,
   },
   {
+    id: 4,
+    path: "/category-pereparat",
+    component: <CategoryPereparat />,
+  },
+  {
     id: 5,
     path: "/news",
     component: <News />,
@@ -55,7 +61,7 @@ export const RouterData = [
   },
   {
     id: 7,
-    path: "/product",
+    path: "/product/:id",
     component: <Product />,
   },
   {
