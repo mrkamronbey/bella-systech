@@ -2,17 +2,23 @@ import React from 'react'
 import CommonCard from '../../../common/card'
 import { Row, Col } from "react-grid-system"
 import Img from "./../../../assets/card/cardimg.png"
-const CategoryProduct = () => {
-  const data = [1, 2, 3, 4, 5]
+import { NavLink } from 'react-router-dom'
+const CategoryProduct = ({dataproduct}) => {
+  function LanguValue() {
+    return window.localStorage.getItem("i18nextLng");
+  }
+
   return (
     <Row style={{ marginTop: "10px" }}>
-      {data.map(elem =>
-        <Col lg={4} md={12} style={{ marginBottom: "20px" }}>
-          <CommonCard src={Img}
+      {dataproduct.map((elem , index) =>
+        <Col key={index} lg={4} md={12} style={{ marginBottom: "20px" }}>
+            <NavLink style={{textDecoration:"none"}} to={`/product/${elem.id}`}>
+            <CommonCard src={elem.image1}
             isTitle={true}
-            card_title={"Краткая информация"}
-            card_description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            card_title={LanguValue() == 'uz'? elem.name_uz: LanguValue() == 'en'? elem.name_en: LanguValue() == 'ru'? elem.name_ru: null }
+            card_description={LanguValue() == 'uz'? elem.description_uz.slice(0 , 50): LanguValue() == 'en'? elem.description_en.slice(0 , 50): LanguValue() == 'ru'? elem.description_ru.slice(0 , 50): null }
           />
+            </NavLink>
         </Col>
       )}
     </Row>

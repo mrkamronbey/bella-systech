@@ -5,18 +5,19 @@ import "swiper/css";
 // import "swiper/css/navigation";
 import { useState } from "react";
 
-const slides = [
-  "https://picsum.photos/1920/1080",
-  "https://picsum.photos/1920/1081",
-  "https://picsum.photos/1920/1082",
-  "https://picsum.photos/1920/1083",
-  "https://picsum.photos/1920/1084"
-];
 
- function ProductSlider() {
+ function ProductSlider({dataproductfilter}) {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  
+const slides = [
+  dataproductfilter.map(elem => elem.image1)[0],
+  dataproductfilter.map(elem => elem.image2)[0],
+  dataproductfilter.map(elem => elem.image3)[0],
+];
+console.log();
   return (
-    <div className="App">
+    dataproductfilter.map((elem , index) => <>
+              <div className="App">
       <section className="slider">
         <div className="slider__flex">
           <div className="slider__col">
@@ -91,7 +92,9 @@ const slides = [
           </div>
         </div>
       </section>
-    </div>
+    </div>  
+      </>)
+
   );
 }
 export default ProductSlider
