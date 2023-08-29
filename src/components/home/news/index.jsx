@@ -15,7 +15,6 @@ const News = () => {
   const { t } = useTranslation();
   const dispatch = useDispatch()
   const newsGetState = useSelector((state) => state.news.newsGet?.data)
-  console.log(newsGetState)
   useEffect(() => {
     dispatch(NewsGet())
   }, [])
@@ -93,6 +92,7 @@ const News = () => {
                     <div className="slider_card_box">
                       <NavLink className={styles.news_link} to={`/newsmore/${elem.id}`}>
                         <CommonCard
+                          width="95%"
                           src={elem.image}
                           card_description={LanguValue() == 'uz' ? `${elem.description_uz.slice(0, 50)}...` : LanguValue() == 'en' ? `${elem.description_en.slice(0, 50)}...` : LanguValue() == 'ru' ? `${elem.description_ru.slice(0, 50)}...` : null}
                           timeText={DateFormat(elem.time_date)}
@@ -116,6 +116,7 @@ const News = () => {
                       <Col lg={4} md={6} sm={12} xs={12}>
                         <NavLink className={styles.news_link} to={`/newsmore/${elem.id}`}>
                           <CommonCard
+                            width="95%"
                             src={elem.image}
                             card_description={LanguValue() == 'uz' ? `${elem.description_uz.slice(0, 50)}...` : LanguValue() == 'en' ? `${elem.description_en.slice(0, 50)}...` : LanguValue() == 'ru' ? `${elem.description_ru.slice(0, 50)}...` : null}
                             timeText={DateFormat(elem.time_date)}

@@ -9,7 +9,6 @@
   -o-border-radius: 20px;
   cursor: pointer;
   overflow: hidden;
-  width: 95%;
   margin: 0 auto;
 }
 .card_img {
@@ -25,7 +24,7 @@
 
 .card_img > section > div > img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  /* aspect-ratio: 3 / 4; */
 }
 .card_content {
   padding: 20px;
@@ -57,7 +56,7 @@
 }
 
 .card_btn > button {
-  width: 48%;
+  width: auto;
   border: none;
   background: transparent;
   outline: none;
@@ -117,7 +116,7 @@
     -moz-border-radius: 0;
     -ms-border-radius: 0;
     -o-border-radius: 0;
-    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.10); 
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
     /* background: #f8f8f8; */
     width: 95%;
     margin: 0 auto;

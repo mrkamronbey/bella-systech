@@ -26,6 +26,10 @@
   display: none !important;
 }
 
+.custumer_modal_col > .custumer_modal_btn{
+  padding: 30px;
+}
+
 .custumer_modal_btn {
   width: 100%;
   margin: 10px 0;
