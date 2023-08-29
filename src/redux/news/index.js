@@ -32,7 +32,7 @@ export const UploadImage = createAsyncThunk("news/upload", async (e) => {
   formData.append("upload_preset", "v0khd47o");
   try {
     return await axios
-      .post("https://api.cloudinary.com/v1_1/dsdkp3672/upload", formData)
+      .post("https://api.cloudinary.com/v1_1/dsdkp3672/upload/q_60", formData)
       .then((response) => response?.data.secure_url);
   } catch (error) {
     return error;
