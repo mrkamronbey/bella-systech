@@ -20,13 +20,21 @@ import './styles.css';
 
 // import required modules
 import { Pagination, Navigation } from 'swiper/modules';
-
-
-
+import { PartnersGet } from '../../../redux/partners';
+import { useDispatch, useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import { Col, Row } from 'react-grid-system';
 
 const OurCustumer = () => {
     const { t } = useTranslation()
     const [ids, setIds] = useState()
+    const dispatch = useDispatch()
+    useEffect(() => {
+        dispatch(PartnersGet())
+    }, [])
+    const partnerGetState = useSelector((state) => state.partners.PartnersGet?.data)
+    const filterPartners = partnerGetState.filter(item => item.id == ids)
+    console.log(filterPartners, 'partners about')
     const [isModalOpen, setIsModalOpen] = useState(false);
     const showModal = (e) => {
         setIsModalOpen(true);
@@ -76,84 +84,109 @@ const OurCustumer = () => {
             }
         ]
     };
-    const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+    function LanguValue() {
+        return window.localStorage.getItem("i18nextLng");
+    }
     return (
         <>
             <div className={styles.custumer_section}>
                 <WrapperContainer>
                     <div className={styles.custumer_content}>
                         <Reveal>
-                        <h4 className={styles.custumer_title}>{t("AboutUs.18")}</h4>
+                            <h4 className={styles.custumer_title}>{t("AboutUs.18")}</h4>
                         </Reveal>
                         <Reveal>
-                        <p className={styles.custumer_text}>{t("AboutUs.19")}</p>
+                            <p className={styles.custumer_text}>{t("AboutUs.19")}</p>
                         </Reveal>
                     </div>
                     <div className="custumer_slid_wrapp">
                         <ModalCommon
-                            title={`Modal name ${ids}`}
+                            title={filterPartners.map(elem =>
+                                LanguValue() == 'uz' ? elem.name_uz : LanguValue() == 'en' ? elem.name_en : LanguValue() == 'ru' ? elem.name_ru : null
+                            )}
                             width={700}
                             isModalOpen={isModalOpen}
                             handleOk={handleOk}
                             handleCancel={handleCancel}
                         >
-                            <div className={styles.modal_head_wrapp}>
-                                {/* <Reveal>
-                                    <h4></h4>
-                                </Reveal> */}
-                                <Reveal>
-                                    <p className={styles.modal_p}>
-                                        Мы предоставили несколько наших услуг этой компании. Если возможно, лучше
-                                        иметь более двух строк текста. Об этом идет текст в этом разделе...
-                                    </p>
-                                </Reveal>
-                            </div>
-                            <div className={styles.modal_contentss_wrapp}>
-                                <div className='modal_slid_wrapp'>
-                                    <Swiper
-                                        pagination={{
-                                            type: 'progressbar',
-                                        }}
-                                        navigation={true}
-                                        modules={[Pagination, Navigation]}
-                                        className="mySwiper"
-                                    >
-                                        {
-                                            arr.map(() => (
-                                                <SwiperSlide>
-                                                    <img src={SliderImg} alt="" />
-                                                </SwiperSlide>
-                                            ))
-                                        }
-
-                                    </Swiper>
-                                </div>
-                                <div className={styles.modal_p_box}>
-                                    <Reveal>
-                                        <p className={styles.modal_p}>
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                                        </p>
-                                    </Reveal>
-                                </div>
-                                <div className={styles.modal_iframe}>
-                                    <iframe width="100%" height="350" src="https://www.youtube.com/embed/FmG3yqLt4bQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </ModalCommon>
-                        <Slider {...settings}>
                             {
-                                arr.map((_, index) => (
+                                filterPartners.map(elem => (
                                     <>
-                                        <div className="custumer_btn_wrapp">
-                                            <button id={index} onClick={showModal} className="custumer_modal_btn">
-                                                <img src={CustumerImg} alt="" />
-                                            </button>
+                                        <div className={styles.modal_head_wrapp}>
+                                            <Reveal>
+                                                <p className={styles.modal_p}>
+                                                    {
+                                                        LanguValue() == 'uz' ? elem.description_uz : LanguValue() == 'en' ? elem.description_en : LanguValue() == 'ru' ? elem.description_ru : null
+                                                    }
+                                                </p>
+                                            </Reveal>
+                                        </div>
+                                        <div className={styles.modal_contentss_wrapp}>
+                                            <div className='modal_slid_wrapp'>
+                                                <Swiper
+                                                    pagination={{
+                                                        type: 'progressbar',
+                                                    }}
+                                                    navigation={true}
+                                                    modules={[Pagination, Navigation]}
+                                                    className="mySwiper"
+                                                >
+
+                                                    <SwiperSlide>
+                                                        <img src={elem.image1} alt="" />
+                                                        <img src={elem.image2} alt="" />
+                                                        <img src={elem.image3} alt="" />
+                                                    </SwiperSlide>
+
+                                                </Swiper>
+                                            </div>
+                                            <div className={styles.modal_p_box}>
+                                                <Reveal>
+                                                    <p className={styles.modal_p}>
+                                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                                    </p>
+                                                </Reveal>
+                                            </div>
+                                            <div className={styles.modal_iframe}>
+                                                <iframe width="100%" height="350" src="https://www.youtube.com/embed/FmG3yqLt4bQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                            </div>
                                         </div>
                                     </>
                                 ))
                             }
 
-                        </Slider>
+                        </ModalCommon>
+                        {
+                            partnerGetState.length >= 8 ? (
+                                <Slider {...settings}>
+                                    {
+                                        partnerGetState.map((elem) => (
+                                            <>
+                                                <div className="custumer_btn_wrapp">
+                                                    <button id={elem.id} onClick={showModal} className="custumer_modal_btn">
+                                                        <img src={elem.logo} alt="" />
+                                                    </button>
+                                                </div>
+                                            </>
+                                        ))
+                                    }
+
+                                </Slider>
+                            ) : (
+                                <Row style={{ margin: "0" }}>
+                                    {
+                                        partnerGetState.slice(0, 8).map(elem => (
+                                            <Col lg={3} className='custumer_modal_col'>
+                                                <button id={elem.id} onClick={showModal} className="custumer_modal_btn">
+                                                    <img style={{ aspectRatio: "16 / 9", width: "100%", height: "100px" }} src={elem.logo} alt="" />
+                                                </button>
+                                            </Col>
+                                        ))
+                                    }
+                                    <Col lg={3}></Col>
+                                </Row>
+                            )
+                        }
                     </div>
                 </WrapperContainer>
             </div>

@@ -3,7 +3,7 @@ import HomeHeroSlider from "./hero-slider";
 import HeroVideo from "./hero-video";
 import HomeOurProduct from "./home-our-product";
 import HomeThird from "./home-third";
-import HomeOurCosmetics from "./home-our-cosmetics";
+import HomeOurCosmetics from "./home-ourcosmetics/index";
 import OurPartner from "./our-partner";
 import News from "./news";
 import RequestConsultation from "./request-consultation";

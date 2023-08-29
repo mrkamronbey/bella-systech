@@ -7,20 +7,22 @@ import { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
 import Slider from "react-slick";
 import './style.css'
-import { AparatProductGet } from '../../../redux/product-aparat/index'
+import { PereparatGet } from '../../../redux/pereparat/index'
+import { Button, Result } from 'antd';
+
 
 import { useTranslation } from 'react-i18next'
 import Reveal from '../../../utils/reveal/reveal'
 import { useDispatch, useSelector } from 'react-redux'
 import { useEffect } from 'react'
 
-const HomeOurProduct = () => {
+const HomeOurCosmetics = () => {
     const { t } = useTranslation()
     const dispatch = useDispatch()
     useEffect(() => {
-        dispatch(AparatProductGet())
+        dispatch(PereparatGet())
     }, [])
-    const aparatProductGetState = useSelector((state) => state.aparatproduct.AparatProductGet?.data)
+    const preparatGetState = useSelector((state) => state.pereparat.PereparatGet?.data)
     const settings = {
         dots: true,
         infinite: true,
@@ -68,15 +70,17 @@ const HomeOurProduct = () => {
                 <WrapperContainer>
                     <div className={styles.title_box}>
                         <Reveal className={styles.title_anime}>
-                            <h4 className={styles.home_our_title}>{t("Card.2")}</h4>
+                            <h4 className={styles.home_our_title}>
+                                {t("Card.3")}
+                            </h4>
                         </Reveal>
                     </div>
                     <div className='ourproduct_slider_wrapp'>
                         {
-                            aparatProductGetState.length >= 3 ? (
+                            preparatGetState.length >= 3 ? (
                                 <Slider {...settings}>
                                     {
-                                        aparatProductGetState.map((elem) => (
+                                        preparatGetState.map((elem) => (
                                             <div className='slider_card_box'>
                                                 <CommonCard
                                                     width="95%"
@@ -89,7 +93,7 @@ const HomeOurProduct = () => {
                                                     }
                                                     card_btn_text1={t("Card.0")}
                                                     card_btn_text2={t("Card.1")}
-                                                    details={`/product/${elem.id}`}
+                                                    details={`/product2/${elem.id}`}
                                                     order="#"
                                                     isBtn={true}
                                                     isTitle={true}
@@ -106,11 +110,11 @@ const HomeOurProduct = () => {
                             ) : (
                                 <Row style={{ margin: "0" }}>
                                     {
-                                        aparatProductGetState.slice(0, 3).map(elem => (
+                                        preparatGetState.slice(0, 3).map(elem => (
                                             <Col lg={4}>
                                                 <CommonCard
                                                     width="100%"
-                                                    src={elem.image1}
+                                                    src={elem.image}
                                                     card_title={
                                                         LanguValue() == 'uz' ? elem.name_uz : LanguValue() == 'en' ? elem.name_en : LanguValue() == 'ru' ? elem.name_ru : null
                                                     }
@@ -119,7 +123,7 @@ const HomeOurProduct = () => {
                                                     }
                                                     card_btn_text1={t("Card.0")}
                                                     card_btn_text2={t("Card.1")}
-                                                    details={`/product/${elem.id}`}
+                                                    details={`/product2/${elem.id}`}
                                                     order="#"
                                                     isBtn={true}
                                                     isTitle={true}
@@ -137,4 +141,4 @@ const HomeOurProduct = () => {
     )
 }
 
-export default HomeOurProduct
+export default HomeOurCosmetics

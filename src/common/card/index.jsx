@@ -4,6 +4,7 @@ import Reveal from "../../utils/reveal/reveal";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import ImageAnimation from "../image";
+import { width } from "@mui/system";
 
 const CommonCard = ({
   src,
@@ -20,11 +21,13 @@ const CommonCard = ({
   timeText,
   textStyle,
   className,
-  classNameImg
+  classNameImg,
+  width
 }) => {
   return (
     <>
       <motion.div
+        style={{ width: width }}
         whileHover={{ scale: 1.04 }}
         transition={{ type: "spring", stiffness: 400, damping: 10 }}
         className={`${styles.card} ${className}`}

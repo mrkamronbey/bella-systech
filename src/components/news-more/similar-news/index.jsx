@@ -96,30 +96,8 @@ const SimilarNews = () => {
                   {newsGetState.map((elem) => (
                     <div className="slider_card_box">
                       <NavLink onClick={handleTap} className={styles.news_link} to={`/newsmore/${elem.id}`}>
-                      <CommonCard
-                        src={elem.image}
-                        card_description={LanguValue() == 'uz' ? `${elem.description_uz.slice(0, 50)}...` : LanguValue() == 'en' ? `${elem.description_en.slice(0, 50)}...` : LanguValue() == 'ru' ? `${elem.description_ru.slice(0, 50)}...` : null}
-                        timeText={DateFormat(elem.time_date)}
-                        isTime={true}
-                        isBtn={false}
-                        isTitle={false}
-                        style={{
-                          aspectRatio: 16 / 9,
-                          width: '100%'
-                        }}
-                        textStyle={{ fontWeight: "600", color: "#000" }}
-                      />
-                      </NavLink>
-                    </div>
-                  ))}
-                </Slider>
-              ) : (
-                <Row style={{ margin: "0" }}>
-                  {
-                    newsGetState.slice(0, 3).map(elem => (
-                      <Col lg={4} md={6} sm={12} xs={12}>
-                        <NavLink onClick={handleTap} className={styles.news_link} to={`/newsmore/${elem.id}`}>
                         <CommonCard
+                          width="95%"
                           src={elem.image}
                           card_description={LanguValue() == 'uz' ? `${elem.description_uz.slice(0, 50)}...` : LanguValue() == 'en' ? `${elem.description_en.slice(0, 50)}...` : LanguValue() == 'ru' ? `${elem.description_ru.slice(0, 50)}...` : null}
                           timeText={DateFormat(elem.time_date)}
@@ -132,6 +110,30 @@ const SimilarNews = () => {
                           }}
                           textStyle={{ fontWeight: "600", color: "#000" }}
                         />
+                      </NavLink>
+                    </div>
+                  ))}
+                </Slider>
+              ) : (
+                <Row style={{ margin: "0" }}>
+                  {
+                    newsGetState.slice(0, 3).map(elem => (
+                      <Col lg={4} md={6} sm={12} xs={12}>
+                        <NavLink onClick={handleTap} className={styles.news_link} to={`/newsmore/${elem.id}`}>
+                          <CommonCard
+                            width="95%"
+                            src={elem.image}
+                            card_description={LanguValue() == 'uz' ? `${elem.description_uz.slice(0, 50)}...` : LanguValue() == 'en' ? `${elem.description_en.slice(0, 50)}...` : LanguValue() == 'ru' ? `${elem.description_ru.slice(0, 50)}...` : null}
+                            timeText={DateFormat(elem.time_date)}
+                            isTime={true}
+                            isBtn={false}
+                            isTitle={false}
+                            style={{
+                              aspectRatio: 16 / 9,
+                              width: '100%'
+                            }}
+                            textStyle={{ fontWeight: "600", color: "#000" }}
+                          />
                         </NavLink>
                       </Col>
                     ))
