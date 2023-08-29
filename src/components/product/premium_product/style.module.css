@@ -36,19 +36,6 @@
     content: "\02";
     color: transparent;
     font-weight: bold;
-    display: inline-block; 
-    position: relative;
-    right: 10px;
-    top: 5px;
-    width: 1em;
-    margin-left: -1em;
-    border-radius: 2px;
-opacity: 0.6000000238418579;
-background: linear-gradient(0deg, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.10) 100%), #DF2027;
-box-shadow: 0px 0px 10px 0px rgba(223, 32, 39, 0.20);
-backdrop-filter: blur(2px);
-width: 16px;
-height: 16px;
-transform: rotate(45deg);
-flex-shrink: 0;
+    margin: 0;
+    padding: 0;
 }
