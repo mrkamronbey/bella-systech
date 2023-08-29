@@ -50,6 +50,18 @@
   color: #df2027 !important;
 }
 
+.certificate_card_box {
+  margin: 0 auto !important;
+  width: 90% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.certificate_card_wrapps{
+  margin: 0 !important;
+}
+
 
 @media only screen and (max-width: 1235px) {
   .certificate_wrap > .slick-slider > .slick-prev {
@@ -83,7 +95,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .certificate_wrap > .slick-slider > .slick-arrow {
-      display: none !important;
-    }
+  .certificate_wrap > .slick-slider > .slick-arrow {
+    display: none !important;
   }
+}

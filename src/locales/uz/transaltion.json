@@ -68,7 +68,14 @@
   "RegisterSlider": {
     "0": "Voqealar tavsifi",
     "1": "Lutronic uskunasi sifati va ishonchliligi bilan ajralib turadi. U uzoqroq xizmat qiladi va texnik xususiyatlari bo'yicha raqobatchilardan ustun turadi. Xizmat ko'rsatish talab qilinganda bizning mutaxassislarimiz uskunani tezda ish holatiga keltiradi.",
-    "2": "Ro'yxatdan o'tish"
+    "2": "Ro'yxatdan o'tish",
+    "3": "Ism, Familiya",
+    "4": "Telefon raqam",
+    "5": "Faoliyat",
+    "6": "Lavozim",
+    "7": "Klinika nomi",
+    "8": "Yuborish",
+    "9": "Ro'yxatdan o'tish"
   },
   "NewsPage": {
     "0": "Yangiliklar",
@@ -85,7 +92,9 @@
     "3": "Bizning telefon:",
     "4": "Bizning elektron pochtamiz:",
     "5": "Bizning ijtimoiy media sahifalarimiz:",
-    "6": "kartani ochish"
+    "6": "kartani ochish",
+    "7": "Rahmat, biz siz bilan bog'lanamiz",
+    "8": "Serverda xatolik bor, iltimos qaytadan urinib ko'ring"
   },
 
   "AboutUs": {

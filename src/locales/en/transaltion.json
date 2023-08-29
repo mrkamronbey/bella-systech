@@ -70,7 +70,14 @@
   "RegisterSlider": {
     "0": "Description of the event",
     "1": "Lutronic equipment is distinguished by quality and reliability. It lasts longer and outperforms its competitors in terms of technical characteristics. When service is required, our specialists quickly restore the equipment to working condition.",
-    "2": "Register"
+    "2": "Register",
+    "3": "Full name",
+    "4": "Phone number",
+    "5": "Activity",
+    "6": "Position",
+    "7": "Clinic name",
+    "8": "Send",
+    "9": "Registration"
   },
   "NewsPage": {
     "0": "News",
@@ -87,7 +94,9 @@
     "3": "Our phone:",
     "4": "Our email:",
     "5": "Our social media pages:",
-    "6": "open to map"
+    "6": "open to map",
+    "7": "Thank you, we'll contact you",
+    "8": "There is an error on the server, please try again"
   },
 
   "AboutUs": {
