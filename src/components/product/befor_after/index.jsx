@@ -4,8 +4,6 @@ import styles from "./style.module.css"
 import { Row, Col } from "react-grid-system"
 import ImageAnimation from "./../../../common/image/index"
 import { WrapperContainer } from './../../../style-app';
-import Before from '../../../assets/before-after/before.png'
-import After from '../../../assets/before-after/after.png'
 const BeforeAfter = ({dataproductfilter}) => {
   const { t } = useTranslation()
   return (

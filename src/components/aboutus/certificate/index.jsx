@@ -3,7 +3,6 @@ import styles from './style.module.css'
 import { WrapperContainer } from '../../../style-app'
 import { Col, Row } from 'react-grid-system'
 import { Image } from 'antd';
-import CertificateImg from '../../../assets/about/certificate.png';
 import './style.css'
 import Slider from "react-slick";
 import { SertificatGet } from '../../../redux/sertifikat/index'

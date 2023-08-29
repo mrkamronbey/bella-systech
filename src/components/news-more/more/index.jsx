@@ -1,6 +1,5 @@
 import { WrapperContainer } from "../../../style-app";
 import styled from "./style.module.css";
-import MoreImg from "../../../assets/news/newscard.png";
 import React from "react";
 import Reveal from '../../../utils/reveal/reveal'
 import ImageAnimation from '../../../common/image/index'

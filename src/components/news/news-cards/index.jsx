@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { Col, Row } from "react-grid-system";
 import CommonCard from "../../../common/card";
-import NewsCardImg from "../../../assets/news/newscard.png";
 import { WrapperContainer } from "../../../style-app";
 import styled from "./style.module.css";
 import { NavLink } from "react-router-dom";

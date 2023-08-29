@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import styles from "./style.module.css";
 import { WrapperContainer } from "../../../style-app";
 import { useTranslation } from "react-i18next";
-import NewsImg from "../../../assets/news/newsimg.png";
 import Reveal from "../../../utils/reveal/reveal";
 import CommonCard from "../../../common/card";
 import { NavLink } from "react-router-dom";

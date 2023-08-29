@@ -8,7 +8,6 @@ import { motion, useScroll } from "framer-motion";
 import Slider from "react-slick";
 import './style.css'
 
-import CardImg from '../../../assets/card/cardimg.png'
 import { useTranslation } from 'react-i18next'
 import Reveal from '../../../utils/reveal/reveal'
 
@@ -68,7 +67,7 @@ const HomeOurProduct = () => {
                                 arr.map(() => (
                                     <div className='slider_card_box'>
                                         <CommonCard
-                                            src={CardImg}
+                                            src=""
                                             card_title="Краткая информация"
                                             card_description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                                             card_btn_text1={t("Card.0")}

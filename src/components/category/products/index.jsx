@@ -1,7 +1,6 @@
 import React from 'react'
 import CommonCard from '../../../common/card'
 import { Row, Col } from "react-grid-system"
-import Img from "./../../../assets/card/cardimg.png"
 import { NavLink } from 'react-router-dom'
 const CategoryProduct = ({ dataproduct }) => {
   function LanguValue() {

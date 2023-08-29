@@ -5,7 +5,6 @@ import CommonCard from '../../../common/card'
 import './style.css'
 import Reveal from '../../../utils/reveal/reveal'
 
-import CardImg from '../../../assets/card/cardimg1.png'
 import { useTranslation } from 'react-i18next'
 import Slider from "react-slick";
 
@@ -64,7 +63,7 @@ const HomeOurCosmetics = () => {
                                 arr.map(() => (
                                     <div className='slider_card_box'>
                                         <CommonCard
-                                            src={CardImg}
+                                            src=""
                                             card_title="Краткая информация"
                                             card_description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                                             card_btn_text1={t("Card.0")}

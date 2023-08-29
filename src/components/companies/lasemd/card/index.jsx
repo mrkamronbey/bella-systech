@@ -2,7 +2,6 @@ import React from 'react'
 import styles from "./style.module.css"
 import { useTranslation } from 'react-i18next'
 import CommonCard from '../../../../common/card'
-import CardImg from "./../../../../assets/card/cardimg.png"
 import "./style.css"
 import Slider from "react-slick";
 const Card = () => {
