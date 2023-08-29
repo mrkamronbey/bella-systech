@@ -11,6 +11,11 @@ export const AparatProductGet = createAsyncThunk("AparatProduct/get", async () =
     .get(`${API_URL}/aparat`)
     .then((response) => response.data);
 });
+export const AparatProductGetFilter = createAsyncThunk("AparatProductFilter/get", async ({brand , category}) => {
+  return await axios
+    .get(`${API_URL}/aparat?brandId=${brand}&categoryId=${category}`)
+    .then((response) => response.data);
+});
 
 export const AparatProductDelete = createAsyncThunk("AparatProduct/delete", async (id) => {
   return await axios
@@ -83,6 +88,12 @@ const AparatProductSlice = createSlice({
       error: false,
       success: false,
     },
+    AparatProductGetFilter: {
+      loading: false,
+      data: [],
+      error: false,
+      success: false,
+    },
     AparatProductPost: {
       Success: false,
       Error: false,
@@ -139,6 +150,21 @@ const AparatProductSlice = createSlice({
       state.AparatProductGet.loading = false;
       state.AparatProductGet.error = true;
       state.AparatProductGet.success = false;
+    },
+    // filter get
+    [AparatProductGetFilter.pending]: (state, action) => {
+      state.AparatProductGetFilter.loading = true;
+    },
+    [AparatProductGetFilter.fulfilled]: (state, action) => {
+      state.AparatProductGetFilter.loading = false;
+      state.AparatProductGetFilter.success = true;
+      state.AparatProductGetFilter.data = action.payload;
+      state.AparatProductGetFilter.error = false;
+    },
+    [AparatProductGetFilter.rejected]: (state, action) => {
+      state.AparatProductGetFilter.loading = false;
+      state.AparatProductGetFilter.error = true;
+      state.AparatProductGetFilter.success = false;
     },
     // add
     [AparatProductPost.pending]: (state, action) => {

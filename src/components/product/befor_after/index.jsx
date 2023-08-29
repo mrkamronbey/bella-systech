@@ -2,7 +2,6 @@ import React from 'react'
 import { useTranslation } from 'react-i18next'
 import styles from "./style.module.css"
 import { Row, Col } from "react-grid-system"
-import ImageAnimation from "./../../../common/image/index"
 import { WrapperContainer } from './../../../style-app';
 const BeforeAfter = ({dataproductfilter}) => {
   const { t } = useTranslation()

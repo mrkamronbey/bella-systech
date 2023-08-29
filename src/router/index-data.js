@@ -7,7 +7,7 @@ const Category = lazy(() => import("./../layouts/category/index"));
 const Product = lazy(() => import("./../layouts/product/index"));
 const Product2 = lazy(() => import("./../layouts/product2/index"));
 const Bialog = lazy(() => import("./../layouts/companies/bialob/index"));
-const CategoryPereparat = lazy(() => import("./../layouts/category/index"))
+const CategoryPereparat = lazy(() => import("./../layouts/category-pereparat/index"))
 const LutronicCompaines = lazy(() => import("./../layouts/companies/lutronic/index")
 );
 const Lasemd = lazy(() => import("./../layouts/companies/lasemd/index"));

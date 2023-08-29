@@ -11,7 +11,10 @@ export const PereparatGet = createAsyncThunk("Pereparat/get", async () => {
     .get(`${API_URL}/pereparat`)
     .then((response) => response.data);
 });
-
+export const PereparatGetFilter = createAsyncThunk("PereparatProductFilter/get", async ({brand , category}) => {
+  return await axios.get(`${API_URL}/pereparat?brandId=${brand}&categoryId=${category}`)
+    .then((response) => response.data);
+});
 export const PereparatDelete = createAsyncThunk("Pereparat/delete", async (id) => {
   return await axios
     .delete(`${API_URL}/pereparat/${id}` , { headers:{ token : cookies.get("token")}})
@@ -83,6 +86,12 @@ const PereparatSlice = createSlice({
       error: false,
       success: false,
     },
+    PereparatGetFilter: {
+      loading: false,
+      data: [],
+      error: false,
+      success: false,
+    },
     PereparatPost: {
       Success: false,
       Error: false,
@@ -139,6 +148,21 @@ const PereparatSlice = createSlice({
       state.PereparatGet.loading = false;
       state.PereparatGet.error = true;
       state.PereparatGet.success = false;
+    },
+    // get filter
+    [PereparatGetFilter.pending]: (state, action) => {
+      state.PereparatGetFilter.loading = true;
+    },
+    [PereparatGetFilter.fulfilled]: (state, action) => {
+      state.PereparatGetFilter.loading = false;
+      state.PereparatGetFilter.success = true;
+      state.PereparatGetFilter.data = action.payload;
+      state.PereparatGetFilter.error = false;
+    },
+    [PereparatGetFilter.rejected]: (state, action) => {
+      state.PereparatGetFilter.loading = false;
+      state.PereparatGetFilter.error = true;
+      state.PereparatGetFilter.success = false;
     },
     // add
     [PereparatPost.pending]: (state, action) => {
