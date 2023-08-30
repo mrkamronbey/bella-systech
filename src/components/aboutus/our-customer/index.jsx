@@ -112,15 +112,6 @@ const OurCustumer = () => {
                             {
                                 filterPartners.map(elem => (
                                     <>
-                                        <div className={styles.modal_head_wrapp}>
-                                            <Reveal>
-                                                <p className={styles.modal_p}>
-                                                    {
-                                                        LanguValue() == 'uz' ? elem.description_uz : LanguValue() == 'en' ? elem.description_en : LanguValue() == 'ru' ? elem.description_ru : null
-                                                    }
-                                                </p>
-                                            </Reveal>
-                                        </div>
                                         <div className={styles.modal_contentss_wrapp}>
                                             <div className='modal_slid_wrapp'>
                                                 <Swiper
@@ -134,21 +125,26 @@ const OurCustumer = () => {
 
                                                     <SwiperSlide>
                                                         <img src={elem.image1} alt="" />
+                                                    </SwiperSlide>
+                                                    <SwiperSlide>
                                                         <img src={elem.image2} alt="" />
+                                                    </SwiperSlide>
+                                                    <SwiperSlide>
                                                         <img src={elem.image3} alt="" />
                                                     </SwiperSlide>
-
                                                 </Swiper>
                                             </div>
                                             <div className={styles.modal_p_box}>
                                                 <Reveal>
                                                     <p className={styles.modal_p}>
-                                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                                        {
+                                                            LanguValue() == 'uz' ? elem.description_uz : LanguValue() == 'en' ? elem.description_en : LanguValue() == 'ru' ? elem.description_ru : null
+                                                        }
                                                     </p>
                                                 </Reveal>
                                             </div>
                                             <div className={styles.modal_iframe}>
-                                                <iframe width="100%" height="350" src="https://www.youtube.com/embed/FmG3yqLt4bQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                <iframe width="100%" height="350" src={elem.video} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                             </div>
                                         </div>
                                     </>
