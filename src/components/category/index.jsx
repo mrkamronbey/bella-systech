@@ -19,6 +19,7 @@ const CategoryComponent = () => {
   }, [])
     const data = useSelector(state => state.aparat.AparatGet.data)
     const dataproduct = useSelector(state => state.aparatproduct.AparatProductGet.data)
+    console.log(data);
     useEffect(() => {
       dispatch(CompanyGet())
     }, [])
