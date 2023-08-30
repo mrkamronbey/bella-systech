@@ -1,11 +1,12 @@
 import React from "react";
 import Reveal from "../../../../utils/reveal/reveal";
 import styles from "./style.module.css";
+import { useNavigate } from "react-router-dom";
 const Content = ({dataproductfilter}) => {
   function LanguValue() {
     return window.localStorage.getItem("i18nextLng");
   }
-
+  const navigate = useNavigate();
   return (
     dataproductfilter.map((elem , index) => <>
      <div className={styles.Wrapper}>
@@ -22,7 +23,7 @@ const Content = ({dataproductfilter}) => {
           <i class="bx bxs-file-doc"></i>Подробная информация
         </a>
 
-        <button>Связаться для оформления заказа</button>
+        <button onClick={() => navigate("/contact")}>Связаться для оформления заказа</button>
 
       </div>
     </div>

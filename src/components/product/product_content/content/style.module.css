@@ -48,6 +48,7 @@
   font-weight: 500;
   line-height: normal;
   padding: 17px;
+  cursor: pointer;
 }
 .buttons a i {
   font-size: 20px;

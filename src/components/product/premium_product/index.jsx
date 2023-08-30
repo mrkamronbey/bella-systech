@@ -11,7 +11,7 @@ const PremiumProduct = ({dataproductfilter}) => {
   return (
     <div className={styles.box}>
     <div className={styles.Container}>
-      <h2>{t("Product.3")}</h2>
+      <h2>{t("Product.1")}</h2>
         <ul>
           {dataproductfilter.map((elem, index) => (
               <li key={index}>
