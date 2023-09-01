@@ -35,7 +35,7 @@ const CategoryComponent = () => {
         <Row>
           <Col lg={3}>
             <CategoryFilter data={data} companies={companies}/>
-            <CategeroyFilterMedia data={data} />
+            <CategeroyFilterMedia data={data} companies={companies} />
           </Col>
           <Col lg={9}>
             <CategoryProduct  dataproduct={dataproduct}/>

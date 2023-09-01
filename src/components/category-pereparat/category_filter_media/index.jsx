@@ -13,7 +13,7 @@ import styles from "./style.module.css"
 import "./style.css"
 import CategoryFilterData from "./category_filter_data";
 // import { CategoryGet } from "../../../../redux/category";
-function CategeroyFilterMedia({ HandleClickClose }) {
+function CategeroyFilterMedia({ HandleClickClose ,data , companies }) {
   // const disptach = useDispatch();
   const {t} = useTranslation();
   // useEffect(() => {
@@ -44,7 +44,7 @@ function CategeroyFilterMedia({ HandleClickClose }) {
           
         </AccordionSummary>
         <AccordionDetails style={{background:"white"}}>
-        <CategoryFilterData/>
+        <CategoryFilterData data={data}  companies={companies}/>
 
         </AccordionDetails>
       </Accordion>

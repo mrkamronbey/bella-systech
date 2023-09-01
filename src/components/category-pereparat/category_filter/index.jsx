@@ -44,13 +44,7 @@ const CategoryFilter = ({ data, companies }) => {
               await dispatch(PereparatGetFilter({brand : e.target.value , category:Category })) 
               setCompanyId(e.target.value)
             }} type="radio" id={elem.id} name="brend" value={elem.id} />
-            <label for={elem.id}>{LanguValue() == "uz"
-                ? elem.title_uz
-                : LanguValue() == "ru"
-                ? elem.title_ru
-                : LanguValue() == "en"
-                ? elem.title_en
-                : null}</label>
+            <label for={elem.id}>{elem.name}</label>
           </div>
         </>
       ))}
