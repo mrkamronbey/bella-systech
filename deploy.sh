@@ -1,4 +1,4 @@
-echo "Switching to branch Saidbek"
+echo "Switching to branch main"
 git checkout Saidbek
 
 echo "Building app..."
