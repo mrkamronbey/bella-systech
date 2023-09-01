@@ -1,6 +1,6 @@
 
-echo "Switching to branch Saidbek"
-git checkout 
+echo "Switching to branch main"
+git checkout Saidbek
 
 
 echo "Building app..."
