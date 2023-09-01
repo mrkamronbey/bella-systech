@@ -6,7 +6,14 @@
     "3": "Bizning afzalliklarimiz",
     "4": "Hamkorlik shartlari",
     "5": "Yangiliklar",
-    "6": "Kontaktlar"
+    "6": "Kontaktlar",
+    "7": "Apparatlar",
+    "8": "Dorilar"
+  },
+  "Lang": {
+    "0": "Ruscha",
+    "1": "Inglizcha",
+    "2": "O'zbekcha"
   },
   "HeroSlider": {
     "0": "Maslahat",
@@ -60,7 +67,7 @@
     "12": "Du - Juma"
   },
   "Category": {
-    "0": "Mahsulot katalogi",
+    "0": "Mahsulotlar katalogi",
     "1": "Kategoriyalar",
     "2": "Brend",
     "3": "Filtr"
@@ -157,5 +164,24 @@
     "1": "Keyin",
     "2": "Bizning hamkorlarimiz",
     "3": "Ushbu mahsulotlarni yaqin atrofdagi klinikalardan olishingiz mumkin"
+  },
+  "Product": {
+    "0": "Mahsulot tavsifi",
+    "1": "Mahsulotning afzalliklari",
+    "2": "Mahsulot qo'llanishi",
+    "3": "Muolaja fotosurati",
+    "4": "Muolaja videosi",
+    "5": "Texnik parametrlar",
+    "6": "Tasdiqlangan effekt",
+    "7": "Shifokorlaringiz uchun qurilma ustida ishlash uchun bepul trening",
+    "8": "Ishlab chiqaruvchining kafolati",
+    "9": "Rus tilidagi shifokorlar uchun qo'llanma",
+    "10": "Rus tilidagi protseduralarning batafsil bayonnomalari",
+    "11": "O'quv materiallari, veb-seminarlar, taqdimotlarga kirish",
+    "12": "Xizmat va texnik yordam",
+    "13": "Kafolatdan keyingi xizmat",
+    "14": "Marketing yordami",
+    "15": "Batafsil ma'lumot",
+    "16": "Buyurtma berish uchun bog'laning"
   }
 }

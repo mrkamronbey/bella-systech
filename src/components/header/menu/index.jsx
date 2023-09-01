@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
 import { Drawer, Space, Dropdown } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
 import { NavLink } from 'react-router-dom';
@@ -20,41 +20,41 @@ const Menu = ({ onClose, open }) => {
     }, [])
 
     const items = [
+        {
+            label: <NavLink to="/companies/biolab">BNV Biolab</NavLink>,
+            key: '0',
+        },
+        {
+            label: <NavLink to="/companies/lutronic">Lutronic</NavLink>,
+            key: '1',
+        },
+        {
+            label: <NavLink to="/companies/juvelook">Juvelook or Lenisna</NavLink>,
+            key: '3',
+        },
+        {
+            label: <NavLink to="/companies/histolab">Histolab</NavLink>,
+            key: '4',
+        },
+        {
+            label: <NavLink to="/companies/classys">Classys</NavLink>,
+            key: '5',
+        },
         // {
-        //     label: <NavLink to="/companies/bialob">BNV Biolab</NavLink>,
-        //     key: '0',
+        //   label: <NavLink to="/companies/ultraformer">Ultraformer</NavLink>,
+        //   key: '6',
         // },
-        // {
-        //     label: <NavLink to="/companies/lutronic">Lutronic</NavLink>,
-        //     key: '1',
-        // },
-        // {
-        //     label: <NavLink to="/companies/lasemd">LaseMD</NavLink>,
-        //     key: '3',
-        // },
-        // {
-        //     label: <NavLink to="/companies/histolab">Histolab</NavLink>,
-        //     key: '4',
-        // },
-        // {
-        //     label: <NavLink to="/companies/classys">Classys</NavLink>,
-        //     key: '5',
-        // },
-        // {
-        //     label: <NavLink to="/companies/ultraformer">Ultraformer</NavLink>,
-        //     key: '6',
-        // },
-        // {
-        //     label: <NavLink to="/companies/skinwell">Skinwell</NavLink>,
-        //     key: '7',
-        // },
+        {
+            label: <NavLink to="/companies/skinwell">Skinwell</NavLink>,
+            key: '6',
+        },
     ];
-    companyGetState.map(elem => (
-        items.push({
-            key: elem.id,
-            label: <NavLink to={`/companies/${elem.name}`}>{elem.name}</NavLink>,
-        })
-    ))
+    // companyGetState.map(elem => (
+    //     items.push({
+    //         key: elem.id,
+    //         label: <NavLink to={`/companies/${elem.name}`}>{elem.name}</NavLink>,
+    //     })
+    // ))
     return (
         <>
             <Drawer

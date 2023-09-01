@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import JoinUsComponent from '../../components/joinus'
+import { Helmet, HelmetProvider } from 'react-helmet-async'
 
 const JoinUs = () => {
     useEffect(() => {
@@ -7,7 +8,15 @@ const JoinUs = () => {
     }, [])
     return (
         <>
-            <JoinUsComponent />
+            <HelmetProvider>
+                <Helmet>
+                    <title>Join Us</title>
+                    <meta name='description' content="Join Us page" />
+                    <link rel="cononical" href="/join" />
+                </Helmet>
+                <JoinUsComponent />
+            </HelmetProvider>
+
         </>
     )
 }

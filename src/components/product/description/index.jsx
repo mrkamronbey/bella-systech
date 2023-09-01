@@ -15,12 +15,12 @@ const DescriptionProduct = ({ dataproductfilter }) => {
           <hr />
           <div className={styles.Wrapper}>
             <Reveal>
-              <h2>{t("Product.17")}</h2>
+              <h2>{t("Product.0")}</h2>
             </Reveal>
             <Reveal>
-            <p style={{whiteSpace : "pre-wrap"}}>
-        {LanguValue() == 'uz' ? e.description_uz: LanguValue() == 'ru' ? e.description_ru:LanguValue() == 'en' ? e.description_en:null}
-        </p>
+              <p style={{ whiteSpace: "pre-wrap" }}>
+                {LanguValue() == 'uz' ? e.description_uz : LanguValue() == 'ru' ? e.description_ru : LanguValue() == 'en' ? e.description_en : null}
+              </p>
             </Reveal>
           </div>
           <div className={styles.Video}>

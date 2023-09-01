@@ -1,5 +1,4 @@
 import { lazy } from "react";
-
 const Home = lazy(() => import("../layouts/home/index"));
 const About = lazy(() => import("./../layouts/about/index"));
 const Contact = lazy(() => import("./../layouts/contact/index"));
@@ -70,37 +69,37 @@ export const RouterData = [
   },
   {
     id: 9,
-    path: "/companies/:name",
+    path: "/companies/biolab",
     component: <Bialog />,
   },
   {
     id: 10,
-    path: "/companies/:name",
+    path: "/companies/lutronic",
     component: <LutronicCompaines />,
   },
   {
     id: 11,
-    path: "/companies/:name",
+    path: "/companies/juvelook",
     component: <Lasemd />,
   },
   {
     id: 12,
-    path: "/companies/:name",
+    path: "/companies/histolab",
     component: <Histolab />,
   },
   {
     id: 13,
-    path: "/companies/:name",
+    path: "/companies/ultraformer",
     component: <UltraFormer />,
   },
   {
     id: 14,
-    path: "/companies/:name",
+    path: "/companies/skinwell",
     component: <Skinwell />,
   },
   {
     id: 15,
-    path: "/companies/:name",
+    path: "/companies/classys",
     component: <Classys />,
   },
   {

@@ -1,5 +1,6 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import NewsMoreComponent from "../../components/news-more";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 function NewsMore() {
   useEffect(() => {
@@ -7,7 +8,15 @@ function NewsMore() {
   }, [])
   return (
     <>
-      <NewsMoreComponent />
+      <HelmetProvider>
+        <Helmet>
+          <title>News Details</title>
+          <meta name='description' content="News details" />
+          <link rel="cononical" href="/newsmore" />
+        </Helmet>
+        <NewsMoreComponent />
+      </HelmetProvider>
+
     </>
   );
 }

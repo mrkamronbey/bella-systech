@@ -85,32 +85,34 @@ function LanguageHeader({ HandleClick }) {
         </>
       ) : null}
       <Select
-        defaultValue={window.localStorage.getItem('label')}
+        defaultValue={
+          LanguValue() == "ru" ? t("Lang.0") : LanguValue() == "en" ? t("Lang.1") : LanguValue() == "uz" ? t("Lang.2") : t("Lang.0")
+        }
         bordered={false}
         style={{ width: 130 }}
         onChange={handleChange}
         options={
           LanguValue() == "ru" ?
             [
-              { value: 'ru', label: 'Русский' },
-              { value: 'en', label: 'Английский' },
-              { value: 'uz', label: 'Узбекский' }
+              { value: 'ru', label: t("Lang.0") },
+              { value: 'en', label: t("Lang.1") },
+              { value: 'uz', label: t("Lang.2") }
             ] :
             LanguValue() == "en" ?
               [
-                { value: 'en', label: 'Английский' },
-                { value: 'ru', label: 'Русский' },
-                { value: 'uz', label: 'Узбекский' }
+                { value: 'ru', label: t("Lang.0") },
+                { value: 'en', label: t("Lang.1") },
+                { value: 'uz', label: t("Lang.2") }
               ] :
               LanguValue() == "uz" ?
                 [
-                  { value: 'uz', label: 'Узбекский' },
-                  { value: 'en', label: 'Английский' },
-                  { value: 'ru', label: 'Русский' },
+                  { value: 'ru', label: t("Lang.0") },
+                  { value: 'en', label: t("Lang.1") },
+                  { value: 'uz', label: t("Lang.2") },
                 ] : [
-                  { value: 'ru', label: 'Русский' },
-                  { value: 'en', label: 'Английский' },
-                  { value: 'uz', label: 'Узбекский' }
+                  { value: 'ru', label: t("Lang.0") },
+                  { value: 'en', label: t("Lang.1") },
+                  { value: 'uz', label: t("Lang.2") }
                 ]
         }
       />

@@ -9,7 +9,7 @@ const BeforeAfter = ({dataproductfilter}) => {
     dataproductfilter.map(elem => elem.design.map(e => <>
     <div className={styles.before_after_section}>
       <WrapperContainer>
-        <h2>{t("Product.3")}</h2>
+        <h2>{t("Product.6")}</h2>
         <Row className={styles.before_after_row}>
           <Col className={styles.before_after_col} lg={6} md={12} sm={12}>
             <div className={styles.before_after_item}>

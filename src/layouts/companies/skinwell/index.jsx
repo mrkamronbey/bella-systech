@@ -1,5 +1,6 @@
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
 import SkinwellComponent from '../../../components/companies/skinwell'
+import { Helmet, HelmetProvider } from 'react-helmet-async'
 
 const Skinwell = () => {
   useEffect(() => {
@@ -7,7 +8,14 @@ const Skinwell = () => {
   }, [])
   return (
     <>
-        <SkinwellComponent/>
+      <HelmetProvider>
+        <Helmet>
+          <title>Company Skinwell</title>
+          <meta name='description' content="Company Skinwell" />
+          <link rel="cononical" href="/companies/skinwell" />
+        </Helmet>
+        <SkinwellComponent />
+      </HelmetProvider>
     </>
   )
 }
