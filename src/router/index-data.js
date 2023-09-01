@@ -1,4 +1,5 @@
 import { lazy } from "react";
+
 const Home = lazy(() => import("../layouts/home/index"));
 const About = lazy(() => import("./../layouts/about/index"));
 const Contact = lazy(() => import("./../layouts/contact/index"));
