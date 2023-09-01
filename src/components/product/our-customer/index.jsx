@@ -231,7 +231,6 @@ const OurCustumer = ({ dataproductfilter }) => {
                 </div>
               )))
             }
-
           </ModalCommon>
           {
             dataproductfilter.map(elem => elem.partners.length >= 4 ? (
