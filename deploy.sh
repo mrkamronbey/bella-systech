@@ -1,5 +1,7 @@
+
 echo "Switching to branch Saidbek"
 git checkout 
+
 
 echo "Building app..."
 npm run build

@@ -115,6 +115,10 @@
   font-size: 18px;
 }
 
+.modal_location{
+  margin-top: 20px;
+}
+
 .social_list {
   padding-left: 0px;
   display: flex;

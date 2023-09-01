@@ -1,5 +1,6 @@
-import React , {useEffect} from 'react'
+import React, { useEffect } from 'react'
 import AboutUsComponent from '../../components/aboutus/index'
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 function About() {
   useEffect(() => {
@@ -7,7 +8,14 @@ function About() {
   }, [])
   return (
     <>
-      <AboutUsComponent />
+      <HelmetProvider>
+        <Helmet>
+          <title>About</title>
+          <meta name='description' content="Complete information about the company's activities" />
+          <link rel="cononical" href="/about" />
+        </Helmet>
+        <AboutUsComponent />
+      </HelmetProvider>
     </>
   )
 }

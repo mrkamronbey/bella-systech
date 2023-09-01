@@ -7,11 +7,11 @@ const ProductDropdown = ({fonstSizes}) => {
     const { t } = useTranslation()
     const items = [
         {
-            label: <NavLink to="/category">Апарат</NavLink>,
+            label: <NavLink to="/category">{t("Header.7")}</NavLink>,
             key: '0',
         },
         {
-            label: <NavLink to="/category-pereparat">Препараты</NavLink>,
+            label: <NavLink to="/category-pereparat">{t("Header.8")}</NavLink>,
             key: '1',
         }
     ];

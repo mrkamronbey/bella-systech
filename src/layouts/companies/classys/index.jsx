@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import HomeHero from '../../../common/hero'
 import ClassysCompainesComponent from '../../../components/companies/classys/index'
+import { Helmet, HelmetProvider } from 'react-helmet-async'
 
 const ClassysCompaines = () => {
   useEffect(() => {
@@ -8,7 +9,14 @@ const ClassysCompaines = () => {
   }, [])
   return (
     <>
-      <ClassysCompainesComponent />
+      <HelmetProvider>
+        <Helmet>
+          <title>Company Classys</title>
+          <meta name='description' content="Company Classys" />
+          <link rel="cononical" href="/companies/classys" />
+        </Helmet>
+        <ClassysCompainesComponent />
+      </HelmetProvider>
     </>
   )
 }

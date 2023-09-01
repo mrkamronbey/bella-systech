@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import ProductComponent from '../../components/product'
+import { Helmet, HelmetProvider } from 'react-helmet-async'
 
 const Product = () => {
   useEffect(() => {
@@ -7,7 +8,15 @@ const Product = () => {
   }, [])
   return (
     <>
-      <ProductComponent />
+      <HelmetProvider>
+        <Helmet>
+          <title>Product Aparat</title>
+          <meta name='description' content="Product Aparat" />
+          <link rel="cononical" href="/product" />
+        </Helmet>
+        <ProductComponent />
+      </HelmetProvider>
+
     </>
   )
 }

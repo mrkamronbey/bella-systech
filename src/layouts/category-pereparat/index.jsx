@@ -1,5 +1,6 @@
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
 import CategoryPereparatComponent from '../../components/category-pereparat';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 const CategoryPereparat = () => {
   useEffect(() => {
@@ -7,9 +8,16 @@ const CategoryPereparat = () => {
   }, [])
   return (
     <>
-      <CategoryPereparatComponent />
+      <HelmetProvider>
+        <Helmet>
+          <title>Category Pereparat</title>
+          <meta name='description' content="Category Pereparat" />
+          <link rel="cononical" href="/category-pereparat" />
+        </Helmet>
+        <CategoryPereparatComponent />
+      </HelmetProvider>
     </>
-  );                                          
+  );
 };
 
 

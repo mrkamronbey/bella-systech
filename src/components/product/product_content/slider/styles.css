@@ -1,4 +1,4 @@
-.App{
+.App {
   margin-top: 100px;
 }
 .slider {
@@ -49,7 +49,7 @@
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   opacity: 0.5;
-  width: 156px;
+  width: auto !important;
 }
 .slider__thumbs .slider__image:hover {
   opacity: 1;
@@ -65,13 +65,15 @@
 }
 .slider__images .slider__image img {
   transition: 3s;
+  aspect-ratio: 3 / 4 !important;
 }
 .slider__images .slider__image:hover img {
   transform: scale(1.1);
 }
 .slider__image {
-  width: 100%;
+  width: auto;
   height: 100%;
+  aspect-ratio: 3 / 4 !important;
   border-radius: 4px;
   overflow: hidden;
 }
@@ -82,6 +84,7 @@
   -o-object-fit: cover;
   object-fit: cover;
 }
+
 @media (max-width: 1024px) {
   .slider__col {
     display: none;
@@ -109,5 +112,19 @@
   .slider__next {
     height: auto;
     width: 32px;
+  }
+}
+
+.swiper-slide {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+@media only screen and (max-width: 425px) {
+  .swiper-slide {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
 }
