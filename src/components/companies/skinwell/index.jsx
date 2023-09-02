@@ -5,13 +5,23 @@ import styles from "./style.module.css"
 import CompainesAbout from './about/index'
 import RequestConsultation from '../../home/request-consultation'
 import BannerSkillWell from './banner-skillwell'
+import { CompanyGet } from '../../../redux/company'
+import { useDispatch, useSelector } from 'react-redux'
+import { useEffect } from 'react'
+
 const SkinwellComponent = () => {
   const { t } = useTranslation()
+  const dispatch = useDispatch()
+  useEffect(() => {
+    dispatch(CompanyGet())
+  }, [])
+  const companyGetState = useSelector((state) => state.company.CompanyGet?.data)
+  const filterCompany = companyGetState.filter(elem => elem.name == 'Skinwell')
   return (
     <>
       <HomeHero title={t("Skinwell")} className={styles.Wrapper} Contact />
-      <CompainesAbout />
-      <BannerSkillWell />
+      <CompainesAbout filterCompany={filterCompany} />
+      <BannerSkillWell filterCompany={filterCompany} />
       <RequestConsultation />
     </>
   )

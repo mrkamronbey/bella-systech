@@ -25,6 +25,37 @@
     float: left;
     width: 49%;
 }
+
+@media only screen and (max-width:1024px) {
+    .Container{
+        width: 90%;
+    }
+    .Row{
+        margin: 0 !important;
+    }
+    .Col {
+        padding: 0 !important;
+        margin-bottom: 10px;
+    }
+    .Photos{
+        width: 100%;
+    }
+    .Video{
+        width:100%;
+    }
+    .Video iframe{
+        height: 245px !important;
+    }
+    .Col img{
+        border-radius: 12px;
+        height: auto;
+    }
+    .Wrapper{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+}
 @media only screen and (max-width:882px) {
     .Container{
         width: 90%;

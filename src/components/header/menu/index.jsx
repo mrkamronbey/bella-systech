@@ -21,31 +21,27 @@ const Menu = ({ onClose, open }) => {
 
     const items = [
         {
-            label: <NavLink to="/companies/biolab">BNV Biolab</NavLink>,
+            label: <NavLink onClick={onClose} to="/companies/lutronic">Lutronic</NavLink>,
             key: '0',
         },
         {
-            label: <NavLink to="/companies/lutronic">Lutronic</NavLink>,
+            label: <NavLink onClick={onClose} to="/companies/classys">Classys</NavLink>,
             key: '1',
         },
         {
-            label: <NavLink to="/companies/juvelook">Juvelook or Lenisna</NavLink>,
+            label: <NavLink onClick={onClose} to="/companies/histolab">Histolab</NavLink>,
             key: '3',
         },
         {
-            label: <NavLink to="/companies/histolab">Histolab</NavLink>,
+            label: <NavLink onClick={onClose} to="/companies/juvelook">Juvelook & Lenisna</NavLink>,
             key: '4',
         },
         {
-            label: <NavLink to="/companies/classys">Classys</NavLink>,
+            label: <NavLink onClick={onClose} to="/companies/skinwell">Skinwell</NavLink>,
             key: '5',
         },
-        // {
-        //   label: <NavLink to="/companies/ultraformer">Ultraformer</NavLink>,
-        //   key: '6',
-        // },
         {
-            label: <NavLink to="/companies/skinwell">Skinwell</NavLink>,
+            label: <NavLink onClick={onClose} to="/companies/biolab">BNV Biolab</NavLink>,
             key: '6',
         },
     ];
@@ -98,7 +94,7 @@ const Menu = ({ onClose, open }) => {
                     </li>
                     <div className={styles.menu_hr}></div>
                     <li>
-                        <ProductDropdown fonstSizes='16px' />
+                        <ProductDropdown onClose={onClose} fonstSizes='16px' />
                     </li>
                     <div className={styles.menu_hr}></div>
                     <li>

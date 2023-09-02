@@ -2,16 +2,17 @@ import React from 'react'
 import { Dropdown, Space } from 'antd';
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { DownOutlined } from '@ant-design/icons';
 import './style.css'
-const ProductDropdown = ({fonstSizes}) => {
+const ProductDropdown = ({ fonstSizes, onClose }) => {
     const { t } = useTranslation()
     const items = [
         {
-            label: <NavLink to="/category">{t("Header.7")}</NavLink>,
+            label: <NavLink onClick={onClose} to="/category">{t("Header.7")}</NavLink>,
             key: '0',
         },
         {
-            label: <NavLink to="/category-pereparat">{t("Header.8")}</NavLink>,
+            label: <NavLink onClick={onClose} to="/category-pereparat">{t("Header.8")}</NavLink>,
             key: '1',
         }
     ];
@@ -26,8 +27,9 @@ const ProductDropdown = ({fonstSizes}) => {
                 <a onClick={(e) => e.preventDefault()}>
                     <Space>
                         <div className="header_btm_drop">
-                            <span style={{fontSize: fonstSizes}}>{t("Header.1")}</span>
+                            <span style={{ fontSize: fonstSizes }}>{t("Header.1")}</span>
                         </div>
+                        <DownOutlined />
                     </Space>
                 </a>
             </Dropdown>

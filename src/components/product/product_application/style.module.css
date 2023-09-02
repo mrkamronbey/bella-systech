@@ -38,33 +38,28 @@
   padding: 0;
 }
 
-.ProductApplication_col{
-    margin-bottom: 20px;
+.ProductApplication_col {
+  margin-bottom: 20px;
 }
-.ProductApplication_col > p::before {
-  content: "\02";
-  color: transparent;
-  font-weight: bold;
-  display: inline-block;
-  position: relative;
-  right: 10px;
-  top: 2px;
-  width: 1em;
-  margin-left: -1em;
-  border-radius: 2px;
-  opacity: 0.6000000238418579;
-  background: linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 0.1) 0%,
-      rgba(255, 255, 255, 0.1) 100%
-    ),
-    #df2027;
-  box-shadow: 0px 0px 10px 0px rgba(223, 32, 39, 0.2);
-  backdrop-filter: blur(2px);
-  width: 16px;
-  height: 16px;
+
+.product_app_icon_wrapp {
+  display: flex;
+  align-items: center;
+}
+
+.product_app_icon_wrapp > p {
+  margin: 7px 0;
+}
+
+.square{
+  display: flex;
+  align-items: baseline;
+  margin-right: 10px;
+}
+.square > i {
+  color: #df2027;
+  font-size: 20px;
   transform: rotate(45deg);
-  flex-shrink: 0;
 }
 @media only screen and (max-width: 882px) {
   .Container {

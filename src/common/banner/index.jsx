@@ -19,7 +19,7 @@ const Banner = ({ title, description, link, img }) => {
                     <div className={styles.banner_big_wrapp}>
                         <div className={styles.banner_row_wrap}>
                             <Row className={styles.banner_row}>
-                                <Col lg={6} md={12} sm={12} xs={12} className={styles.banner_col}>
+                                <Col lg={8} md={12} sm={12} xs={12} className={styles.banner_col}>
                                     <div className={styles.banner_content_wrap}>
                                         <Reveal>
                                             <h4 className={styles.banner_title}>
@@ -39,11 +39,11 @@ const Banner = ({ title, description, link, img }) => {
                                     </div>
 
                                 </Col>
-                                <Col lg={6} md={12} sm={12} xs={12} className={styles.banner_col}>
+                                <Col lg={4} md={12} sm={12} xs={12} className={styles.banner_col}>
                                     <div className={styles.banner_img_wrapp}>
                                         <ImageAnimation src={img} style={{
                                             width: "100%",
-                                            aspectRatio: 1 / 1
+                                            aspectRatio: 3 / 4
                                         }} />
                                     </div>
                                 </Col>

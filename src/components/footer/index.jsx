@@ -34,25 +34,22 @@ const Footer = () => {
                                 <ul>
                                     <li><p>{t("Footer.0")}</p></li>
                                     <li>
-                                        <NavLink className={styles.Navlink} to={"/companies/bialob"}>BNV Biolab</NavLink>
+                                        <NavLink className={styles.Navlink} to="/companies/lutronic">Lutronic</NavLink>
                                     </li>
                                     <li>
-                                        <NavLink className={styles.Navlink} to={"/companies/lutronic"}>Lutronic</NavLink>
+                                        <NavLink className={styles.Navlink} to="/companies/classys">Classys</NavLink>
                                     </li>
                                     <li>
-                                        <NavLink className={styles.Navlink} to={"/companies/lasemd"}>Lasemd</NavLink>
+                                        <NavLink className={styles.Navlink} to="/companies/histolab">Histolab</NavLink>
                                     </li>
                                     <li>
-                                        <NavLink className={styles.Navlink} to={"/companies/histolab"}>Histolab</NavLink>
+                                        <NavLink className={styles.Navlink} to="/companies/juvelook">Juvelook & Lenisna</NavLink>
                                     </li>
                                     <li>
-                                        <NavLink className={styles.Navlink} to={"/companies/classys"}>Classys</NavLink>
+                                        <NavLink className={styles.Navlink} to="/companies/skinwell">Skinwell</NavLink>
                                     </li>
                                     <li>
-                                        <NavLink className={styles.Navlink} to={"/companies/ultraformer"}>Ultraformer</NavLink>
-                                    </li>
-                                    <li>
-                                        <NavLink className={styles.Navlink} to={"/companies/skinwell"}>Skinwell</NavLink>
+                                        <NavLink className={styles.Navlink} to="/companies/biolab">BNV Biolab</NavLink>
                                     </li>
                                 </ul>
 

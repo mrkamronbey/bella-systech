@@ -11,7 +11,7 @@ const CategoryProduct = ({ dataproduct }) => {
   return (
     <Row style={{ marginTop: "10px" }}>
       {data.success == false ? dataproduct.map((elem, index) =>
-        <Col key={index} lg={4} md={12} style={{ marginBottom: "20px" }}>
+        <Col key={index} lg={4} md={6} style={{ marginBottom: "30px" }}>
           <NavLink style={{ textDecoration: "none" }} to={`/product/${elem.id}`}>
             <CommonCard
               src={elem.image1}
@@ -21,13 +21,12 @@ const CategoryProduct = ({ dataproduct }) => {
               style={{
                 aspectRatio: 3 / 4,
                 width: '100%',
-                height: "300px"
               }}
             />
           </NavLink>
         </Col>
       ):data?.data.map((elem, index) =>
-      <Col key={index} lg={4} md={12} style={{ marginBottom: "20px" }}>
+      <Col key={index} lg={4} md={6} style={{ marginBottom: "30px" }}>
         <NavLink style={{ textDecoration: "none" }} to={`/product/${elem.id}`}>
           <CommonCard src={elem.image1}
             isTitle={true}

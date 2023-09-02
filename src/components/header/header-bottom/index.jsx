@@ -33,33 +33,35 @@ const HeaderBottom = () => {
       : header.classList.remove("is_sticky");
   };
   const { t } = useTranslation();
+  //  Lutronic
+  // Classys 
+  // Histolab 
+  // Juvelook & Lenisna 
+  // Skinwell
+  // BNV Biolab
   const items = [
     {
-      label: <NavLink to="/companies/biolab">BNV Biolab</NavLink>,
+      label: <NavLink to="/companies/lutronic">Lutronic</NavLink>,
       key: '0',
     },
     {
-      label: <NavLink to="/companies/lutronic">Lutronic</NavLink>,
+      label: <NavLink to="/companies/classys">Classys</NavLink>,
       key: '1',
     },
     {
-      label: <NavLink to="/companies/juvelook">Juvelook or Lenisna</NavLink>,
+      label: <NavLink to="/companies/histolab">Histolab</NavLink>,
       key: '3',
     },
     {
-      label: <NavLink to="/companies/histolab">Histolab</NavLink>,
+      label: <NavLink to="/companies/juvelook">Juvelook & Lenisna</NavLink>,
       key: '4',
     },
     {
-      label: <NavLink to="/companies/classys">Classys</NavLink>,
+      label: <NavLink to="/companies/skinwell">Skinwell</NavLink>,
       key: '5',
     },
-    // {
-    //   label: <NavLink to="/companies/ultraformer">Ultraformer</NavLink>,
-    //   key: '6',
-    // },
     {
-      label: <NavLink to="/companies/skinwell">Skinwell</NavLink>,
+      label: <NavLink to="/companies/biolab">BNV Biolab</NavLink>,
       key: '6',
     },
   ];

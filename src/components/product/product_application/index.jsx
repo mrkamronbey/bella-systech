@@ -17,8 +17,10 @@ const ProductApplication = ({ dataproductfilter }) => {
           <Col className={styles.ProductApplication_col} lg={6}>
             {dataproductfilter.map((elem, index) =>
               elem.sample?.slice(0, 3).map((e, index) => (
-                <>
-
+                <div className={styles.product_app_icon_wrapp}>
+                  <div className={styles.square}>
+                    <i class='bx bxs-square'></i>
+                  </div>
                   <p>
                     {LanguValue() == "ru"
                       ? e.name_ru
@@ -28,16 +30,17 @@ const ProductApplication = ({ dataproductfilter }) => {
                           ? e.name_en
                           : null}
                   </p>
-
-                </>
+                </div>
               ))
             )}
           </Col>
           <Col className={styles.ProductApplication_col} lg={6}>
             {dataproductfilter.map((elem, index) =>
               elem.sample?.slice(3, 6).map((e, index) => (
-                <>
-
+                <div className={styles.product_app_icon_wrapp}>
+                  <div className={styles.square}>
+                    <i class='bx bxs-square'></i>
+                  </div>
                   <p>
                     {LanguValue() == "ru"
                       ? e.name_ru
@@ -47,16 +50,17 @@ const ProductApplication = ({ dataproductfilter }) => {
                           ? e.name_en
                           : null}
                   </p>
-
-                </>
+                </div>
               ))
             )}
           </Col>
           <Col className={styles.ProductApplication_col} lg={6}>
             {dataproductfilter.map((elem, index) =>
               elem.sample?.slice(6, 9).map((e, index) => (
-                <>
-
+                <div className={styles.product_app_icon_wrapp}>
+                  <div className={styles.square}>
+                    <i class='bx bxs-square'></i>
+                  </div>
                   <p>
                     {LanguValue() == "ru"
                       ? e.name_ru
@@ -66,16 +70,17 @@ const ProductApplication = ({ dataproductfilter }) => {
                           ? e.name_en
                           : null}
                   </p>
-
-                </>
+                </div>
               ))
             )}
           </Col>
           <Col className={styles.ProductApplication_col} lg={6}>
             {dataproductfilter.map((elem, index) =>
               elem.sample?.slice(9, 12).map((e, index) => (
-                <>
-
+                <div className={styles.product_app_icon_wrapp}>
+                  <div className={styles.square}>
+                    <i class='bx bxs-square'></i>
+                  </div>
                   <p>
                     {LanguValue() == "ru"
                       ? e.name_ru
@@ -85,63 +90,11 @@ const ProductApplication = ({ dataproductfilter }) => {
                           ? e.name_en
                           : null}
                   </p>
-
-                </>
+                </div>
               ))
             )}
           </Col>
         </Row>
-        {/* <ul>
-          {dataproductfilter.map((elem, index) =>
-            elem.sample?.slice(3, 6).map((e, index) => (
-              <>
-                <li>
-                  {LanguValue() == "ru"
-                    ? e.name_ru
-                    : LanguValue() == "uz"
-                      ? e.name_uz
-                      : LanguValue() == "en"
-                        ? e.name_en
-                        : null}
-                </li>
-              </>
-            ))
-          )}
-        </ul>
-        <ul>
-          {dataproductfilter.map((elem, index) =>
-            elem.sample?.slice(6, 9).map((e, index) => (
-              <>
-                <li>
-                  {LanguValue() == "ru"
-                    ? e.name_ru
-                    : LanguValue() == "uz"
-                      ? e.name_uz
-                      : LanguValue() == "en"
-                        ? e.name_en
-                        : null}
-                </li>
-              </>
-            ))
-          )}
-        </ul>
-        <ul>
-          {dataproductfilter.map((elem, index) =>
-            elem.sample?.slice(9, 12).map((e, index) => (
-              <>
-                <li>
-                  {LanguValue() == "ru"
-                    ? e.name_ru
-                    : LanguValue() == "uz"
-                      ? e.name_uz
-                      : LanguValue() == "en"
-                        ? e.name_en
-                        : null}
-                </li>
-              </>
-            ))
-          )}
-        </ul> */}
       </div>
     </div>
   );

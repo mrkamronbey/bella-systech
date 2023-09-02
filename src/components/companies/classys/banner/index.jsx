@@ -2,19 +2,30 @@ import React from 'react'
 import Banner from '../../../../common/banner/index'
 import BannerImg from '../../../../assets/banner/banner_img1.png'
 
-const BannerCard = () => {
-    const arr = [1, 2, 3, 4, 5, 6]
+const BannerCard = ({ filterCompany }) => {
+    function LanguValue() {
+        return window.localStorage.getItem("i18nextLng");
+    }
     return (
         <>
             {
-                arr.map(() => (
+                filterCompany.map(elem => elem.aparat.map(item => (
                     <Banner
-                        title="Идеальная система для омоложения кожи и доставки космецевтических средств"
-                        description=' Уникальная система, сочетающая в себе тулиевый лазер и эксклюзивную линию космецевтики'
-                        link='/product'
-                        img={BannerImg}
+                        title={
+                            LanguValue() == 'uz' ? item.name_uz : LanguValue() == 'ru' ? item.name_ru : LanguValue() == 'en' ? item.name_en : null
+                        }
+                        description={
+                            LanguValue() == 'uz' ?
+                                `${item.description_uz.slice(0, 250)}...` :
+                                LanguValue() == 'ru' ?
+                                    `${item.description_ru.slice(0, 250)}...` :
+                                    LanguValue() == 'en' ?
+                                        `${item.description_en.slice(0, 250)}` : null
+                        }
+                        img={item.image1}
+                        link={`/product/${item.id}`}
                     />
-                ))
+                )))
             }
         </>
     )

@@ -87,7 +87,7 @@ const BannerSkillWell = () => {
                                                 </NavLink>
                                             </CommonButton>
                                             <CommonButton className={styles.right_btn}>
-                                                <NavLink to="#">
+                                                <NavLink to="/contact">
                                                     {t("Card.1")}
                                                 </NavLink>
                                             </CommonButton>
