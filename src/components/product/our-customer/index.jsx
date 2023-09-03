@@ -92,10 +92,15 @@ const OurCustumer = ({ dataproductfilter }) => {
       <WrapperContainer>
         <div className={styles.custumer_content}>
           <Reveal>
-            <h4 className={styles.custumer_title}>{t("BeforeAfter.2")}</h4>
-          </Reveal>
-          <Reveal>
-            <p className={styles.custumer_text}>{t("BeforeAfter.3")}</p>
+            <h4 className={styles.custumer_title}>
+              {
+                dataproductfilter.map(elem => (
+                  LanguValue() == "ru" ? `Можете пройти процедуру на аппарате "${elem.name_ru}" в клиниках` :
+                    LanguValue() == "en" ? ` You can undergo the procedure on the device "${elem.name_en}" in clinics` :
+                      LanguValue() == "uz" ? `Siz klinikalarda "${elem.name_uz}"qurilmasida protseduradan o'tishingiz mumkin` : `Можете пройти процедуру на аппарате "${elem.name_ru} "в клиниках`
+                ))
+              }
+            </h4>
           </Reveal>
         </div>
         <div className="custumer_slid_wrapp">
@@ -103,7 +108,6 @@ const OurCustumer = ({ dataproductfilter }) => {
             className="product_modal"
             title={
               filterPartners?.map(e => e.map(elem => (LanguValue() == 'uz' ? elem.name_uz : LanguValue() == 'en' ? elem.name_en : LanguValue() == 'ru' ? elem.name_ru : null)))
-
             }
             width={900}
             isModalOpen={isModalOpen}

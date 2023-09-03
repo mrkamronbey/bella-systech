@@ -23,9 +23,9 @@ const Buying = ({ dataproductfilter }) => {
                 <h2>
                     {
                         dataproductfilter.map(elem => (
-                            LanguValue() == "ru" ? `Покупая ${elem.name_ru} в компании Bella-systech, вы получаете:` :
+                            LanguValue() == "ru" ? `Покупая ${elem.name_ru} в компании Bella-systech Uzbekistan, вы получаете:` :
                                 LanguValue() == "en" ? `Buying ${elem.name_en} from Bella-systech, you get:` :
-                                    LanguValue() == "uz" ? `Bella-systech-dan ${elem.name_uz}-ni sotib olib, siz quyidagilarni olasiz:` : `Покупая ${elem.name_ru} в компании Bella-systech, вы получаете:`
+                                    LanguValue() == "uz" ? `Bella-systech Uzbekistan-dan ${elem.name_uz}-ni sotib olib, siz quyidagilarni olasiz:` : `Покупая ${elem.name_ru} в компании Bella-systech Uzbekistan, вы получаете:`
                         ))
                     }
 

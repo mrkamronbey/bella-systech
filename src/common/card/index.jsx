@@ -73,7 +73,7 @@ const CommonCard = ({
                   damping: 10,
                 }}
               >
-                <NavLink to={order}>{card_btn_text2}</NavLink>
+                <NavLink to={order ? '/contact' : order}>{card_btn_text2}</NavLink >
               </motion.button>
             </div>
           ) : null}

@@ -5,6 +5,15 @@
   padding: 32px;
   color: #fff;
 }
+
+.media_aparat_title {
+  display: none;
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
 .slider .swiper-container1 {
   width: 100%;
   height: 100%;
@@ -91,13 +100,16 @@
   }
 }
 @media (max-width: 767.98px) {
+  .media_aparat_title{
+    display: block;
+  }
   .slider__flex {
     flex-direction: column-reverse;
   }
 
   .slider__images {
     width: 100%;
-    height: 242px;
+    height: auto;
   }
   .slider__thumbs {
     height: 100px;

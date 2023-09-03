@@ -11,7 +11,7 @@ const Content = ({dataproductfilter}) => {
     dataproductfilter.map((elem , index) => <>
      <div className={styles.Wrapper}>
       <Reveal>
-        <h3>{LanguValue() == 'uz' ? elem.name_uz: LanguValue() == 'ru' ? elem.name_ru:LanguValue() == 'en' ? elem.name_en:null}</h3>
+        <h3 className={styles.mobile_none_title}>{LanguValue() == 'uz' ? elem.name_uz: LanguValue() == 'ru' ? elem.name_ru:LanguValue() == 'en' ? elem.name_en:null}</h3>
       </Reveal>
       <Reveal>
         <p style={{whiteSpace : "pre-wrap"}}>

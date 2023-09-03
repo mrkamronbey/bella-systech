@@ -4,7 +4,6 @@
 }
 .Wrapper h3 {
   color: #000;
-
   /* Text/Heading 2 */
   font-family: Okta Neue;
   font-size: 24px;
@@ -100,5 +99,11 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 767.98px) {
+  .mobile_none_title {
+    display: none !important;
   }
 }

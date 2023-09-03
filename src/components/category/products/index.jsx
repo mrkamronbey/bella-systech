@@ -16,8 +16,8 @@ const CategoryProduct = ({ dataproduct }) => {
             <CommonCard
               src={elem.image1}
               isTitle={true}
-              card_title={LanguValue() == 'uz' ? elem.name_uz : LanguValue() == 'en' ? elem.name_en : LanguValue() == 'ru' ? elem.name_ru : null}
-              card_description={LanguValue() == 'uz' ? elem.description_uz.slice(0, 50) : LanguValue() == 'en' ? elem.description_en.slice(0, 50) : LanguValue() == 'ru' ? elem.description_ru.slice(0, 50) : null}
+              card_title={LanguValue() == 'uz' ? `${elem.name_uz.slice(0, 15)}...` : LanguValue() == 'en' ? `${elem.name_en.slice(0, 15)}...` : LanguValue() == 'ru' ? `${elem.name_ru.slice(0, 15)}...` : null}
+              card_description={LanguValue() == 'uz' ? `${elem.description_uz.slice(0, 30)}...` : LanguValue() == 'en' ? `${elem.description_en.slice(0, 30)}...` : LanguValue() == 'ru' ? `${elem.description_ru.slice(0, 30)}...` : null}
               style={{
                 aspectRatio: 3 / 4,
                 width: '100%',
@@ -25,17 +25,17 @@ const CategoryProduct = ({ dataproduct }) => {
             />
           </NavLink>
         </Col>
-      ):data?.data.map((elem, index) =>
-      <Col key={index} lg={4} md={6} style={{ marginBottom: "30px" }}>
-        <NavLink style={{ textDecoration: "none" }} to={`/product/${elem.id}`}>
-          <CommonCard src={elem.image1}
-            isTitle={true}
-            card_title={LanguValue() == 'uz' ? elem.name_uz : LanguValue() == 'en' ? elem.name_en : LanguValue() == 'ru' ? elem.name_ru : null}
-            card_description={LanguValue() == 'uz' ? elem.description_uz.slice(0, 50) : LanguValue() == 'en' ? elem.description_en.slice(0, 50) : LanguValue() == 'ru' ? elem.description_ru.slice(0, 50) : null}
-          />
-        </NavLink>
-      </Col>
-    )}
+      ) : data?.data.map((elem, index) =>
+        <Col key={index} lg={4} md={6} style={{ marginBottom: "30px" }}>
+          <NavLink style={{ textDecoration: "none" }} to={`/product/${elem.id}`}>
+            <CommonCard src={elem.image1}
+              isTitle={true}
+              card_title={LanguValue() == 'uz' ? elem.name_uz : LanguValue() == 'en' ? elem.name_en : LanguValue() == 'ru' ? elem.name_ru : null}
+              card_description={LanguValue() == 'uz' ? elem.description_uz.slice(0, 50) : LanguValue() == 'en' ? elem.description_en.slice(0, 50) : LanguValue() == 'ru' ? elem.description_ru.slice(0, 50) : null}
+            />
+          </NavLink>
+        </Col>
+      )}
     </Row>
   )
 }

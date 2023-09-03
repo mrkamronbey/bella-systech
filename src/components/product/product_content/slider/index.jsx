@@ -4,11 +4,14 @@ import "./styles.css";
 import "swiper/css";
 // import "swiper/css/navigation";
 import { useState } from "react";
+import Reveal from './../../../../utils/reveal/reveal';
 
 
 function ProductSlider({ dataproductfilter }) {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
-
+  function LanguValue() {
+    return window.localStorage.getItem("i18nextLng");
+  }
   const slides = [
     dataproductfilter.map(elem => elem.image1)[0],
     dataproductfilter.map(elem => elem.image2)[0],
@@ -18,8 +21,10 @@ function ProductSlider({ dataproductfilter }) {
   return (
     dataproductfilter.map((elem, index) => <>
       <div className="App">
+        <h3 className="media_aparat_title">{LanguValue() == 'uz' ? elem.name_uz : LanguValue() == 'ru' ? elem.name_ru : LanguValue() == 'en' ? elem.name_en : null}</h3>
         <section className="slider">
           <div className="slider__flex">
+
             <div className="slider__col">
 
               <div className="slider__thumbs">
