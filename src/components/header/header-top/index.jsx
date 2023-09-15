@@ -5,7 +5,7 @@ import LanguageHeader from '../header-language'
 import { Tooltip } from 'antd';
 import Menu from '../menu';
 import './style.css'
-import HeaderLogo from '../../../assets/header/bella-systech-hdr-logo.png'
+import HeaderLogo from '../../../assets/header/logos.png'
 import { NavLink } from 'react-router-dom';
 
 

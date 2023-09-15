@@ -4,9 +4,19 @@ import { useTranslation } from "react-i18next";
 import CommonCard from "../../../../common/card";
 import { Col, Row } from "react-grid-system";
 import "./style.css";
+import { useDispatch, useSelector } from 'react-redux'
+import { useEffect } from 'react'
+import { PereparatGet } from '../../../../redux/pereparat/index'
 const Card = () => {
   const { t } = useTranslation();
-  const data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+  const dispatch = useDispatch()
+  useEffect(() => {
+    dispatch(PereparatGet())
+  }, [])
+  const preparatGetState = useSelector((state) => state.pereparat.PereparatGet?.data)
+   function LanguValue() {
+        return window.localStorage.getItem("i18nextLng");
+    }
 
   return (
     <div className={styles.Wrapper}>
@@ -14,28 +24,29 @@ const Card = () => {
         <div className={styles.box}>
           <h2>{t("Compaines.6")}</h2>
           <Row className={styles.Row}>
-            {data.map(() => (
-              <Col className={styles.Col} lg={4} md={12}>
-                <div className={styles.slider_card_box}>
+            {
+              preparatGetState.map(elem => (
+                <Col className={styles.Col} lg={4}>
                   <CommonCard
                     className={styles.histolab_card}
-                    src={
-                      "https://llskin.ru/image/cache/catalog/VIA/VIAnew-642x470.png"
+                    width="100%"
+                    src={elem.image1}
+                    card_title={
+                      LanguValue() == 'uz' ? elem.name_uz.length >= 20 ? `${elem.name_uz.slice(0, 20)}...` : elem.name_uz : LanguValue() == 'en' ? elem.name_en.length >= 20 ? `${elem.name_en.slice(0, 20)}...` : elem.name_en : LanguValue() == 'ru' ? elem.name_ru.length >= 20 ? `${elem.name_ru.slice(0, 20)}...` : elem.name_ru : elem.name_ru.length >= 20 ? `${elem.name_ru.slice(0, 20)}...` : elem.name_ru
                     }
-                    style={{ width: "100%", aspectRatio: 16 / 10 }}
-                    card_title="Краткая информация"
-                    card_description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    // card_description={
+                    //     LanguValue() == 'uz' ? `${elem.description_uz.slice(0, 150)}...` : LanguValue() == 'en' ? `${elem.description_en.slice(0, 150)}...` : LanguValue() == 'ru' ? `${elem.description_ru.slice(0, 150)}...` : null
+                    // }
                     card_btn_text1={t("Card.0")}
                     card_btn_text2={t("Card.1")}
-                    details="/product"
+                    details={`/product2/${elem.id}`}
                     order="#"
                     isBtn={true}
                     isTitle={true}
-
                   />
-                </div>
-              </Col>
-            ))}
+                </Col>
+              ))
+            }
           </Row>
         </div>
       </div>

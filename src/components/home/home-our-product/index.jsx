@@ -76,17 +76,17 @@ const HomeOurProduct = () => {
                             aparatProductGetState.length >= 3 ? (
                                 <Slider {...settings}>
                                     {
-                                        aparatProductGetState.map((elem) => (
+                                        aparatProductGetState.slice(0, 8).map((elem) => (
                                             <div className='slider_card_box'>
                                                 <CommonCard
                                                     width="95%"
                                                     src={elem.image1}
                                                     card_title={
-                                                        LanguValue() == 'uz' ? elem.name_uz : LanguValue() == 'en' ? elem.name_en : LanguValue() == 'ru' ? elem.name_ru : null
+                                                        LanguValue() == 'uz' ? elem.name_uz.length >= 20 ? `${elem.name_uz.slice(0, 20)}...` : elem.name_uz : LanguValue() == 'en' ? elem.name_en.length >= 20 ? `${elem.name_en.slice(0, 20)}...` : elem.name_en : LanguValue() == 'ru' ? elem.name_ru.length >= 20 ? `${elem.name_ru.slice(0, 20)}...` : elem.name_ru : elem.name_ru.length >= 20 ? `${elem.name_ru.slice(0, 20)}...` : elem.name_ru
                                                     }
-                                                    card_description={
-                                                        LanguValue() == 'uz' ? `${elem.description_uz.slice(0, 150)}...` : LanguValue() == 'en' ? `${elem.description_en.slice(0, 150)}...` : LanguValue() == 'ru' ? `${elem.description_ru.slice(0, 150)}...` : null
-                                                    }
+                                                    // card_description={
+                                                    //     LanguValue() == 'uz' ? `${elem.description_uz.slice(0, 150)}...` : LanguValue() == 'en' ? `${elem.description_en.slice(0, 150)}...` : LanguValue() == 'ru' ? `${elem.description_ru.slice(0, 150)}...` : null
+                                                    // }
                                                     card_btn_text1={t("Card.0")}
                                                     card_btn_text2={t("Card.1")}
                                                     details={`/product/${elem.id}`}
@@ -96,7 +96,7 @@ const HomeOurProduct = () => {
                                                     style={{
                                                         aspectRatio: 3 / 4,
                                                         width: '100%',
-                                                        height: "400px"
+                                                        height: "auto"
                                                     }}
                                                 />
                                             </div>

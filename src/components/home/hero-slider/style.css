@@ -1,5 +1,5 @@
 .home_hero_section {
-  padding: 100.5px 0 0 0;
+  padding: 145px 0 0 0;
   height: 84.3vh;
 }
 .home_hero_section .swiper {
@@ -14,13 +14,13 @@
   background-position: center;
   background-size: cover;
   width: 100% !important;
-  height: 100% !important;
+  height: auto !important;
 }
 
 .home_hero_section .swiper-slide-image {
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: auto;
 }
 
 .home_hero_section .swiper-button-prev,
@@ -36,28 +36,36 @@
 
 @media only screen and (max-width: 991px) {
   .home_hero_section {
-    padding: 64.5px 0 0 0;
-    height: 88.3vh;
+    padding: 78.5px 0 0 0;
+    height: auto;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .home_hero_section {
-    padding: 64.5px 0 0 0;
-    height: 100vh;
+    padding: 78.5px 0 0 0;
+    height: auto;
+  } 
+}
+
+@media only screen and (max-width: 620px) {
+  .home_hero_section {
+    overflow-y: hidden;
+    padding: 70px 0 0 0;
+    height: auto;
   }
 }
 @media only screen and (max-width: 425px) {
   .home_hero_section {
     overflow-y: hidden;
-    padding: 90px 0 0 0;
-    height: 50vh;
+    padding: 70px 0 0 0;
+    height: 55vh;
   }
 }
 
 @media only screen and (max-width: 375px) {
   .home_hero_section {
-    padding: 80.5px 0 0 0;
-    height: 50vh;
+    padding: 60.5px 0 0 0;
+    height: 40vh;
   }
 }

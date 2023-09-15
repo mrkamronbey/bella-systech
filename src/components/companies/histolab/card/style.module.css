@@ -11,6 +11,9 @@
 .Row {
   margin: 0 !important;
 }
+.Col{
+  margin-bottom: 50px !important;
+}
 .histolab_card {
   width: 100%;
 }

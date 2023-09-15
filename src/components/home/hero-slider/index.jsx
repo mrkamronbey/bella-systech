@@ -12,9 +12,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import 'swiper/css';
 import 'swiper/css/effect-creative';
-// import BannerImg from '../../../assets/banner'
-
-
+import BannerImg from '../../../assets/banner/image_2023-09-15_09-56-59.png'
 
 const HomeHeroSlider = () => {
     const { t } = useTranslation()
@@ -49,33 +47,25 @@ const HomeHeroSlider = () => {
                     <SwiperSlide>
                         <img
                             className="swiper-slide-image"
-                            src="https://studio.swiperjs.com/demo-images/nature/01.jpg"
+                            src={BannerImg}
                         />
                         <div className={styles.content_box}>
-                            <div className={styles.slider_content}>
-                                <Reveal>
-                                    <h2 className={styles.slider_title}>Banner slide 1</h2>
-                                </Reveal>
-                                <Reveal>
-                                    <p className={styles.slider_text}>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse, blanditiis.</p>
-                                </Reveal>
-                            </div>
                             <div className={styles.btn_group}>
                                 <CommonButton className={styles.left_btn}>
-                                    <NavLink to="#">
+                                    <a href="tel:+998 93 908 70 85">
                                         {t("HeroSlider.0")}
-                                    </NavLink>
+                                    </a>
                                 </CommonButton>
                                 <CommonButton className={styles.right_btn}>
-                                    <NavLink to="#">
+                                    <a href="#form">
                                         {t("HeroSlider.1")}
-                                    </NavLink>
+                                    </a>
                                 </CommonButton>
                             </div>
                         </div>
                     </SwiperSlide>
 
-                    <SwiperSlide>
+                    {/* <SwiperSlide>
                         <img
                             className="swiper-slide-image"
                             src="https://studio.swiperjs.com/demo-images/nature/02.jpg"
@@ -157,7 +147,7 @@ const HomeHeroSlider = () => {
                                 <CommonButton className={styles.right_btn}>{t("HeroSlider.1")}</CommonButton>
                             </div>
                         </div>
-                    </SwiperSlide>
+                    </SwiperSlide> */}
                 </Swiper>
                 {/* </WrapperContainer> */}
             </div>
