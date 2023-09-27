@@ -19,7 +19,7 @@ const LutronicCompainesComponent = () => {
   const filterCompany = companyGetState.filter(elem => elem.name == 'Lutronic')
   return (
     <>
-      <HomeHero title={"Lutronic"} className={styles.Wrapper} Contact />
+      <HomeHero title_style={{color: "#fff"}} title={"Lutronic"} className={styles.Wrapper} Contact />
       <ContentCompaines filterCompany={filterCompany} />
       <BannerCard filterCompany={filterCompany} />
       <LutronicCard />

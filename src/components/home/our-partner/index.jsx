@@ -9,11 +9,12 @@ import Slider from "react-slick";
 import { PartnersGet } from '../../../redux/partners';
 
 
-import PartnerImg1 from '../../../assets/partner/partner-logo1.png'
-import PartnerImg2 from '../../../assets/partner/partner-logo2.png'
-import PartnerImg3 from '../../../assets/partner/partner-logo3.png'
-import PartnerImg4 from '../../../assets/partner/partner-logo4.png'
-import PartnerImg5 from '../../../assets/partner/partner-logo5.png'
+import PartnerImg1 from '../../../assets/partner/1.png'
+import PartnerImg2 from '../../../assets/partner/2.png'
+import PartnerImg3 from '../../../assets/partner/3.png'
+import PartnerImg4 from '../../../assets/partner/4.png'
+import PartnerImg5 from '../../../assets/partner/5.png'
+import PartnerImg6 from '../../../assets/partner/6.png'
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { Col, Row } from 'react-grid-system';
@@ -21,6 +22,32 @@ import { Col, Row } from 'react-grid-system';
 
 
 const OurPartner = () => {
+  const sliderData = [
+    {
+      id: 1,
+      image: PartnerImg1
+    },
+    {
+      id: 2,
+      image: PartnerImg2
+    },
+    {
+      id: 3,
+      image: PartnerImg3
+    },
+    {
+      id: 4,
+      image: PartnerImg4
+    },
+    {
+      id: 5,
+      image: PartnerImg5
+    },
+    {
+      id: 6,
+      image: PartnerImg6
+    }
+  ]
   const { t } = useTranslation()
   const dispatch = useDispatch()
   useEffect(() => {
@@ -35,7 +62,7 @@ const OurPartner = () => {
     speed: 2000,
     autoplaySpeed: 4000,
     cssEase: "linear",
-    slidesToShow: 5,
+    slidesToShow: 6,
     slidesToScroll: 1,
     initialSlide: 0,
     responsive: [
@@ -81,32 +108,17 @@ const OurPartner = () => {
             </Reveal>
           </div>
           <div className='slider_wrapp'>
-            {
-              partnerGetState.length >= 4 ? (
-                <Slider {...settings}>
-                  {
-                    partnerGetState.map(elem => (
-                      <div className='slider_link_box'>
-                        {/* <NavLink className='slider_link' to="#"> */}
-                        <img src={elem.logo} alt="" />
-                        {/* </NavLink> */}
-                      </div>
-                    ))
-                  }
-                </Slider>
-              ) : (
-                <Row style={{ margin: "0" }}>
-                  {
-                    partnerGetState.slice(0, 4).map(elem => (
-                      <Col lg={3} className='partners_img_col'>
-                        <img src={elem.logo} alt="" />
-                      </Col>
-                    ))
-                  }
-                </Row>
-
-              )
-            }
+            <Slider {...settings}>
+              {
+                sliderData.map(elem => (
+                  <div id={elem.id} className='slider_link_box'>
+                    {/* <NavLink className='slider_link' to="#"> */}
+                    <img src={elem.image} alt="" />
+                    {/* </NavLink> */}
+                  </div>
+                ))
+              }
+            </Slider>
           </div>
         </WrapperContainer>
       </div>

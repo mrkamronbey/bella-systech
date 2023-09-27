@@ -127,6 +127,10 @@
   .card_btn > button {
     font-size: 14px;
   }
+
+  .card_content{
+    padding: 10px;
+  }
 }
 @media screen and (max-width: 320px) {
   .card_btn > button {

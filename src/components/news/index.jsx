@@ -13,7 +13,7 @@ function NewsComponent() {
 
   return (
     <>
-      <HomeHero title={t("NewsPage.0")} className={styled.NewsHero} />
+      <HomeHero title_style={{ color: "#fff" }} title={t("NewsPage.0")} className={styled.NewsHero} />
       <NewsCards />
       <RegisterSlider />
       <RequestConsultation />

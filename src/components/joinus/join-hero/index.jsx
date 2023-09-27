@@ -4,10 +4,10 @@ import HomeHero from "../../../common/hero";
 import { useTranslation } from "react-i18next";
 
 const JoinHero = () => {
-    const {t} = useTranslation()
+    const { t } = useTranslation()
     return (
         <>
-            <HomeHero title={t("Cooperation.0")} className={styles.join_hero} />
+            <HomeHero title_style={{ color: "#fff" }} title={t("Cooperation.0")} className={styles.join_hero} />
         </>
     )
 }

@@ -71,9 +71,12 @@ const Footer = () => {
                                 <span><i class='bx bx-stopwatch' ></i> 09:00 - 18:00, {t("Footer.12")}</span>
                                 <Reveal>
                                     <h5>{t("Footer.11")}</h5>
-
                                 </Reveal>
-                                <button style={{ cursor: "pointer" }} type="submit">{t("Footer.9")}</button>
+                                <button style={{ cursor: "pointer" }} type="submit">
+                                    <a href='tel:+998 93 908 70 85'>
+                                        {t("Footer.9")}
+                                    </a>
+                                </button>
                                 <ul className={styles.social_media}>
                                     <li><a href="#"><i class='bx bxl-telegram' ></i></a></li>
                                     <li><a href="#"><i class='bx bxl-instagram' ></i></a></li>

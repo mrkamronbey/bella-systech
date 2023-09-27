@@ -1,7 +1,7 @@
 import { Suspense } from "react"
 import { Routes, Route } from "react-router-dom"
 import { RouterData } from "./index-data"
-import Logo from '../assets/header/bella-systech-hdr-logo.png'
+import Logo from '../assets/header/logos.png'
 import './style.css'
 
 function RouterComponent() {

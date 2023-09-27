@@ -4,7 +4,8 @@ import { useTranslation } from 'react-i18next'
 import CommonCard from '../../../../common/card'
 import "./style.css"
 import Slider from "react-slick";
-const Card = () => {
+import { Col, Row } from 'react-grid-system'
+const Card = ({ filterCompany }) => {
     const { t } = useTranslation()
     const data = [1, 2, 3, 4, 5]
     const settings = {
@@ -45,31 +46,78 @@ const Card = () => {
             }
         ]
     };
+    function LanguValue() {
+        return window.localStorage.getItem("i18nextLng");
+    }
     return (
         <div className={styles.Wrapper}>
             <div className={styles.Container}>
                 <div className={styles.box}>
                     <h2>{t("Compaines.2")}</h2>
                     <div className='ourproduct_slider_wrapp'>
-                        <Slider {...settings}>
-                            {
-                                data.map(() => (
-                                    <div className='slider_card_box'>
-                                        <CommonCard
-                                            src={"https://biotus.uz/media/amasty/amoptmobile/catalog/product/cache/1a5f7a0f055b7b526c4e22471a441dbb/1/_/1_818_56_jpg.webp"}
-                                            card_title="Краткая информация"
-                                            card_description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                                            card_btn_text1={t("Card.0")}
-                                            card_btn_text2={t("Card.1")}
-                                            details="/product"
-                                            order="#"
-                                            isBtn={true}
-                                            isTitle={true}
-                                        />
-                                    </div>
-                                ))
-                            }
-                        </Slider>
+                        {
+                            filterCompany.map(elem => elem.pereparat.length >= 3 ? <Slider {...settings}>
+                                {
+                                    filterCompany.map(elem => elem.pereparat?.map(item => (
+                                        <div className='slider_card_box'>
+                                            <CommonCard
+                                                width="90%"
+                                                src={item.image1}
+                                                card_title={
+                                                    LanguValue() == 'uz' ? `${item.name_uz.slice(0, 20)}...` : LanguValue() == 'ru' ? `${item.name_ru.slice(0, 20)}...` : LanguValue() == 'en' ? `${item.name_en.slice(0, 20)}...` : `${item.name_ru.slice(0, 20)}...`
+                                                }
+                                                card_description={
+                                                    LanguValue() == 'uz' ?
+                                                        `${item.description_uz.slice(0, 60)}...` :
+                                                        LanguValue() == 'ru' ?
+                                                            `${item.description_ru.slice(0, 60)}...` :
+                                                            LanguValue() == 'en' ?
+                                                                `${item.description_en.slice(0, 60)}...` : `${item.description_ru.slice(0, 60)}...`
+                                                }
+
+                                                card_btn_text1={t("Card.0")}
+                                                card_btn_text2={t("Card.1")}
+                                                details={`/product2/${item.id}`}
+                                                order="/contact"
+                                                isBtn={true}
+                                                isTitle={true}
+                                            />
+                                        </div>
+                                    )))
+                                }
+                            </Slider> : <Row style={{ margin: "0" }}>
+                                {
+                                    filterCompany.map(elem => elem.pereparat?.map(item => (
+                                        <Col lg={4}>
+                                            <CommonCard
+                                                width="100%"
+                                                src={item.image1}
+                                                card_title={
+                                                    LanguValue() == 'uz' ? `${item.name_uz.slice(0, 20)}...` : LanguValue() == 'ru' ? `${item.name_ru.slice(0, 20)}...` : LanguValue() == 'en' ? `${item.name_en.slice(0, 20)}...` : `${item.name_ru.slice(0, 20)}...`
+                                                }
+                                                card_description={
+                                                    LanguValue() == 'uz' ?
+                                                        `${item.description_uz.slice(0, 60)}...` :
+                                                        LanguValue() == 'ru' ?
+                                                            `${item.description_ru.slice(0, 60)}...` :
+                                                            LanguValue() == 'en' ?
+                                                                `${item.description_en.slice(0, 60)}...` : `${item.description_ru.slice(0, 60)}...`
+                                                }
+
+                                                card_btn_text1={t("Card.0")}
+                                                card_btn_text2={t("Card.1")}
+                                                details={`/product2/${item.id}`}
+                                                order="/contact"
+                                                isBtn={true}
+                                                isTitle={true}
+                                            />
+                                        </Col>
+                                    )))
+                                }
+                            </Row>
+                            )
+                        }
+
                     </div>
                 </div>
             </div>

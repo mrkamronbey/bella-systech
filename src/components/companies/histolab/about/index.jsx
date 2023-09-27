@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from "./style.module.css"
 import { Col, Row } from "react-grid-system"
-import AboutImage from "./../../../../assets/compaines/about-image.png"
+import AboutImage from "./../../../../assets/compaines/histolab-about.png"
 import { useTranslation } from 'react-i18next'
 import ImageAnimation from '../../../../common/image'
 import Reveal from '../../../../utils/reveal/reveal'

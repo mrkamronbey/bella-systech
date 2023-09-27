@@ -32,10 +32,10 @@
   background: #f8f8f8 !important;
   border: none;
   outline: none;
-  padding: 40px 60px;
-  display: flex;
+  /* padding: 40px 60px; */
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
   border: 20px solid #fff !important;
   border-radius: 20px;
   filter: blur(2px);

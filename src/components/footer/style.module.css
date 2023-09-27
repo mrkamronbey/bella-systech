@@ -154,6 +154,7 @@
   line-height: 160%;
   cursor: pointer;
   color: #ffffff;
+  text-decoration: none;
   border: none;
   outline: none;
   padding: 15px 20px;
@@ -162,6 +163,11 @@
   margin-left: auto;
   justify-content: center;
   transition: 0.3s;
+}
+
+.network_contact > button > a{
+  color: #fff;
+  text-decoration: none;
 }
 
 .network_contact > button:hover,

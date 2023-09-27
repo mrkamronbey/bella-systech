@@ -21,6 +21,8 @@ const News = lazy(() => import("./../layouts/News/index"));
 const NewsMore = lazy(() => import("./../layouts/News-More/index"));
 const Benefits = lazy(() => import("./../layouts/benefits/index"));
 const JoinUs = lazy(() => import("../layouts/joinus/index"));
+const CosmeticCategory = lazy(() => import("../layouts/cosmetic-category/index"))
+const Product3 = lazy(() => import("../layouts/product3/index"))
 
 export const RouterData = [
   {
@@ -112,5 +114,15 @@ export const RouterData = [
     id: 17,
     path: "/join",
     component: <JoinUs />,
+  },
+  {
+    id: 18,
+    path: "/cosmetic-cateogry",
+    component: <CosmeticCategory />,
+  },
+  {
+    id: 19,
+    path: "/product3/:id",
+    component: <Product3 />,
   },
 ];

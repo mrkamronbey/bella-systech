@@ -19,7 +19,7 @@ const SkinwellComponent = () => {
   const filterCompany = companyGetState.filter(elem => elem.name == 'Skinwell')
   return (
     <>
-      <HomeHero title={t("Skinwell")} className={styles.Wrapper} Contact />
+      <HomeHero title_style={{color: "#fff"}} title={t("Skinwell")} className={styles.Wrapper} Contact />
       <CompainesAbout filterCompany={filterCompany} />
       <BannerSkillWell filterCompany={filterCompany} />
       <RequestConsultation />

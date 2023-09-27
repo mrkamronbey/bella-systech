@@ -12,7 +12,7 @@ const BannerCard = ({ filterCompany }) => {
                 filterCompany.map(elem => elem.aparat.map(item => (
                     <Banner
                         title={
-                            LanguValue() == 'uz' ? item.name_uz : LanguValue() == 'ru' ? item.name_ru : LanguValue() == 'en' ? item.name_en : null
+                            LanguValue() == 'uz' ? item.name_uz : LanguValue() == 'ru' ? item.name_ru : LanguValue() == 'en' ? item.name_en : item.name_ru
                         }
                         description={
                             LanguValue() == 'uz' ?
@@ -20,7 +20,7 @@ const BannerCard = ({ filterCompany }) => {
                                 LanguValue() == 'ru' ?
                                     `${item.description_ru.slice(0, 250)}...` :
                                     LanguValue() == 'en' ?
-                                        `${item.description_en.slice(0, 250)}` : null
+                                        `${item.description_en.slice(0, 250)}` : `${item.description_ru.slice(0, 250)}...`
                         }
                         img={item.image1}
                         link={`/product/${item.id}`}

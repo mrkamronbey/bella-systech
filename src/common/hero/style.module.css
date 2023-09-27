@@ -24,7 +24,7 @@
   display: inline;
   width: 100%;
   padding-top: 8%;
-  color: #fff;
+  color: #000;
   font-size: 48px;
   font-style: normal;
   font-weight: 600;
@@ -100,9 +100,7 @@
     color: #ffffff;
     width: 100%;
   }
-  .hero_title {
-    padding-top: 20%;
-  }
+
   .Container {
     display: flex;
     align-items: center;
@@ -110,13 +108,13 @@
   }
   .hero_title {
     width: 100%;
-    color: white;
+    /* color: white; */
     display: flex;
     font-style: normal;
     font-weight: bold;
     font-size: 22px;
     line-height: 30px !important;
-    color: #ffffff;
+    /* color: #ffffff; */
   }
 
   .Container button {
@@ -157,5 +155,9 @@
 
   .hero_content{
     padding-left: 9px;
+  }
+
+  .hero_title{
+    color: #fff !important;
   }
 }

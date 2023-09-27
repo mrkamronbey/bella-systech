@@ -8,7 +8,7 @@ const BenefitsHero = () => {
     const { t } = useTranslation()
     return (
         <>
-            <HomeHero title={t("Benefits.1")} className={styles.benefits_hero}>
+            <HomeHero title_style={{ color: "#fff" }} title={t("Benefits.1")} className={styles.benefits_hero}>
                 <Counter />
             </HomeHero>
         </>

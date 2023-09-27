@@ -81,7 +81,7 @@ const RequestConsultation = () => {
   })
 
   useEffect(() => {
-    !names || !phone || !mail ? setDisableds(true) : setDisableds(false);
+    !names || !phone.includes("+") || !mail.includes("@") ? setDisableds(true) : setDisableds(false);
   }, [mail]);
   return (
     <>
@@ -106,7 +106,7 @@ const RequestConsultation = () => {
                       onChange={(e) => setNames(e.currentTarget.value)}
                       required
                     />
-                    <i class="bx bxs-check-circle"></i>
+                    {/* <i class="bx bxs-check-circle"></i> */}
                     {/* <i class='bx bxs-x-circle'></i> */}
                   </div>
                   <div>
@@ -116,8 +116,11 @@ const RequestConsultation = () => {
                       onChange={(e) => setPhone(e.currentTarget.value)}
                       required
                     />
-                    <i class="bx bxs-check-circle"></i>
-                    {/* <i class='bx bxs-x-circle'></i> */}
+                    {/* {
+                      "+" ? <i class="bx bxs-check-circle"></i> : <i class='bx bxs-x-circle'></i>
+                    } */}
+
+
                   </div>
                   <div>
                     <input
@@ -126,7 +129,7 @@ const RequestConsultation = () => {
                       onChange={(e) => setMail(e.currentTarget.value)}
                       required
                     />
-                    <i class="bx bxs-check-circle"></i>
+                    {/* <i class="bx bxs-check-circle"></i> */}
                     {/* <i class='bx bxs-x-circle'></i> */}
                   </div>
                   {contextHolder}

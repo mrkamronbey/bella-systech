@@ -19,6 +19,11 @@
   position: relative;
 }
 
+.spin_wrapp > img{
+  width: 180px;
+  height: 90px;
+}
+
 .loader {
   width: 60px;
   height: 60px;

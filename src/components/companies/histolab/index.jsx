@@ -19,7 +19,7 @@ const HistolabComponent = () => {
   const filterCompany = companyGetState.filter(elem => elem.name == 'Histolab')
   return (
     <div>
-      <HomeHero title={t("Histolab")} className={styles.Wrapper} Contact />
+      <HomeHero title_style={{color: "#fff"}} title={t("Histolab")} className={styles.Wrapper} Contact />
       <CompainesAbout filterCompany={filterCompany} />
       <Card filterCompany={filterCompany} />
       <RequestConsultation />

@@ -7,7 +7,7 @@ import Counter from "./counter";
 
 
 const BenefitsCount = () => {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
   return (
     <>
       <div className={styles.benefits_count_section}>

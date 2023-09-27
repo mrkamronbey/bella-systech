@@ -9,7 +9,7 @@ function ContactComponent() {
   const { t } = useTranslation();
   return (
     <>
-      <HomeHero className={styled.contact_hero} title={t("Contact.0")} />
+      <HomeHero title_style={{color: "#fff"}} className={styled.contact_hero} title={t("Contact.0")} />
       <Location t={t} />
       <RequestConsultation />
     </>

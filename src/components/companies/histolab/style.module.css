@@ -1,12 +1,25 @@
 .Wrapper {
-  background-image: url("./../../../assets/compaines/bnv.png");
+  background-image: url("./../../../assets/compaines/histolab.jpg");
   background-size: cover;
+  background-position: center right;
   background-repeat: no-repeat;
   width: 100%;
   height: 50dvh;
-  margin-top: 119px;
+  margin-top: 145px;
   overflow-y: hidden;
+  color: #000;
+  position: relative;
 }
+
+.Wrapper::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+
 .Container {
   max-width: 1250px;
   width: 100%;
@@ -43,9 +56,23 @@
 
 @media only screen and (max-width: 991px) {
   .Wrapper {
-    background-image: url("./../../../assets/compaines/bnv.png");
+    background-image: url("./../../../assets/compaines/histolab.jpg");
+    background-position: center right;
     background-size: cover;
-    background-position: bottom center;
+    width: 100%;
+    margin-top: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .Wrapper {
+    background-image: url("./../../../assets/compaines/histolab.jpg");
+    background-position: center right;
+    background-size: cover;
+    /* background-position-x: -200px; */
     width: 100%;
     margin-top: 85px;
     display: flex;
@@ -57,9 +84,10 @@
 @media only screen and (max-width: 578px) {
   .Wrapper {
     overflow-y: hidden;
-    background-image: url("./../../../assets/compaines/bnv.png");
+    background-position-x: -300px;
+    background-image: url("./../../../assets/compaines/histolab.jpg");
+    background-position: center right;
     background-size: cover;
-    background-position: center;
     width: 100%;
     margin-top: 85px;
     display: flex;
@@ -71,21 +99,42 @@
 @media only screen and (max-width: 425px) {
   .Wrapper {
     overflow-y: hidden;
-    background-image: url("./../../../assets/compaines/bnv.png");
+    /* background-position-x: -163px; */
+    background-image: url("./../../../assets/compaines/histolab.jpg");
+    background-position: center right;
     width: 100%;
     height: 30dvh;
+    margin-top: 69px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+ 
+}
+
+@media only screen and (max-width: 375px) {
+  .Wrapper {
+    overflow-y: hidden;
+    margin-top: 61px;
+    /* background-position-x: -213px; */
+    background-image: url("./../../../assets/compaines/histolab.jpg");
+    background-position: center right;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 320px) {
   .Wrapper {
     overflow-y: hidden;
-    background-image: url("./../../../assets/compaines/bnv.png");
+    margin-top: 61px;
+    background-position-x: -260px;
+    background-image: url("./../../../assets/compaines/histolab.jpg");
+    background-position: center right;
     width: 100%;
-    margin-top: 31px;
     display: flex;
     align-items: center;
     justify-content: center;

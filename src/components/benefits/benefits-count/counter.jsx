@@ -17,8 +17,12 @@ function Counter({ className, ...rest }) {
         <Row className={styles.benefits_count_row}>
           <Col className={styles.benefits_count_col} lg={3} md={6} sm={6} xs={6}>
             <div className={styles.count_wrap}>
-              <strong className="strong" data-number="18">
-                <CountUp {...rest} start={viewPortEntered ? null : 0} end={18}>
+              <strong className="strong" data-number="12">
+                <CountUp
+                  {...rest}
+                  start={viewPortEntered ? null : 0}
+                  end={12}
+                >
                   {({ countUpRef }) => {
                     return (
                       <ReactVisibilitySensor

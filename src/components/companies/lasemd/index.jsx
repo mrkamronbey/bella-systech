@@ -19,7 +19,7 @@ const LasemdComponent = () => {
   const filterCompany = companyGetState.filter(elem => elem.name == 'JUVELOOK и LENISNA')
   return (
     <div>
-      <HomeHero title={t("JUVELOOK & LENISNA")} className={styles.Wrapper} Contact />
+      <HomeHero title_style={{color: "#fff"}} title={t("JUVELOOK & LENISNA")} className={styles.Wrapper} Contact />
       <CompainesAbout filterCompany={filterCompany} />
       <Card filterCompany={filterCompany} />
       <RequestConsultation />

@@ -16,10 +16,11 @@ const BialogComponent = () => {
     dispatch(CompanyGet())
   }, [])
   const companyGetState = useSelector((state) => state.company.CompanyGet?.data)
+  console.log(companyGetState, 'biolab')
   const filterCompany = companyGetState.filter(elem => elem.name == 'BNV Biolab')
   return (
     <div>
-      <HomeHero title={t("BNV Biolab")} className={styles.Wrapper} Contact />
+      <HomeHero title_style={{color: "#fff"}} title={t("BNV Biolab")} className={styles.Wrapper} Contact />
       <CompainesAbout filterCompany={filterCompany} />
       <Card filterCompany={filterCompany} />
       <RequestConsultation />

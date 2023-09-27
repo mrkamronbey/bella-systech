@@ -17,7 +17,7 @@ const ClassysCompainesComponent = () => {
   const filterCompany = companyGetState.filter(elem => elem.name == 'Classys')
   return (
     <>
-      <HomeHero title={"Classys"} className={styles.Wrapper} Contact />
+      <HomeHero title_style={{color: "#fff"}}  title={"Classys"} className={styles.Wrapper} Contact />
       <ContentCompaines filterCompany={filterCompany} />
       <BannerCard filterCompany={filterCompany} />
       <ClassysCard />

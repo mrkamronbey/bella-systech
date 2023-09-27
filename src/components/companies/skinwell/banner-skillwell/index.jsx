@@ -10,9 +10,11 @@ import { NavLink } from 'react-router-dom'
 
 import BannerSkinWell from '../../../../assets/banner/skinwell-img.png'
 
-const BannerSkillWell = () => {
+const BannerSkillWell = ({ filterCompany }) => {
     const { t } = useTranslation()
-    const arr = [1, 2, 3, 4]
+    function LanguValue() {
+        return window.localStorage.getItem("i18nextLng");
+    }
     return (
         <>
             <div className={styles.banner_section}>
@@ -20,89 +22,61 @@ const BannerSkillWell = () => {
                     <div className={styles.banner_big_wrapp}>
                         <div className={styles.banner_row_wrap}>
                             <Row className={styles.banner_row}>
-                                <Col lg={6} md={12} sm={12} xs={12} className={styles.banner_col}>
-                                    <div className={styles.banner_content_wrap}>
-                                        <Reveal>
-                                            <h4 className={styles.banner_title}>
-                                                Почему Skinwell Bio-Cellulose Mask?
-                                            </h4>
-                                        </Reveal>
-                                        <ul className={styles.banner_ul}>
-                                            <li>
-                                                <Reveal>
-                                                    <p className={styles.banner_item_p}>
-                                                        Способствует хорошему проникновению активной сыворотки
-                                                    </p>
-                                                </Reveal>
-                                            </li>
-                                            <li>
-                                                <Reveal>
-                                                    <p className={styles.banner_item_p}>
-                                                        Имеет высокий охлаждающий эффект
+                                {
+                                    filterCompany.map(elem => elem.pereparat.map(item => (
+                                        <>
+                                            <Col lg={6} md={12} sm={12} xs={12} className={styles.banner_col}>
+                                                <div className={styles.banner_content_wrap}>
+                                                    <Reveal>
+                                                        <h4 className={styles.banner_title}>
+                                                            {
+                                                                LanguValue() == 'uz' ? item.name_uz : LanguValue() == 'ru' ? item.name_ru : LanguValue() == 'en' ? item.name_en : item.name_ru
+                                                            }
+                                                        </h4>
+                                                    </Reveal>
+                                                    <ul className={styles.banner_ul}>
+                                                        <li>
+                                                            <Reveal>
+                                                                <p className={styles.banner_item_p}>
+                                                                    {
+                                                                        LanguValue() == 'uz' ?
+                                                                            `${item.description_uz.slice(0, 200)}...` :
+                                                                            LanguValue() == 'ru' ?
+                                                                                `${item.description_ru.slice(0, 200)}...` :
+                                                                                LanguValue() == 'en' ?
+                                                                                    `${item.description_en.slice(0, 200)}...` : `${item.description_ru.slice(0, 200)}...`
+                                                                    }
+                                                                </p>
+                                                            </Reveal>
+                                                        </li>
+                                                    </ul>
 
-                                                    </p>
-                                                </Reveal>
-                                            </li>
-                                            <li>
-                                                <Reveal>
-                                                    <p className={styles.banner_item_p}>
-                                                        Натуральная
-                                                    </p>
-                                                </Reveal>
-                                            </li>
-                                            <li>
-                                                <Reveal>
-                                                    <p className={styles.banner_item_p}>
-                                                        Материал играет активную роль в стимулировании регенеративных процессов
-                                                    </p>
-                                                </Reveal>
-                                            </li>
-                                            <li>
-                                                <Reveal>
-                                                    <p className={styles.banner_item_p}>
-                                                        Заметный лифтинг-эффект
-                                                    </p>
-                                                </Reveal>
-                                            </li>
-                                            <li>
-                                                <Reveal>
-                                                    <p className={styles.banner_item_p}>
-                                                        При наложении маски на лицо, очень мягкое и комфортное ощущение
-                                                    </p>
-                                                </Reveal>
-                                            </li>
-                                            <li>
-                                                <Reveal>
-                                                    <p className={styles.banner_item_p}>
-                                                        Не повреждается во время использования
-                                                    </p>
-                                                </Reveal>
-                                            </li>
-                                        </ul>
+                                                    <div className={styles.btn_group}>
+                                                        <CommonButton className={styles.left_btn}>
+                                                            <NavLink to={`/product2/${item.id}`}>
+                                                                {t("Card.0")}
+                                                            </NavLink>
+                                                        </CommonButton>
+                                                        <CommonButton className={styles.right_btn}>
+                                                            <NavLink to="/contact">
+                                                                {t("Card.1")}
+                                                            </NavLink>
+                                                        </CommonButton>
+                                                    </div>
+                                                </div>
 
-                                        <div className={styles.btn_group}>
-                                            <CommonButton className={styles.left_btn}>
-                                                <NavLink to="#">
-                                                    {t("Card.0")}
-                                                </NavLink>
-                                            </CommonButton>
-                                            <CommonButton className={styles.right_btn}>
-                                                <NavLink to="/contact">
-                                                    {t("Card.1")}
-                                                </NavLink>
-                                            </CommonButton>
-                                        </div>
-                                    </div>
-
-                                </Col>
-                                <Col lg={6} md={12} sm={12} xs={12} className={styles.banner_col}>
-                                    <div className={styles.banner_img_wrapp}>
-                                        <ImageAnimation src={BannerSkinWell} style={{
-                                            width: "100%",
-                                            aspectRatio: 16 / 9
-                                        }} />
-                                    </div>
-                                </Col>
+                                            </Col>
+                                            <Col lg={6} md={12} sm={12} xs={12} className={styles.banner_col}>
+                                                <div className={styles.banner_img_wrapp}>
+                                                    <ImageAnimation src={item.image1} style={{
+                                                        width: "100%",
+                                                        aspectRatio: 3 / 4
+                                                    }} />
+                                                </div>
+                                            </Col>
+                                        </>
+                                    )))
+                                }
                             </Row>
                         </div>
                     </div>

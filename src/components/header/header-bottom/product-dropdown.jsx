@@ -16,7 +16,7 @@ const ProductDropdown = ({ fonstSizes, onClose }) => {
             key: '1',
         },
         {
-            label: <NavLink onClick={onClose} to="/category-pereparat">{t("Header.9")}</NavLink>,
+            label: <NavLink onClick={onClose} to="/cosmetic-cateogry">{t("Header.9")}</NavLink>,
             key: '2',
         }
     ];

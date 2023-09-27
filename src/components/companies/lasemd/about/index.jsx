@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from "./style.module.css"
 import { Col, Row } from "react-grid-system"
-import AboutImage from "./../../../../assets/compaines/about-image.png"
+import AboutImage from "./../../../../assets/compaines/juvelook-about.png"
 import { useTranslation } from 'react-i18next'
 import ImageAnimation from '../../../../common/image'
 import Reveal from '../../../../utils/reveal/reveal'
@@ -17,7 +17,7 @@ const CompainesAbout = ({ filterCompany }) => {
                     {
                         filterCompany.map(elem => (
                             <>
-                                <Col lg={6} md={12}>
+                                <Col className={styles.col} lg={6} md={12}>
                                     <div className={styles.Col}>
                                         <ImageAnimation
                                             style={{
@@ -28,7 +28,7 @@ const CompainesAbout = ({ filterCompany }) => {
                                     </div>
                                 </Col>
 
-                                <Col lg={6} md={12}>
+                                <Col className={styles.col} lg={6} md={12}>
                                     <div className={styles.Col_Right}>
                                         <Reveal>
                                             <h2 className={styles.classys_title}>{

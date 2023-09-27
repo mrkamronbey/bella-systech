@@ -1,11 +1,21 @@
 .Wrapper {
-  background-image: url("./../../../assets/compaines/bnv.png");
+  background-image: url("./../../../assets/compaines/juvelook.jpg");
+  background-position: center right;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
   height: 50dvh;
-  margin-top: 119px;
+  margin-top: 145px;
   overflow-y: hidden;
+  position: relative;
+}
+
+.Wrapper::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .Container {
@@ -34,9 +44,9 @@
 
 @media only screen and (max-width: 991px) {
   .Wrapper {
-    background-image: url("./../../../assets/compaines/bnv.png");
+    background-image: url("./../../../assets/compaines/juvelook.jpg");
+    background-position: center right;
     background-size: cover;
-    background-position: bottom center;
     width: 100%;
     margin-top: 85px;
     display: flex;
@@ -58,9 +68,9 @@
 @media only screen and (max-width: 578px) {
   .Wrapper {
     overflow-y: hidden;
-    background-image: url("./../../../assets/compaines/bnv.png");
+    background-image: url("./../../../assets/compaines/juvelook.jpg");
+    background-position: center right;
     background-size: cover;
-    background-position: center;
     width: 100%;
     margin-top: 85px;
     display: flex;
@@ -72,9 +82,11 @@
 @media only screen and (max-width: 425px) {
   .Wrapper {
     overflow-y: hidden;
-    background-image: url("./../../../assets/compaines/bnv.png");
+    background-image: url("./../../../assets/compaines/juvelook.jpg");
+    background-position: center right;
     width: 100%;
     height: 30dvh;
+    margin-top: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -84,9 +96,25 @@
 @media only screen and (max-width: 375px) {
   .Wrapper {
     overflow-y: hidden;
-    background-image: url("./../../../assets/compaines/bnv.png");
+    background-image: url("./../../../assets/compaines/juvelook.jpg");
+    background-position: center right;
+    /* background-position-x: -230px; */
     width: 100%;
-    margin-top: 31px;
+    margin-top: 61px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .Wrapper {
+    overflow-y: hidden;
+    background-image: url("./../../../assets/compaines/juvelook.jpg");
+    background-position: right;
+    background-position-x: -380px;
+    width: 100%;
+    margin-top: 61px;
     display: flex;
     align-items: center;
     justify-content: center;

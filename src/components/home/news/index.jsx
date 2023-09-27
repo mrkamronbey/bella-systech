@@ -80,9 +80,9 @@ const News = () => {
             <Reveal>
               <h4 className={styles.news_title}>{t("News.0")}</h4>
             </Reveal>
-            <Reveal>
+            {/* <Reveal>
               <p className={styles.news_text}>{t("News.1")}</p>
-            </Reveal>
+            </Reveal> */}
           </div>
           <div className='news_slider_wrapp'>
             {
