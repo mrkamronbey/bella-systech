@@ -10,7 +10,7 @@ const Benefits = () => {
         <>
             <HelmetProvider>
                 <Helmet>
-                    <title>Benefits</title>
+                    <title>Косметологические решения из Кореи</title>
                     <meta name='description' content="Company benefits" />
                     <link rel="cononical" href="/benefits" />
                 </Helmet>

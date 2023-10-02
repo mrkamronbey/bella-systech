@@ -10,7 +10,7 @@ const CategoryPereparat = () => {
     <>
       <HelmetProvider>
         <Helmet>
-          <title>Category Pereparat</title>
+          <title>Профессиональная косметика Ташкент</title>
           <meta name='description' content="Category Pereparat" />
           <link rel="cononical" href="/category-pereparat" />
         </Helmet>

@@ -10,7 +10,7 @@ const Skinwell = () => {
     <>
       <HelmetProvider>
         <Helmet>
-          <title>Company Skinwell</title>
+          <title>Маски от Skinwell</title>
           <meta name='description' content="Company Skinwell" />
           <link rel="cononical" href="/companies/skinwell" />
         </Helmet>

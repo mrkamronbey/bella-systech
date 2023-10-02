@@ -2,7 +2,10 @@ import React from 'react'
 import styles from './style.module.css'
 import { WrapperContainer } from '../../../style-app'
 import { Col, Row } from 'react-grid-system'
-import BenefitsImg from '../../../assets/benefits/benefits.png'
+import BenefitsImg2 from '../../../assets/benefits/2.png'
+import BenefitsImg3 from '../../../assets/benefits/3.png'
+import BenefitsImg4 from '../../../assets/benefits/4.png'
+import BenefitsImg5 from '../../../assets/benefits/5.png'
 import { useTranslation } from 'react-i18next'
 import Reveal from '../../../utils/reveal/reveal'
 import ImageAnimation from '../../../common/image/index'
@@ -20,7 +23,7 @@ const BenefitsCard = () => {
                                 <div className='benefits_col_wrapp'>
                                     <div className={styles.benefits_col_img}>
                                         <ImageAnimation
-                                            src={BenefitsImg}
+                                            src={BenefitsImg2}
                                             style={{
                                                 width: "100%",
                                                 aspectRatio: "16 / 9",
@@ -49,7 +52,7 @@ const BenefitsCard = () => {
                                     </div>
                                     <div className={styles.benefits_col_img}>
                                         <ImageAnimation
-                                            src={BenefitsImg}
+                                            src={BenefitsImg3}
                                             style={{
                                                 width: "100%",
                                                 aspectRatio: "16 / 9",
@@ -62,7 +65,7 @@ const BenefitsCard = () => {
                                 <div className='benefits_col_wrapp'>
                                     <div className={styles.benefits_col_img}>
                                         <ImageAnimation
-                                            src={BenefitsImg}
+                                            src={BenefitsImg4}
                                             style={{
                                                 width: "100%",
                                                 aspectRatio: "16 / 9",
@@ -91,7 +94,7 @@ const BenefitsCard = () => {
                                     </div>
                                     <div className={styles.benefits_col_img}>
                                         <ImageAnimation
-                                            src={BenefitsImg}
+                                            src={BenefitsImg5}
                                             style={{
                                                 width: "100%",
                                                 aspectRatio: "16 / 9",

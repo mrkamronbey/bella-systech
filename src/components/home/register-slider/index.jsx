@@ -126,152 +126,157 @@ const RegisterSlider = () => {
     }, [clinics]);
     return (
         <>
-            <div className={styles.register_section}>
-                <Modal width={800} footer={false} title={t("RegisterSlider.9")} open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
-                    <div className={styles.news_form_wrapp}>
-                        <form onSubmit={HandleSubmit}>
-                            <Row className={styles.news_form_row}>
-                                <Col lg={6} md={12} sm={12} xs={12} className={styles.news_form_col}>
-                                    <label htmlFor="fullname">
-                                        {t("RegisterSlider.3")}
-                                    </label>
-                                    <Input
-                                        required
-                                        className={styles.news_form_input}
-                                        id='fullname'
-                                        onChange={(e) => setFullName(e.currentTarget.value)}
-                                    />
-                                </Col>
-                                <Col lg={6} md={12} sm={12} xs={12} className={styles.news_form_col}>
-                                    <label htmlFor="phone">
-                                        {t("RegisterSlider.4")}
-                                    </label>
-                                    <Input
-                                        required
-                                        className={styles.news_form_input}
-                                        id='phone'
-                                        onChange={(e) => setNumber(e.currentTarget.value)}
-                                    />
-                                </Col>
-                                <Col lg={6} md={12} sm={12} xs={12} className={styles.news_form_col}>
-                                    <label htmlFor="activity">
-                                        {t("RegisterSlider.5")}
-                                    </label>
-                                    <Input
-                                        required
-                                        className={styles.news_form_input}
-                                        id='activity'
-                                        onChange={(e) => setActivities(e.currentTarget.value)}
-                                    />
-                                </Col>
-                                <Col lg={6} md={12} sm={12} xs={12} className={styles.news_form_col}>
-                                    <label htmlFor="position">
-                                        {t("RegisterSlider.6")}
-                                    </label>
-                                    <Input
-                                        required
-                                        className={styles.news_form_input}
-                                        id='position'
-                                        onChange={(e) => setPositions(e.currentTarget.value)}
-                                    />
-                                </Col>
-                                <Col lg={6} md={12} sm={12} xs={12} className={styles.news_form_col}>
-                                    <label htmlFor="clinic_name">
-                                        {t("RegisterSlider.7")}
-                                    </label>
-                                    <Input
-                                        required
-                                        className={styles.news_form_input}
-                                        id='clinic_name'
-                                        onChange={(e) => setClinics(e.currentTarget.value)}
-                                    />
-                                </Col>
-                                <Col lg={12} className={`${styles.news_form_col} ${styles.news_form_col_btn}`}>
-                                    {contextHolder}
-                                    <CommonButton
-                                        disabled={disableds}
-                                        type='submit'
-                                        className={styles.news_form_btn}>
-                                        {t("RegisterSlider.8")}
-                                    </CommonButton>
-                                </Col>
-                            </Row>
-                        </form>
-                    </div>
-                </Modal>
-                <WrapperContainer>
-                    <div className='register_slider_wrapp'>
-                        <Swiper
-                            slidesPerView={1}
-                            spaceBetween={30}
-                            loop={true}
-                            pagination={{
-                                clickable: true,
-                            }}
-                            navigation={false}
-                            modules={[Autoplay, Pagination, Navigation]}
-                            className="mySwiper"
-                            autoplay={{
-                                delay: 9500,
-                                disableOnInteraction: false,
-                            }}
-                            onAutoplayTimeLeft={onAutoplayTimeLeft}
-                        >
-                            {
-                                newsFilter?.map((elem) => (
-                                    <SwiperSlide>
-                                        <div className={styles.register_wrapp}>
-                                            <Row className={styles.register_row}>
-                                                <Col lg={7} md={12} sm={12} className={styles.register_col}>
-                                                    <div className={styles.register_img_wrapp}>
-                                                        <ImageAnimation src={elem.image} style={{
-                                                            width: "100%",
-                                                            aspectRatio: "16 / 9",
-                                                        }} />
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5} md={12} sm={12} className={styles.register_col}>
-                                                    <div className={styles.register_content_wrapp}>
-                                                        <Reveal>
-                                                            <h4 className={styles.register_title}>
-                                                                {
-                                                                    LanguValue() == 'uz' ? elem.title_uz : LanguValue() == 'en' ? elem.title_en : LanguValue() == 'ru' ? elem.title_ru : null
-                                                                }
-                                                            </h4>
-                                                        </Reveal>
-                                                        <Reveal>
-                                                            <p className={styles.register_text}>
-                                                                {
-                                                                    LanguValue() == 'uz' ? `${elem.description_uz.slice(0, 200)}...` : LanguValue() == 'en' ? `${elem.description_en.slice(0, 200)}...` : LanguValue() == 'ru' ? `${elem.description_ru.slice(0, 200)}...` : null
-                                                                }
-                                                            </p>
-                                                        </Reveal>
-                                                        <CommonButton
-                                                            id={elem.id}
-                                                            onClick={showModal}
-                                                            className={styles.register_btn}>
-                                                            {t("RegisterSlider.2")}
-                                                        </CommonButton>
-                                                    </div>
-                                                </Col>
-                                            </Row>
-
-
-                                        </div>
-                                    </SwiperSlide>
-                                ))
-                            }
-                            <div className="autoplay-progress" slot="container-end">
-                                <svg viewBox="0 0 48 48" ref={progressCircle}>
-                                    <circle cx="24" cy="24" r="20"></circle>
-                                </svg>
-                                <span ref={progressContent}></span>
+            {
+                newsFilter.length ? (
+                    <div className={styles.register_section}>
+                        <Modal width={800} footer={false} title={t("RegisterSlider.9")} open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+                            <div className={styles.news_form_wrapp}>
+                                <form onSubmit={HandleSubmit}>
+                                    <Row className={styles.news_form_row}>
+                                        <Col lg={6} md={12} sm={12} xs={12} className={styles.news_form_col}>
+                                            <label htmlFor="fullname">
+                                                {t("RegisterSlider.3")}
+                                            </label>
+                                            <Input
+                                                required
+                                                className={styles.news_form_input}
+                                                id='fullname'
+                                                onChange={(e) => setFullName(e.currentTarget.value)}
+                                            />
+                                        </Col>
+                                        <Col lg={6} md={12} sm={12} xs={12} className={styles.news_form_col}>
+                                            <label htmlFor="phone">
+                                                {t("RegisterSlider.4")}
+                                            </label>
+                                            <Input
+                                                required
+                                                className={styles.news_form_input}
+                                                id='phone'
+                                                onChange={(e) => setNumber(e.currentTarget.value)}
+                                            />
+                                        </Col>
+                                        <Col lg={6} md={12} sm={12} xs={12} className={styles.news_form_col}>
+                                            <label htmlFor="activity">
+                                                {t("RegisterSlider.5")}
+                                            </label>
+                                            <Input
+                                                required
+                                                className={styles.news_form_input}
+                                                id='activity'
+                                                onChange={(e) => setActivities(e.currentTarget.value)}
+                                            />
+                                        </Col>
+                                        <Col lg={6} md={12} sm={12} xs={12} className={styles.news_form_col}>
+                                            <label htmlFor="position">
+                                                {t("RegisterSlider.6")}
+                                            </label>
+                                            <Input
+                                                required
+                                                className={styles.news_form_input}
+                                                id='position'
+                                                onChange={(e) => setPositions(e.currentTarget.value)}
+                                            />
+                                        </Col>
+                                        <Col lg={6} md={12} sm={12} xs={12} className={styles.news_form_col}>
+                                            <label htmlFor="clinic_name">
+                                                {t("RegisterSlider.7")}
+                                            </label>
+                                            <Input
+                                                required
+                                                className={styles.news_form_input}
+                                                id='clinic_name'
+                                                onChange={(e) => setClinics(e.currentTarget.value)}
+                                            />
+                                        </Col>
+                                        <Col lg={12} className={`${styles.news_form_col} ${styles.news_form_col_btn}`}>
+                                            {contextHolder}
+                                            <CommonButton
+                                                disabled={disableds}
+                                                type='submit'
+                                                className={styles.news_form_btn}>
+                                                {t("RegisterSlider.8")}
+                                            </CommonButton>
+                                        </Col>
+                                    </Row>
+                                </form>
                             </div>
+                        </Modal>
+                        <WrapperContainer>
+                            <div className='register_slider_wrapp'>
+                                <Swiper
+                                    slidesPerView={1}
+                                    spaceBetween={30}
+                                    loop={true}
+                                    pagination={{
+                                        clickable: true,
+                                    }}
+                                    navigation={false}
+                                    modules={[Autoplay, Pagination, Navigation]}
+                                    className="mySwiper"
+                                    autoplay={{
+                                        delay: 9500,
+                                        disableOnInteraction: false,
+                                    }}
+                                    onAutoplayTimeLeft={onAutoplayTimeLeft}
+                                >
+                                    {
+                                        newsFilter?.map((elem) => (
+                                            <SwiperSlide>
+                                                <div className={styles.register_wrapp}>
+                                                    <Row className={styles.register_row}>
+                                                        <Col lg={7} md={12} sm={12} className={styles.register_col}>
+                                                            <div className={styles.register_img_wrapp}>
+                                                                <ImageAnimation src={elem.image} style={{
+                                                                    width: "100%",
+                                                                    aspectRatio: "16 / 9",
+                                                                }} />
+                                                            </div>
+                                                        </Col>
+                                                        <Col lg={5} md={12} sm={12} className={styles.register_col}>
+                                                            <div className={styles.register_content_wrapp}>
+                                                                <Reveal>
+                                                                    <h4 className={styles.register_title}>
+                                                                        {
+                                                                            LanguValue() == 'uz' ? elem.title_uz : LanguValue() == 'en' ? elem.title_en : LanguValue() == 'ru' ? elem.title_ru : null
+                                                                        }
+                                                                    </h4>
+                                                                </Reveal>
+                                                                <Reveal>
+                                                                    <p className={styles.register_text}>
+                                                                        {
+                                                                            LanguValue() == 'uz' ? `${elem.description_uz.slice(0, 200)}...` : LanguValue() == 'en' ? `${elem.description_en.slice(0, 200)}...` : LanguValue() == 'ru' ? `${elem.description_ru.slice(0, 200)}...` : null
+                                                                        }
+                                                                    </p>
+                                                                </Reveal>
+                                                                <CommonButton
+                                                                    id={elem.id}
+                                                                    onClick={showModal}
+                                                                    className={styles.register_btn}>
+                                                                    {t("RegisterSlider.2")}
+                                                                </CommonButton>
+                                                            </div>
+                                                        </Col>
+                                                    </Row>
 
-                        </Swiper>
+
+                                                </div>
+                                            </SwiperSlide>
+                                        ))
+                                    }
+                                    <div className="autoplay-progress" slot="container-end">
+                                        <svg viewBox="0 0 48 48" ref={progressCircle}>
+                                            <circle cx="24" cy="24" r="20"></circle>
+                                        </svg>
+                                        <span ref={progressContent}></span>
+                                    </div>
+
+                                </Swiper>
+                            </div>
+                        </WrapperContainer>
                     </div>
-                </WrapperContainer>
-            </div>
+                ) : null
+            }
+
         </>
     );
 }

@@ -11,7 +11,7 @@ const ClassysCompaines = () => {
     <>
       <HelmetProvider>
         <Helmet>
-          <title>Company Classys</title>
+          <title>Косметологическое оборудовние Classys</title>
           <meta name='description' content="Company Classys" />
           <link rel="cononical" href="/companies/classys" />
         </Helmet>

@@ -10,7 +10,7 @@ function Home() {
     <>
       <HelmetProvider>
         <Helmet>
-          <title>Home</title>
+          <title>Bella-systech Uzbekistan</title>
           <meta name='description' content="Home page" />
           <link rel="cononical" href="/" />
         </Helmet>

@@ -60,7 +60,7 @@ const Menu = ({ onClose, open }) => {
                             <img src={HeaderLogo} alt="" />
                         </div>
                         <div className={styles.drawers_title}>
-                            <h4>Bella-Systech</h4>
+                            <h4>Bella-Systech Uzbekistan</h4>
                         </div>
                     </>
                 }

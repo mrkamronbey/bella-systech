@@ -25,7 +25,7 @@ const OurPartner = () => {
   const sliderData = [
     {
       id: 1,
-      image: PartnerImg1
+      image: PartnerImg4
     },
     {
       id: 2,
@@ -37,7 +37,7 @@ const OurPartner = () => {
     },
     {
       id: 4,
-      image: PartnerImg4
+      image: PartnerImg6
     },
     {
       id: 5,
@@ -45,7 +45,7 @@ const OurPartner = () => {
     },
     {
       id: 6,
-      image: PartnerImg6
+      image: PartnerImg1
     }
   ]
   const { t } = useTranslation()

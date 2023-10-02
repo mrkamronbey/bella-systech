@@ -184,49 +184,84 @@ const OurCustumer = ({ dataproductfilter }) => {
                                   Toshkent, Sergeli 8-A uy
                                 </a>
                               </li> */}
-                            <li>
-                              <span>
-                                <i class="bx bx-phone-call"></i>
-                              </span>
-                              <a href={`tel:${elem.phone_number1}`}>
-                                {elem.phone_number1}
-                              </a>
-                            </li>
-                            <li>
-                              <span>
-                                <i class="bx bx-phone-call"></i>
-                              </span>
-                              <a href={`tel:${elem.phone_number2}`}>
-                                {elem.phone_number2}
-                              </a>
-                            </li>
+
+                            {
+                              !elem.phone_number1 ? (
+                                null
+                              ) : (
+                                <li>
+                                  <span>
+                                    <i class="bx bx-phone-call"></i>
+                                  </span>
+                                  <a href={`tel:${elem.phone_number1}`}>
+                                    {elem.phone_number1}
+                                  </a>
+                                </li>
+                              )
+                            }
+
+                            {
+                              !elem.phone_number2 ? (
+                                null
+                              ) : (
+                                <li>
+                                  <span>
+                                    <i class="bx bx-phone-call"></i>
+                                  </span>
+                                  <a href={`tel:${elem.phone_number2}`}>
+                                    {elem.phone_number2}
+                                  </a>
+                                </li>
+                              )
+                            }
+
                           </ul>
 
                           <h4 className={styles.social_media_title}>
                             Social media
                           </h4>
                           <ul className={styles.social_list}>
-                            <li>
-                              <a href={elem.telegram_link}>
-                                <span>
-                                  <i class="bx bxl-telegram"></i>
-                                </span>
-                              </a>
-                            </li>
-                            <li>
-                              <a href={elem.instagram_link}>
-                                <span>
-                                  <i class="bx bxl-instagram"></i>
-                                </span>
-                              </a>
-                            </li>
-                            <li>
-                              <a href={elem.facebook_link}>
-                                <span>
-                                  <i class="bx bxl-facebook"></i>
-                                </span>
-                              </a>
-                            </li>
+                            {
+                              !elem.telegram_link ? (
+                                null
+                              ) : (
+                                <li>
+                                  <a href={elem.telegram_link}>
+                                    <span>
+                                      <i class="bx bxl-telegram"></i>
+                                    </span>
+                                  </a>
+                                </li>
+                              )
+                            }
+
+                            {
+                              !elem.instagram_link ? (
+                                null
+                              ) : (
+                                <li>
+                                  <a href={elem.instagram_link}>
+                                    <span>
+                                      <i class="bx bxl-instagram"></i>
+                                    </span>
+                                  </a>
+                                </li>
+                              )
+                            }
+
+                            {
+                              !elem.facebook_link ? (
+                                null
+                              ) : (
+                                <li>
+                                  <a href={elem.facebook_link}>
+                                    <span>
+                                      <i class="bx bxl-facebook"></i>
+                                    </span>
+                                  </a>
+                                </li>
+                              )
+                            }
                           </ul>
                         </div>
                       </Col>

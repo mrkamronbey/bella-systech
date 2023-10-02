@@ -10,7 +10,7 @@ const Lasemd = () => {
     <div>
       <HelmetProvider>
         <Helmet>
-          <title>Company Juvelook or Lenisna</title>
+          <title>Медицинская косметика от Juvelook or Lenisna</title>
           <meta name='description' content="Company Juvelook or Lenisna" />
           <link rel="cononical" href="/companies/juvelook" />
         </Helmet>

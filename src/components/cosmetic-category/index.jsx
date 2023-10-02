@@ -31,7 +31,7 @@ const BioCategoryComponent = () => {
       const companies = useSelector(state => state.company.CompanyGet.data)
   return (
     <>
-      <HomeHero title_style={{color: "#fff"}} title={t("Category.0")} className={styles.Wrapper} Contact />
+      <HomeHero title_style={{color: "#fff"}} title={t("Header.9")} className={styles.Wrapper} Contact />
       <div className={styles.Container}>
         <Row>
           <Col lg={3}>

@@ -1,7 +1,8 @@
 .about_hero {
-  background-image: url("../../../assets/hero.png");
+  background-image: url("../../../assets/hero/3.png");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center right;
   width: 100%;
   height: 50dvh;
   margin-top: 119px;
@@ -16,9 +17,24 @@
 
 @media only screen and (max-width: 991px) {
   .about_hero {
-    background-image: url("../../../assets/hero.png");
+    background-image: url("../../../assets/hero/3.png");
     background-size: cover;
-    background-position: bottom center;
+    background-position: center right;
+    width: 100%;
+    margin-top: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 652px) {
+  .about_hero {
+    overflow-y: hidden;
+    background-image: url("../../../assets/hero/3.png");
+    background-size: cover;
+    background-position: center;
+    background-position-x: -530px;
     width: 100%;
     margin-top: 85px;
     display: flex;
@@ -30,11 +46,11 @@
 @media only screen and (max-width: 578px) {
   .about_hero {
     overflow-y: hidden;
-    background-image: url("../../../assets/hero.png");
-    background-size: cover;
+    background-image: url("../../../assets/hero/3.png");
     background-position: center;
+    background-position-x: -580px;
     width: 100%;
-    margin-top: 85px;
+    margin-top: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,9 +60,11 @@
 @media only screen and (max-width: 425px) {
   .about_hero {
     overflow-y: hidden;
-    background-image: url("../../../assets/hero.png");
+    background-image: url("../../../assets/hero/3.png");
+    background-position-x: -550px;
+    background-position: center right;
     width: 100%;
-    height: 30dvh;
+    height: 35dvh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,9 +74,11 @@
 @media only screen and (max-width: 375px) {
   .about_hero {
     overflow-y: hidden;
-    background-image: url("../../../assets/hero.png");
+    background-image: url("../../../assets/hero/3.png");
+    background-position: center;
+    background-position-x: -450px;
     width: 100%;
-    margin-top: 31px;
+    margin-top: 51px;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -44,9 +44,9 @@ const HeaderTop = () => {
             <div className="header_top_link_wrapp">
               <ul className='header_top_list'>
                 <li>
-                  <a className="mobile_none" href="tel:+998 93 908 70 85">
+                  <a className="mobile_none" href="tel:+998 90 735 55 44">
                     <i class='bx bx-phone-call'></i>
-                    <span>+998 93 908 70 85</span>
+                    <span>+998 90 735 55 44</span>
                   </a>
                 </li>
                 <li>
@@ -55,8 +55,8 @@ const HeaderTop = () => {
                     <span>info@bella-systech.uz</span>
                   </a>
                   <div className="tool_none">
-                    <Tooltip title="+998 93 908 70 85">
-                      <a className="tool_link" href="tel:+998 93 908 70 85">
+                    <Tooltip title="+998 90 735 55 44">
+                      <a className="tool_link" href="tel:+998 90 735 55 44">
                         <i class='bx bx-phone-call'></i>
                       </a>
                     </Tooltip>

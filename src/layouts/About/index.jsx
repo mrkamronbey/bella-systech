@@ -10,7 +10,7 @@ function About() {
     <>
       <HelmetProvider>
         <Helmet>
-          <title>About</title>
+          <title> О нас </title>
           <meta name='description' content="Complete information about the company's activities" />
           <link rel="cononical" href="/about" />
         </Helmet>

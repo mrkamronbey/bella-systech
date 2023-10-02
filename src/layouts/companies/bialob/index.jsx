@@ -11,7 +11,7 @@ const Bialog = () => {
     <>
       <HelmetProvider>
         <Helmet>
-          <title>Company Biolab</title>
+          <title>Профессиональная косметик от Biolab</title>
           <meta name='description' content="Company Biolab" />
           <link rel="cononical" href="/companies/biolab" />
         </Helmet>

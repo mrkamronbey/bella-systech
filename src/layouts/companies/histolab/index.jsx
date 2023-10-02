@@ -10,7 +10,7 @@ const Histolab = () => {
     <>
       <HelmetProvider>
         <Helmet>
-          <title>Company Histolab</title>
+          <title>Профессиональное оборудовние Histolab</title>
           <meta name='description' content="Company Histolab" />
           <link rel="cononical" href="/companies/histolab" />
         </Helmet>

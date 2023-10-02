@@ -4,6 +4,7 @@ import { WrapperContainer } from '../../../style-app'
 import { Col, Row } from 'react-grid-system'
 import ImageAnimation from '../../../common/image/index'
 import AboutSecondImg from '../../../assets/about/aboutsecond.png'
+import AboutCardImg from '../../../assets/about/1.png'
 import { useTranslation } from 'react-i18next'
 import Reveal from '../../../utils/reveal/reveal'
 
@@ -17,7 +18,7 @@ const AboutSecond = () => {
                         <Row className={styles.about_second_row}>
                             <Col lg={6} md={12} sm={12} className={styles.about_second_col}>
                                 <ImageAnimation
-                                    src={AboutSecondImg}
+                                    src={AboutCardImg}
                                     style={{
                                         width: "100%",
                                         aspectRatio: "16 / 9",

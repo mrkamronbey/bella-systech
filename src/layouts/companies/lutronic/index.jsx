@@ -11,7 +11,7 @@ const LutronicCompaines = () => {
     <>
       <HelmetProvider>
         <Helmet>
-          <title>Company Lutronic</title>
+          <title>Профессиональня оборудовние Lutronic</title>
           <meta name='description' content="Company Lutronic" />
           <link rel="cononical" href="/companies/lutronic" />
         </Helmet>

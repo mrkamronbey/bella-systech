@@ -7,6 +7,7 @@ import { Col, Row } from "react-grid-system";
 import Card1 from '../../../assets/about/crd1.png'
 import Card2 from '../../../assets/about/crd2.png'
 import Card3 from '../../../assets/about/crd3.png'
+
 import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router-dom";
 

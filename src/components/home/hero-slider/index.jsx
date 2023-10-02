@@ -52,7 +52,7 @@ const HomeHeroSlider = () => {
                         <div className={styles.content_box}>
                             <div className={styles.btn_group}>
                                 <CommonButton className={styles.left_btn}>
-                                    <a href="tel:+998 93 908 70 85">
+                                    <a href="tel:+998 90 735 55 44">
                                         {t("HeroSlider.0")}
                                     </a>
                                 </CommonButton>

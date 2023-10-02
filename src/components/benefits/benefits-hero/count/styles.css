@@ -61,6 +61,14 @@
   color: #003b46;
 }
 
+@media screen and (max-width: 1330px) {
+  .counter_hero{
+    width: 100%;
+    position: absolute;
+    bottom: 10%;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .counter-row {
     grid-template-columns: 1fr 1fr;

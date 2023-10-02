@@ -19,12 +19,12 @@ const Footer = () => {
                                 <p>{t("Footer.10")}</p></Reveal>
                             <hr />
                             <div className={styles.network}>
-                                <a href="tel:+998 93 908 70 85">
+                                <a href="tel:+998 90 735 55 44">
                                     <i class='bx bxs-phone-call'>
                                     </i>
-                                    +998 93 908 70 85</a>
+                                    +998 90 735 55 44</a>
                                 <a href="mailto:info@bella-systech.uz"><i class='bx bxs-envelope' ></i>info@bella-systech.uz</a>
-                                <a href="https://www.google.com/maps/place/%D0%A2%D0%B0%D1%88%D0%BA%D0%B5%D0%BD%D1%82,+%D0%A3%D0%B7%D0%B1%D0%B5%D0%BA%D0%B8%D1%81%D1%82%D0%B0%D0%BD/@41.3524901,69.1887478,14z/data=!4m6!3m5!1s0x38ae8b0cc379e9c3:0xa5a9323b4aa5cb98!8m2!3d41.2994958!4d69.2400734!16zL20vMGZzbXk?entry=ttu" target={"_blank"}><i class='bx bxs-map' ></i>г.Ташкент</a>
+                                <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.6307878615066!2d69.27150627511922!3d41.29513930171357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8ba4e6f1d2e3%3A0x28e4d7c3fa7e25f8!2z6ZqU56a75oi_!5e0!3m2!1suz!2s!4v1696061972835!5m2!1suz!2s"  target={"_blank"}><i class='bx bxs-map' ></i>Узбекистан, Ташкент, Мирабадский р-н, ул. Фидокор 7</a>
                             </div>
                         </div>
                     </Col>
@@ -73,7 +73,7 @@ const Footer = () => {
                                     <h5>{t("Footer.11")}</h5>
                                 </Reveal>
                                 <button style={{ cursor: "pointer" }} type="submit">
-                                    <a href='tel:+998 93 908 70 85'>
+                                    <a href='tel:+998 90 735 55 44'>
                                         {t("Footer.9")}
                                     </a>
                                 </button>

@@ -19,7 +19,7 @@ const AboutUsComponent = () => {
             <Certificate />
             <OurPartner />
             <News />
-            <OurCustumer />
+            {/* <OurCustumer /> */}
             <RegisterSlider />
             <RequestConsultation />
         </>

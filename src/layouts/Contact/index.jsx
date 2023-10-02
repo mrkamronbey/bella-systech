@@ -11,7 +11,7 @@ function Contact() {
     <>
       <HelmetProvider>
         <Helmet>
-          <title>Contact</title>
+          <title>Оборудование для салонов красоты Ташкент</title>
           <meta name='description' content="Company contacts" />
           <link rel="cononical" href="/contact" />
         </Helmet>
