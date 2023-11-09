@@ -71,11 +71,11 @@ function Counter({ className, ...rest }) {
           </Col>
           <Col className={styles.benefits_hero_count_col} lg={3} md={3} sm={12} sx={12}>
             <div className={styles.count_wrap}>
-              <strong className="strong" data-number="80">
+              <strong className="strong" data-number="150">
                 <CountUp
                   {...rest}
                   start={viewPortEntered ? null : 0}
-                  end={80}
+                  end={150}
                 >
                   {({ countUpRef }) => {
                     return (
@@ -102,11 +102,11 @@ function Counter({ className, ...rest }) {
           </Col>
           <Col className={styles.benefits_hero_count_col} lg={3} md={3} sm={12} sx={12}>
             <div className={styles.count_wrap}>
-              <strong className="strong" data-number="28">
+              <strong className="strong" data-number="5">
                 <CountUp
                   {...rest}
                   start={viewPortEntered ? null : 0}
-                  end={28}
+                  end={5}
                 >
                   {({ countUpRef }) => {
                     return (

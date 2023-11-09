@@ -146,17 +146,7 @@ const OurCustumer = ({ dataproductfilter }) => {
                       </p>
                     </Reveal>
                   </div>
-                  <div className={styles.modal_iframe}>
-                    <iframe
-                      width="100%"
-                      height="350"
-                      src={elem.video}
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
+
                   <div className={styles.modal_location}>
                     <Row className={styles.modal_row}>
                       <Col className={styles.modal_col} lg={7}>

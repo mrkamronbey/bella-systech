@@ -13,9 +13,14 @@ import 'swiper/css/navigation';
 import 'swiper/css';
 import 'swiper/css/effect-creative';
 import BannerImg from '../../../assets/banner/image_2023-09-15_09-56-59.png'
+import BannerImg2 from '../../../assets/banner/3.png'
+import BannerImg3 from '../../../assets/banner/4.png'
 
 const HomeHeroSlider = () => {
     const { t } = useTranslation()
+    function LanguValue() {
+        return window.localStorage.getItem("i18nextLng");
+    }
     return (
         <>
             <div
@@ -47,7 +52,7 @@ const HomeHeroSlider = () => {
                     <SwiperSlide>
                         <img
                             className="swiper-slide-image"
-                            src={BannerImg}
+                            src={LanguValue() == "ru" ?  BannerImg : LanguValue() == "uz" ? BannerImg3 : LanguValue() == "en" ? BannerImg2 : null }
                         />
                         <div className={styles.content_box}>
                             <div className={styles.btn_group}>
